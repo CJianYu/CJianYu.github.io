@@ -2,8 +2,22 @@ body{
     padding:0 10px 30px 10px;
 }
 
+.home{
+    margin: 5% 20%;
+}
+
 header{
+    margin-bottom: 20px;
+}
+
+.blog_title {
     font-size: 26px;
     color:#333;
     text-decoration: none;
+}
+
+.container{
+    border: 1px solid #ccc;
+      box-shadow: 2px -2px 10px #ddd;
+      padding: 30px 60px 40px 60px;
 }
