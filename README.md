@@ -1,2 +1,0 @@
-# webnotes
-My personal site
