@@ -1,26 +1,26 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: 懒人的梦呓
-description: Jeffrey's blog, try to bring something special to the world.
-keywords: blog,Jekyll,github,gh-pages
-baseurl:   # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
-url: https://cjianyu.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
+title: Jalpc
+description: Jack's blog,use Jekyll and github pages.
+keywords: Jack,Jalpc,blog,Jekyll,github,gh-pages
+baseurl:  /Jalpc # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
+url: https://jarrekk.github.io/Jalpc  # url should be 'http://<github_username>.github.io/homepage' as before
 # url: http://127.0.0.1:4000
 img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 # author -- index page "about me" section
 author:  # change following line to your infomation.
-  name: Jeffrey  # Be used at blog posts' author.
-  first_name: Jeffrey  # Be used at index page about me section.
-  last_name: chen  # Be used at index page about me section.
+  name: GitHub  # Be used at blog posts' author.
+  first_name: Hub  # Be used at index page about me section.
+  last_name: Git  # Be used at index page about me section.
   avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
-  github_username:   # Leave blank if you don't have now
-  linkedin_id:  # Leave blank if you don't have now
-  facebook_username:   # Leave blank if you don't have now
-  twitter_username: hackepoch  # Leave blank if you don't have now
-  email: hackepoch@gmail.com  # Leave blank if you don't have now
-  cv:   # An online CV can be printed as PDF, leave blank if you don't have now
+  github_username: jarrekk  # Leave blank if you don't have now
+  linkedin_id: jarrekk # Leave blank if you don't have now
+  facebook_username: jiakunnj  # Leave blank if you don't have now
+  twitter_username: jiakun614  # Leave blank if you don't have now
+  email: me@jarrekk.com  # Leave blank if you don't have now
+  cv: http://cv.jarrekk.com  # An online CV can be printed as PDF, leave blank if you don't have now
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
     - name: icon-apache
@@ -28,7 +28,7 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: 东半球最有文艺气息的前端开发工程师，努力将看透的世界变得好一点点。  # Describe yourself.
+  desc: Introduce myself will be here.  # Describe yourself.
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
