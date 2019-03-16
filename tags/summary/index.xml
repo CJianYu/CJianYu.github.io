@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Even - A super concise theme for Hugo</title>
-    <link>https://cjianyu.github.io/post/</link>
-    <description>Recent content in Posts on Even - A super concise theme for Hugo</description>
+    <title>summary on Even - A super concise theme for Hugo</title>
+    <link>https://cjianyu.github.io/tags/summary/</link>
+    <description>Recent content in summary on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Mar 2019 15:22:55 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Dec 2018 16:12:34 +0800</lastBuildDate>
     
-	<atom:link href="https://cjianyu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cjianyu.github.io/tags/summary/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About Me</title>
-      <link>https://cjianyu.github.io/post/about-me/</link>
-      <pubDate>Sat, 16 Mar 2019 15:22:55 +0800</pubDate>
-      
-      <guid>https://cjianyu.github.io/post/about-me/</guid>
-      <description>这里将会是我的介绍，暂时没有出炉</description>
-    </item>
     
     <item>
       <title>我的2018年终总结</title>

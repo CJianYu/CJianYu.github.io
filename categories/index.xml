@@ -10,5 +10,14 @@
 	<atom:link href="https://cjianyu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>“年终总结&#34;</title>
+      <link>https://cjianyu.github.io/categories/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Wed, 12 Dec 2018 16:12:34 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/categories/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

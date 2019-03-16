@@ -20,5 +20,14 @@
       <description>这里将会是我的介绍，暂时没有出炉</description>
     </item>
     
+    <item>
+      <title>我的2018年终总结</title>
+      <link>https://cjianyu.github.io/post/2018/</link>
+      <pubDate>Wed, 12 Dec 2018 16:12:34 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/2018/</guid>
+      <description>翻了下上一年对这一年的期待与目标，竟找不到了，可能我上一年只希望这一年可以过得快乐一些吧，当然，这是个玩笑话。 这一年社会发生了很多事，但当你</description>
+    </item>
+    
   </channel>
 </rss>
