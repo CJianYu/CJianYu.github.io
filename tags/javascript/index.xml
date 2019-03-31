@@ -17,7 +17,21 @@
       <pubDate>Wed, 27 Mar 2019 20:34:33 +0800</pubDate>
       
       <guid>https://cjianyu.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
-      <description>正则表达式主要还是知识点多而杂，看过很容易忘，所以，看完知识点及时练习很重要。 首先，掌握一些常用的元字符： 值得一说的是\b\B表示边界，可以</description>
+      <description>&lt;p&gt;正则表达式主要还是知识点多而杂，看过很容易忘，所以，看完知识点及时练习很重要。&lt;/p&gt;
+
+&lt;h4 id=&#34;首先-掌握一些常用的元字符&#34;&gt;首先，掌握一些常用的元字符：&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/18615652/49017455-d9cfef80-f1c3-11e8-96c3-dc687c97839e.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;值得一说的是\b\B表示边界，可以在匹配结束时使用。&lt;/p&gt;
+
+&lt;h4 id=&#34;其次是掌握必要的量词意义&#34;&gt;其次是掌握必要的量词意义：&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/18615652/49018022-3da6e800-f1c5-11e8-8089-5e752d1ca844.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;然后我们了解一下分支与字符集的概念&#34;&gt;然后我们了解一下分支与字符集的概念。&lt;/h4&gt;
+
+&lt;p&gt;类似[abc]的，就是一个字符集，表示匹配方括号里面的一个字符。这里[abc] == [a-c]&lt;/p&gt;</description>
     </item>
     
   </channel>
