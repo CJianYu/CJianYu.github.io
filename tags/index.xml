@@ -6,9 +6,19 @@
     <description>Recent content in Tags on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Wed, 27 Mar 2019 20:34:33 +0800</lastBuildDate>
     
 	<atom:link href="https://cjianyu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://cjianyu.github.io/tags/javascript/</link>
+      <pubDate>Wed, 27 Mar 2019 20:34:33 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>css</title>
