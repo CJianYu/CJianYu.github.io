@@ -316,25 +316,23 @@ Css标准中，规定如何排布文字或盒的算法，这个算法依赖一�
     </footer>
   </article>
         </div>
-        <div id="comments-gitment"></div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js" crossorigin="anonymous"></script>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
-      var gitment = new Gitment({
+      var gitalk = new Gitalk({
         id: '2019-03-24 00:17:03 \x2b0800 CST',
         title: '聊聊css布局',
-        link: decodeURI(location.href),
-        desc: '\x3ch3 id=\x22从normal-flow说起\x22\x3e从normal flow说起\x3c\/h3\x3e\n\n\x3cp\x3e我们知道，书本印刷的排版是从上而下，从左到右，一行装不下换行，依次排列的规则，css中正常流也是这种规则。不同的是，css标准中有格式化上下文的概念。\x3c\/p\x3e\n\n\x3cp\x3e\x3cem\x3eCss标准中，规定如何排布文字或盒的算法，这个算法依赖一个排版的“当前现状”，css把这个当前状态称为“格式化上下文”。\x3c\/em\x3e\x3c\/p\x3e\n\n\x3cp\x3e格式化上下文又分为块级格式化上下文和行内级格式化上下文。块级格式化上下文从上到下依次排列，行内级格式化上下文从左到右依次排列，排不下换行。\x3c\/p\x3e\n\n\x3cp\x3e所以，遇到一个元素需要排版，一般有以下三种情况：\n* 遇到块级盒，排入块级格式化上下文\n* 遇到行内级盒或文字，排入行内级格式化上下文，排不下创建一个行盒排版，行盒会创建一个行内级格式化上下文。（行盒是块级，所以又到上一种情况）\n* 遇到float盒，将float盒的顶部盒当前行内级上下文上边缘对齐，float方向的那条边对齐，重新排版\x3c\/p\x3e',
-        owner: 'CJianYu',
+        clientID: '05974c1cc13d6148bcd0',
+        clientSecret: '1728004705e563e811c77fe4bd644836e33eed63',
         repo: 'CJianYu.github.io',
-        oauth: {
-          client_id: '05974c1cc13d6148bcd0',
-          client_secret: '1728004705e563e811c77fe4bd644836e33eed63'
-        }
+        owner: 'CJianYu',
+        admin: ['CJianYu'],
+        body: decodeURI(location.href)
       });
-      gitment.render('comments-gitment');
+      gitalk.render('gitalk-container');
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
 
       </div>
     </main>
