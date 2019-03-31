@@ -6,10 +6,19 @@
     <description>Recent content on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Mar 2019 00:17:03 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 Mar 2019 20:34:33 +0800</lastBuildDate>
     
 	<atom:link href="https://cjianyu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>正则表达式必知必会</title>
+      <link>https://cjianyu.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Wed, 27 Mar 2019 20:34:33 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>正则表达式主要还是知识点多而杂，看过很容易忘，所以，看完知识点及时练习很重要。 首先，掌握一些常用的元字符： 值得一说的是\b\B表示边界，可以</description>
+    </item>
     
     <item>
       <title>聊聊css布局</title>

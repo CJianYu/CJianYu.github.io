@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjianyu.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    <lastmod>2019-03-27T20:34:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/post/css_layout/</loc>
     <lastmod>2019-03-27T00:17:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -31,7 +38,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/post/</loc>
-    <lastmod>2019-03-27T00:17:03+08:00</lastmod>
+    <lastmod>2019-03-27T20:34:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -72,7 +79,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/</loc>
-    <lastmod>2019-03-27T00:17:03+08:00</lastmod>
+    <lastmod>2019-03-27T20:34:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

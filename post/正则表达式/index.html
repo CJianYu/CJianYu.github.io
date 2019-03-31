@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>正则表达式必知必会 - 懒人的梦呓</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Jeffrey" /><meta name="description" content="正则表达式主要还是知识点多而杂，看过很容易忘，所以，看完知识点及时练习很重要。 首先，掌握一些常用的元字符： 值得一说的是\b\B表示边界，可以" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://cjianyu.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="正则表达式必知必会" />
+<meta property="og:description" content="正则表达式主要还是知识点多而杂，看过很容易忘，所以，看完知识点及时练习很重要。 首先，掌握一些常用的元字符： 值得一说的是\b\B表示边界，可以" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cjianyu.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" />
+<meta property="article:published_time" content="2019-03-27T20:34:33&#43;08:00"/>
+<meta property="article:modified_time" content="2019-03-27T20:34:33&#43;08:00"/>
+
+<meta itemprop="name" content="正则表达式必知必会">
+<meta itemprop="description" content="正则表达式主要还是知识点多而杂，看过很容易忘，所以，看完知识点及时练习很重要。 首先，掌握一些常用的元字符： 值得一说的是\b\B表示边界，可以">
+
+
+<meta itemprop="datePublished" content="2019-03-27T20:34:33&#43;08:00" />
+<meta itemprop="dateModified" content="2019-03-27T20:34:33&#43;08:00" />
+<meta itemprop="wordCount" content="1420">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="正则表达式必知必会"/>
+<meta name="twitter:description" content="正则表达式主要还是知识点多而杂，看过很容易忘，所以，看完知识点及时练习很重要。 首先，掌握一些常用的元字符： 值得一说的是\b\B表示边界，可以"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">懒人的梦呓</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">懒人的梦呓</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">正则表达式必知必会</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-03-27 </span>
+        
+          <span class="more-meta"> 1420 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#首先-掌握一些常用的元字符">首先，掌握一些常用的元字符：</a></li>
+<li><a href="#其次是掌握必要的量词意义">其次是掌握必要的量词意义：</a></li>
+<li><a href="#然后我们了解一下分支与字符集的概念">然后我们了解一下分支与字符集的概念。</a></li>
+<li><a href="#分组和引用">分组和引用</a></li>
+<li><a href="#转义">转义</a></li>
+<li><a href="#环视断言">环视断言</a></li>
+<li><a href="#惰性与贪婪">惰性与贪婪</a></li>
+<li><a href="#修饰符与标志">修饰符与标志</a></li>
+<li><a href="#正则的方法">正则的方法</a></li>
+<li><a href="#可视化网站">可视化网站</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<p>正则表达式主要还是知识点多而杂，看过很容易忘，所以，看完知识点及时练习很重要。</p>
+
+<h4 id="首先-掌握一些常用的元字符">首先，掌握一些常用的元字符：</h4>
+
+<p><img src="https://user-images.githubusercontent.com/18615652/49017455-d9cfef80-f1c3-11e8-96c3-dc687c97839e.png" alt="image" /></p>
+
+<p>值得一说的是\b\B表示边界，可以在匹配结束时使用。</p>
+
+<h4 id="其次是掌握必要的量词意义">其次是掌握必要的量词意义：</h4>
+
+<p><img src="https://user-images.githubusercontent.com/18615652/49018022-3da6e800-f1c5-11e8-8089-5e752d1ca844.png" alt="image" /></p>
+
+<h4 id="然后我们了解一下分支与字符集的概念">然后我们了解一下分支与字符集的概念。</h4>
+
+<p>类似[abc]的，就是一个字符集，表示匹配方括号里面的一个字符。这里[abc] == [a-c]</p>
+
+<p>类似(a, b, c)用( )包住的，就叫分支，当然如果没有括号阔起来也可以，但一般情况下都会用（）阔起来，更直观。分支跟字符集有什么不同呢？比如/（ax|by|cz)/可以匹配 ax或者by或者cz，但如果你用字符集就办不到。</p>
+
+<p>到这里，就初步掌握正则表达式，简单的已经能写出来了。</p>
+
+<h4 id="分组和引用">分组和引用</h4>
+
+<p>用正则匹配到的字符，有时候我们不需要替换，而是要利用，这时候就要用到分组，可以帮组我们很快达到某些目的，比如将2019-03-12变成03/12/2019。</p>
+
+<p>我们看下分组例子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">  <span class="kd">let</span> <span class="nx">regex</span> <span class="o">=</span> <span class="sr">/(\d{4})-(\d{2})-(\d{2})/</span><span class="p">;</span>
+  <span class="kd">let</span> <span class="nx">string</span> <span class="o">=</span> <span class="s2">&#34;2019-03-12&#34;</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">string</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">regex</span><span class="p">)</span> <span class="p">);</span> 
+<span class="c1">// should output: [&#34;2019-03-12&#34;, &#34;2019&#34;, &#34;03&#34;, &#34;12&#34;, index: 0, input: &#34;2019-03-12&#34;]
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>除了用match方法返回数组，我们还可以用全局属性$1至$9来匹配分组内容：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">  <span class="kd">let</span> <span class="nx">regex</span> <span class="o">=</span> <span class="sr">/(\d{4})-(\d{2})-(\d{2})/</span>
+  <span class="kd">let</span> <span class="nx">string</span> <span class="o">=</span> <span class="s2">&#34;2019-03-12&#34;</span>
+
+  <span class="nx">regex</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">string</span><span class="p">)</span> <span class="c1">// 这里执行正则操作即可，match等方法都可以
+</span><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">RegExp</span><span class="p">.</span><span class="nx">$1</span><span class="p">)</span> <span class="c1">// 2019
+</span><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">RegExp</span><span class="p">.</span><span class="nx">$2</span><span class="p">)</span> <span class="c1">// 03
+</span><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">RegExp</span><span class="p">.</span><span class="nx">$3</span><span class="p">)</span> <span class="c1">// 12
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>那么如何实现上面所说等，将2019-03-12变成03/12/2019呢？直接上代码吧：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">  <span class="kd">let</span> <span class="nx">regex</span> <span class="o">=</span> <span class="sr">/(\d{4})-(\d{2})-(\d{2})/</span>
+  <span class="kd">let</span> <span class="nx">string</span> <span class="o">=</span> <span class="s2">&#34;2019-03-12&#34;</span>
+
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">string</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">regex</span><span class="p">,</span> <span class="s2">&#34;$2/$3/$1&#34;</span><span class="p">)</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span> <span class="c1">// 03/12/2019
+</span><span class="c1"></span>
+  <span class="c1">// 那么，如果regex = /(\d{4})-(\d{2})-\2/ 又是什么意思？
+</span><span class="c1"></span>  <span class="c1">// 这里的\2表示要跟第二组的一样
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>上面这种分组有个缺点就是，如果（）内还有（），这样也会形成分组，要将分组里面的分组也算进分组里面去。这样在算第几个分组的时候就要注意一下。当然，可以在不想引用的地方加上 ?: ,这个叫分组不引用，用例子可能会比较直观一点：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">  <span class="c1">// regex里(19|20)\d\d)括号里面有括号，所以会有两个分组(19|20)\d\d)匹配的是$1，(19|20)匹配到的是$2，但如果我们将(19|20)算进$2，我们可以这样写regex： let regex = /((?:19|20)\d\d)-(\d{2})-(\d{2})/
+</span><span class="c1"></span>  <span class="kd">let</span> <span class="nx">regex</span> <span class="o">=</span> <span class="sr">/((19|20)\d\d)-(\d{2})-(\d{2})/</span>
+  <span class="kd">let</span> <span class="nx">string</span> <span class="o">=</span> <span class="s2">&#34;2019-03-12&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>如果觉得乱，我们可以用另一种形式，就是具名的分组（只有在es2018才有，所以不是所有引擎都支持），例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">  <span class="kd">let</span> <span class="nx">regex</span> <span class="o">=</span> <span class="sr">/(?&lt;year&gt;\d{4})-(?&lt;month&gt;\d{2})-(?&lt;day&gt;\d{2})/</span>
+  <span class="kd">let</span> <span class="nx">string</span> <span class="o">=</span> <span class="s2">&#34;2019-03-12&#34;</span>
+
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">string</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">regex</span><span class="p">)</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+  <span class="c1">// 这里会打印一个array，array里有个group的object，里面包含了year、month、跟day的值
+</span><span class="c1"></span>  <span class="c1">// let regex = /(?&lt;year&gt;\d{4})-(?&lt;month&gt;\d{2})-\k&lt;month&gt;/ 这时候\k&lt;month&gt;表示这里必须跟month那一组相同才能匹配，比如string = ‘2019-11-11’才能匹配，像string = ’2019-11-23‘就不能匹配
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<h4 id="转义">转义</h4>
+
+<p>如果想要匹配一些有特殊意义的字符，比如元字符、量词、{}、()等，需要用\转义</p>
+
+<h4 id="环视断言">环视断言</h4>
+
+<p>1.根据方向的不同，分为lookahead和lookbehind
+2.根据判定原则，分为肯定和否定</p>
+
+<p><img src="http://ww1.sinaimg.cn/large/007Gv6lPgy1g1lbp2am60j31rg0gqako.jpg" alt="image" /></p>
+
+<p>规则如下：
+（?=pattern) 如果pattern是肯定的，那么整个表达式是肯定的
+（?!pattern) 如果pattern是肯定的，那么整个表达式是否定的，即整个表达式是不匹配的</p>
+
+<h4 id="惰性与贪婪">惰性与贪婪</h4>
+
+<p>这里需要注意的是，匹配分为贪婪匹配和惰性匹配，贪婪匹配会尽可能多地匹配，比如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">    <span class="kd">let</span> <span class="nx">reg</span> <span class="o">=</span> <span class="sr">/.*\d{2,4}/</span>
+    <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="s1">&#39;12 123 1234 12345 123456&#39;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">reg</span><span class="p">))</span> <span class="c1">// &#34;12 123 1234 12345 123456&#34;
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>而惰性匹配，通过在量次后面加个问号就能实现惰性匹配，惰性匹配与贪婪匹配相反，尽可能少的匹配：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript">    <span class="kd">let</span> <span class="nx">reg</span> <span class="o">=</span> <span class="sr">/.*?\d{2,4}/</span>
+    <span class="kd">let</span> <span class="nx">str</span> <span class="o">=</span> <span class="s1">&#39;12 123 1234 12345 123456&#39;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="nx">reg</span><span class="p">))</span> <span class="c1">// expect output &#39;12&#39;
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<h4 id="修饰符与标志">修饰符与标志</h4>
+
+<ol>
+<li>g &ndash;global</li>
+<li>i &ndash;ignore</li>
+<li>m &ndash;multiple</li>
+<li>y &ndash;sticky</li>
+<li>u &ndash;unicode</li>
+<li>s &ndash;dotAll</li>
+</ol>
+
+<h4 id="正则的方法">正则的方法</h4>
+
+<p>详情请看mdn中关于正则表达式的介绍
+<img src="http://ww1.sinaimg.cn/large/007Gv6lPgy1g1m0u87w04j31em0fbn28.jpg" alt="img" /></p>
+
+<h4 id="可视化网站">可视化网站</h4>
+
+<p><a href="https://regexper.com/">帮你更好理解正则表达式的可视化网站</a></p>
+
+    </div>
+
+    
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/css_layout/">
+            <span class="next-text nav-default">聊聊css布局</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/CJianYu" class="iconfont icon-github" title="github"></a>
+  <a href="https://cjianyu.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Jeffrey</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136354269-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?https:\/\/hm.baidu.com\/hm.js?11b3ab96fbe1187db509353824a1ff3b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+
+
+</body>
+</html>
