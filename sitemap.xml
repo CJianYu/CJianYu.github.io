@@ -31,10 +31,17 @@
   </url>
   
   <url>
-    <loc>https://cjianyu.github.io/post/about-me/</loc>
+    <loc>https://cjianyu.github.io/post/about/</loc>
     <lastmod>2018-03-16T15:22:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cjianyu.github.io/tags/about/</loc>
+    <lastmod>2018-03-16T15:22:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -59,7 +66,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/tags/</loc>
-    <lastmod>2019-03-27T20:34:33+08:00</lastmod>
+    <lastmod>2018-03-16T15:22:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
