@@ -105,14 +105,5 @@
       <description>这里将会是我的介绍，暂时没有出炉</description>
     </item>
     
-    <item>
-      <title>About Me</title>
-      <link>https://cjianyu.github.io/post/about/</link>
-      <pubDate>Fri, 16 Mar 2018 15:22:55 +0800</pubDate>
-      
-      <guid>https://cjianyu.github.io/post/about/</guid>
-      <description>这里将会是我的介绍，暂时没有出炉</description>
-    </item>
-    
   </channel>
 </rss>
