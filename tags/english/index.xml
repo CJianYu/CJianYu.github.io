@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>English on 懒人的梦呓</title>
+    <link>https://cjianyu.github.io/tags/english/</link>
+    <description>Recent content in English on 懒人的梦呓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 Nov 2018 00:17:03 +0800</lastBuildDate>
+    
+	<atom:link href="https://cjianyu.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>你到底该怎样学习英语？</title>
+      <link>https://cjianyu.github.io/post/english_learn/</link>
+      <pubDate>Sat, 24 Nov 2018 00:17:03 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/english_learn/</guid>
+      <description>英语可能是有些人一生的噩梦，从初中高中英语拉低平均分，到后来因为英语成绩与梦想大学失之交臂，再到后面遭受四六级考试的蹂躏，最后放弃治疗，彻底</description>
+    </item>
+    
+  </channel>
+</rss>
