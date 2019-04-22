@@ -11,9 +11,18 @@
     
     
     <item>
+      <title>Humanities</title>
+      <link>https://cjianyu.github.io/categories/humanities/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://cjianyu.github.io/categories/humanities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ideas</title>
       <link>https://cjianyu.github.io/categories/ideas/</link>
-      <pubDate>Sat, 24 Nov 2018 00:17:03 +0800</pubDate>
+      <pubDate>Wed, 12 Dec 2018 16:12:34 +0800</pubDate>
       
       <guid>https://cjianyu.github.io/categories/ideas/</guid>
       <description></description>
@@ -29,47 +38,20 @@
     </item>
     
     <item>
+      <title>Note</title>
+      <link>https://cjianyu.github.io/categories/note/</link>
+      <pubDate>Wed, 06 Jun 2018 16:12:34 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/categories/note/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tech</title>
       <link>https://cjianyu.github.io/categories/tech/</link>
       <pubDate>Wed, 27 Mar 2019 20:34:33 +0800</pubDate>
       
       <guid>https://cjianyu.github.io/categories/tech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>“Humanities&#34;</title>
-      <link>https://cjianyu.github.io/categories/humanities/</link>
-      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://cjianyu.github.io/categories/humanities/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>“Ideas&#34;</title>
-      <link>https://cjianyu.github.io/categories/ideas/</link>
-      <pubDate>Wed, 12 Dec 2018 16:12:34 +0800</pubDate>
-      
-      <guid>https://cjianyu.github.io/categories/ideas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>“Life&#34;</title>
-      <link>https://cjianyu.github.io/categories/life/</link>
-      <pubDate>Tue, 12 Feb 2019 16:12:34 +0800</pubDate>
-      
-      <guid>https://cjianyu.github.io/categories/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>“Note&#34;</title>
-      <link>https://cjianyu.github.io/categories/note/</link>
-      <pubDate>Wed, 06 Jun 2018 16:12:34 +0800</pubDate>
-      
-      <guid>https://cjianyu.github.io/categories/note/</guid>
       <description></description>
     </item>
     
