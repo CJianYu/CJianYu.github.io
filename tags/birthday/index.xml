@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Birthday on 懒人的梦呓</title>
+    <link>https://cjianyu.github.io/tags/birthday/</link>
+    <description>Recent content in Birthday on 懒人的梦呓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 May 2019 00:03:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://cjianyu.github.io/tags/birthday/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>生日快乐，懒人先生</title>
+      <link>https://cjianyu.github.io/post/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90%E6%87%92%E4%BA%BA%E5%85%88%E7%94%9F/</link>
+      <pubDate>Fri, 10 May 2019 00:03:20 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90%E6%87%92%E4%BA%BA%E5%85%88%E7%94%9F/</guid>
+      <description>不知道从哪一年开始，印象中每一次生日，我都会感冒，这样直接导致我本可以吃很多想吃的食物都会因为要忌口而不得已吃不到，过后想补回来又没有了这种</description>
+    </item>
+    
+  </channel>
+</rss>
