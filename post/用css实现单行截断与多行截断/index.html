@@ -148,10 +148,11 @@
       <p>有个很常见的业务场景，就是实现单行截断或者使用多行截断，最后要以省略号结尾。比如某个商品的标题太长，在有限区域内不能完全展示，如果要全部展示，页面就会很丑，所以要单行或多行截断。这里记录一下常见的解决办法。</p>
 
 <ol>
-<li>单行截断</li>
-</ol>
+<li><p>单行截断</p>
 
-<p>文本溢出我们用text-overflow能很容易解决，达到单行文本溢出省略的效果，这里如果不是block元素，比如span，要设置display: inline-block：</p>
+<ul>
+<li>文本溢出我们用text-overflow能很容易解决，达到单行文本溢出省略的效果，这里如果不是block元素，比如span，要设置display: inline-block：</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt">1
@@ -161,14 +162,14 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css">   <span class="nt">div</span> <span class="p">{</span>
-     <span class="k">white-space</span><span class="p">:</span> <span class="kc">nowrap</span><span class="p">;</span>
-     <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
-     <span class="k">text-overflow</span><span class="p">:</span> <span class="kc">ellipsis</span><span class="p">;</span>
-   <span class="p">}</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-css" data-lang="css"> <span class="nt">div</span> <span class="p">{</span>
+   <span class="k">white-space</span><span class="p">:</span> <span class="kc">nowrap</span><span class="p">;</span>
+   <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+   <span class="k">text-overflow</span><span class="p">:</span> <span class="kc">ellipsis</span><span class="p">;</span>
+ <span class="p">}</span></code></pre></td></tr></table>
 </div>
-</div>
-<ol>
+</div></li>
+
 <li><p>多行截断</p>
 
 <ul>
