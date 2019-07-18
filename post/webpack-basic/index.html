@@ -163,7 +163,7 @@ module.exports = {
 
 <meta itemprop="datePublished" content="2019-07-18T23:50:22&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-18T23:50:22&#43;08:00" />
-<meta itemprop="wordCount" content="2685">
+<meta itemprop="wordCount" content="2713">
 
 
 
@@ -297,7 +297,7 @@ module.exports = {
       <div class="post-meta">
         <span class="post-time"> 2019-07-18 </span>
         
-          <span class="more-meta"> 2685 words </span>
+          <span class="more-meta"> 2713 words </span>
           <span class="more-meta"> 6 mins read </span>
         
       </div>
@@ -560,9 +560,7 @@ module.exports = {
 
 <h4 id="解析es6">解析ES6</h4>
 
-<ol>
-<li>安装一下安装必要插件与loader, 在命令行输入：</li>
-</ol>
+<p>1.安装一下安装必要插件与loader, 在命令行输入：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
@@ -571,9 +569,7 @@ module.exports = {
 <pre class="chroma"><code class="language-shell" data-lang="shell">npm install @babel/core @babel/preset-env babel-loader -D</code></pre></td></tr></table>
 </div>
 </div>
-<ol>
-<li>添加babel-loader配置文件（ 解析es6需要用到babel-loader，配置文件是 .babelrc ），并输入以下配置：</li>
-</ol>
+<p>2.添加babel-loader配置文件（ 解析es6需要用到babel-loader，配置文件是 .babelrc ），并输入以下配置：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-json" data-lang="json"><span class="lnt">1
@@ -590,9 +586,7 @@ module.exports = {
 <span class="p">}</span></code></pre></td></tr></table>
 </div>
 </div>
-<ol>
-<li>在webpack中配置module</li>
-</ol>
+<p>3.在webpack中配置module</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
@@ -624,9 +618,7 @@ module.exports = {
 </div>
 <h4 id="解析css-less-sass">解析css、Less、Sass</h4>
 
-<ol>
-<li>安装css-loader、style-loader、 less、less-loader</li>
-</ol>
+<p>1.安装css-loader、style-loader、 less、less-loader</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
@@ -635,9 +627,7 @@ module.exports = {
 <pre class="chroma"><code class="language-shell" data-lang="shell">npm i style-loader css-loader -D</code></pre></td></tr></table>
 </div>
 </div>
-<ol>
-<li>配置webpack</li>
-</ol>
+<p>2.配置webpack</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
@@ -677,15 +667,11 @@ module.exports = {
 </code></pre></td></tr></table>
 </div>
 </div>
-<ol>
-<li>Sass同理</li>
-</ol>
+<p>3.Sass同理</p>
 
 <h4 id="解析图片与文字">解析图片与文字</h4>
 
-<ol>
-<li>安装file-loader</li>
-</ol>
+<p>1.安装file-loader</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
@@ -694,9 +680,7 @@ module.exports = {
 <pre class="chroma"><code class="language-shell" data-lang="shell">npm i file-loader -D</code></pre></td></tr></table>
 </div>
 </div>
-<ol>
-<li>配置webpack</li>
-</ol>
+<p>2.配置webpack</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
@@ -738,9 +722,7 @@ module.exports = {
 </code></pre></td></tr></table>
 </div>
 </div>
-<ol>
-<li>也可以使用url-loader去解析图片与字体，可以设置使小文件自动转为base64</li>
-</ol>
+<p>3.也可以使用url-loader去解析图片与字体，可以设置使小文件自动转为base64</p>
 
 <h4 id="文件监听">文件监听</h4>
 
@@ -808,9 +790,7 @@ module.exports = {
 
 <p>我们通过watch进行文件监听有一个问题就是每次都要手动刷新浏览器，为了可以自动展示最新的效果所以引入了热更新的方法。WDS（webpack-dev-server）不刷新浏览器，不输出文件而是保存在内存中，使用了HotModuleReplacementPlugin插件。使用方法：</p>
 
-<ol>
-<li>在package.json添加命令：</li>
-</ol>
+<p>1.在package.json添加命令：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
@@ -834,9 +814,7 @@ module.exports = {
 </code></pre></td></tr></table>
 </div>
 </div>
-<ol>
-<li>配置webpack.config.js</li>
-</ol>
+<p>2.配置webpack.config.js</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
@@ -874,9 +852,7 @@ module.exports = {
 </div>
 <h4 id="代码压缩">代码压缩</h4>
 
-<ol>
-<li>css的压缩</li>
-</ol>
+<p>1.css的压缩</p>
 
 <p>css的压缩可以用optimize-css-assets-webpack-plugin，同时需要使用cssnano预处理器，在webpack中可以这样设置</p>
 <div class="highlight"><div class="chroma">
@@ -906,9 +882,7 @@ module.exports = {
 </code></pre></td></tr></table>
 </div>
 </div>
-<ol>
-<li>html的压缩</li>
-</ol>
+<p>2.html的压缩</p>
 
 <p>使用出名的html-webpack-plugin，配置一下参数即可。在命令行安装一下插件<code>yarn  add html-webpack-plugin</code>，然后在webpack.config.js配置</p>
 <div class="highlight"><div class="chroma">
@@ -964,9 +938,7 @@ module.exports = {
 </code></pre></td></tr></table>
 </div>
 </div>
-<ol>
-<li>js的压缩</li>
-</ol>
+<p>3.js的压缩</p>
 
 <p>当模式为生产模式的时候，webpack内置了uglifyjs-webpack-plugin，会自动压缩js代码，所以不需要额外添加操作。</p>
     </div>
