@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Webpack入门教程 - 懒人的梦呓</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Jeffrey" /><meta name="description" content="为什么要用构建工具 转换es6、转换jsx、css前缀补全/预处理器、压缩混淆、图片压缩
+初识webpack webpack默认文件是webpack.config.js，当然，你也可以根据自己的需要进行更改，通过：webpack — config 指定配置文件，webpack一般包含以下内容：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  module.exports = { entry: &amp;#39;./src/index.js&amp;#39;, // 打包的入口文件  output: &amp;#39;./dist/main.js&amp;#39;, // 打包的输出  mode: &amp;#39;production&amp;#39;, // 环境  module: { rules: [ {test: /\.text/, use: &amp;#39;raw-loader&amp;#39;} // Loader配置  ] }, plugin: [ // plugin配置  new HtmlWebpackPlugin({ template: &amp;#39;./src/index.html&amp;#39;, // 所用的模版  filename: &amp;#39;index.html&amp;#39;, // 打包后的文件名  minify: { // 压缩html  removeAttributeQuotes: true, // 去掉双引号  collapseWhiteSpace: true, // 变成一行  }, hash: true, // 添加hash  }) ] }   " /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://cjianyu.github.io/post/webpack-basic/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Webpack入门教程" />
+<meta property="og:description" content="为什么要用构建工具
+
+转换es6、转换jsx、css前缀补全/预处理器、压缩混淆、图片压缩
+
+初识webpack
+
+webpack默认文件是webpack.config.js，当然，你也可以根据自己的需要进行更改，通过：webpack       — config 指定配置文件，webpack一般包含以下内容：
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+
+
+module.exports = {
+  entry: &#39;./src/index.js&#39;, // 打包的入口文件
+  output: &#39;./dist/main.js&#39;, // 打包的输出
+  mode: &#39;production&#39;, // 环境
+  module: {
+    rules: [
+      {test: /\.text/, use: &#39;raw-loader&#39;}  // Loader配置
+    ]
+  },
+  plugin: [                                   // plugin配置
+    new HtmlWebpackPlugin({
+        template: &#39;./src/index.html&#39;, // 所用的模版
+        filename: &#39;index.html&#39;, // 打包后的文件名
+        minify: {  // 压缩html
+          removeAttributeQuotes: true, // 去掉双引号
+          collapseWhiteSpace: true, // 变成一行
+        },
+        hash: true, // 添加hash
+      })
+  ]
+}
+
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cjianyu.github.io/post/webpack-basic/" />
+<meta property="article:published_time" content="2019-07-18T23:50:22&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-18T23:50:22&#43;08:00"/>
+
+<meta itemprop="name" content="Webpack入门教程">
+<meta itemprop="description" content="为什么要用构建工具
+
+转换es6、转换jsx、css前缀补全/预处理器、压缩混淆、图片压缩
+
+初识webpack
+
+webpack默认文件是webpack.config.js，当然，你也可以根据自己的需要进行更改，通过：webpack       — config 指定配置文件，webpack一般包含以下内容：
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+
+
+module.exports = {
+  entry: &#39;./src/index.js&#39;, // 打包的入口文件
+  output: &#39;./dist/main.js&#39;, // 打包的输出
+  mode: &#39;production&#39;, // 环境
+  module: {
+    rules: [
+      {test: /\.text/, use: &#39;raw-loader&#39;}  // Loader配置
+    ]
+  },
+  plugin: [                                   // plugin配置
+    new HtmlWebpackPlugin({
+        template: &#39;./src/index.html&#39;, // 所用的模版
+        filename: &#39;index.html&#39;, // 打包后的文件名
+        minify: {  // 压缩html
+          removeAttributeQuotes: true, // 去掉双引号
+          collapseWhiteSpace: true, // 变成一行
+        },
+        hash: true, // 添加hash
+      })
+  ]
+}
+
+
+">
+
+
+<meta itemprop="datePublished" content="2019-07-18T23:50:22&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-18T23:50:22&#43;08:00" />
+<meta itemprop="wordCount" content="2680">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Webpack入门教程"/>
+<meta name="twitter:description" content="为什么要用构建工具
+
+转换es6、转换jsx、css前缀补全/预处理器、压缩混淆、图片压缩
+
+初识webpack
+
+webpack默认文件是webpack.config.js，当然，你也可以根据自己的需要进行更改，通过：webpack       — config 指定配置文件，webpack一般包含以下内容：
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+
+
+module.exports = {
+  entry: &#39;./src/index.js&#39;, // 打包的入口文件
+  output: &#39;./dist/main.js&#39;, // 打包的输出
+  mode: &#39;production&#39;, // 环境
+  module: {
+    rules: [
+      {test: /\.text/, use: &#39;raw-loader&#39;}  // Loader配置
+    ]
+  },
+  plugin: [                                   // plugin配置
+    new HtmlWebpackPlugin({
+        template: &#39;./src/index.html&#39;, // 所用的模版
+        filename: &#39;index.html&#39;, // 打包后的文件名
+        minify: {  // 压缩html
+          removeAttributeQuotes: true, // 去掉双引号
+          collapseWhiteSpace: true, // 变成一行
+        },
+        hash: true, // 添加hash
+      })
+  ]
+}
+
+
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">懒人的梦呓</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">懒人的梦呓</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Webpack入门教程</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-07-18 </span>
+        
+          <span class="more-meta"> 2680 words </span>
+          <span class="more-meta"> 6 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#为什么要用构建工具">为什么要用构建工具</a></li>
+<li><a href="#初识webpack">初识webpack</a></li>
+<li><a href="#安装webpack与webpack-cli">安装webpack与webpack-cli</a></li>
+<li><a href="#核心概念之entry">核心概念之entry</a></li>
+<li><a href="#核心概念之output">核心概念之output</a></li>
+<li><a href="#核心概念之loader">核心概念之loader</a></li>
+<li><a href="#核心概念之plugin">核心概念之plugin</a></li>
+<li><a href="#核心概念之mode">核心概念之mode</a></li>
+<li><a href="#基础用法">基础用法</a>
+<ul>
+<li><a href="#解析es6">解析ES6</a></li>
+<li><a href="#解析css-less-sass">解析css、Less、Sass</a></li>
+<li><a href="#解析图片与文字">解析图片与文字</a></li>
+<li><a href="#文件监听">文件监听</a></li>
+<li><a href="#热更新-webpack-dev-server">热更新（webpack-dev-server）</a></li>
+</ul></li>
+<li><a href="#代码压缩">代码压缩</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h3 id="为什么要用构建工具">为什么要用构建工具</h3>
+
+<p>转换es6、转换jsx、css前缀补全/预处理器、压缩混淆、图片压缩</p>
+
+<h3 id="初识webpack">初识webpack</h3>
+
+<p>webpack默认文件是webpack.config.js，当然，你也可以根据自己的需要进行更改，通过：webpack       — config 指定配置文件，webpack一般包含以下内容：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">entry</span><span class="o">:</span> <span class="s1">&#39;./src/index.js&#39;</span><span class="p">,</span> <span class="c1">// 打包的入口文件
+</span><span class="c1"></span>  <span class="nx">output</span><span class="o">:</span> <span class="s1">&#39;./dist/main.js&#39;</span><span class="p">,</span> <span class="c1">// 打包的输出
+</span><span class="c1"></span>  <span class="nx">mode</span><span class="o">:</span> <span class="s1">&#39;production&#39;</span><span class="p">,</span> <span class="c1">// 环境
+</span><span class="c1"></span>  <span class="nx">module</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">rules</span><span class="o">:</span> <span class="p">[</span>
+      <span class="p">{</span><span class="nx">test</span><span class="o">:</span> <span class="sr">/\.text/</span><span class="p">,</span> <span class="nx">use</span><span class="o">:</span> <span class="s1">&#39;raw-loader&#39;</span><span class="p">}</span>  <span class="c1">// Loader配置
+</span><span class="c1"></span>    <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="nx">plugin</span><span class="o">:</span> <span class="p">[</span>                                   <span class="c1">// plugin配置
+</span><span class="c1"></span>    <span class="k">new</span> <span class="nx">HtmlWebpackPlugin</span><span class="p">({</span>
+        <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;./src/index.html&#39;</span><span class="p">,</span> <span class="c1">// 所用的模版
+</span><span class="c1"></span>        <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="c1">// 打包后的文件名
+</span><span class="c1"></span>        <span class="nx">minify</span><span class="o">:</span> <span class="p">{</span>  <span class="c1">// 压缩html
+</span><span class="c1"></span>          <span class="nx">removeAttributeQuotes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 去掉双引号
+</span><span class="c1"></span>          <span class="nx">collapseWhiteSpace</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 变成一行
+</span><span class="c1"></span>        <span class="p">},</span>
+        <span class="nx">hash</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 添加hash
+</span><span class="c1"></span>      <span class="p">})</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="安装webpack与webpack-cli">安装webpack与webpack-cli</h3>
+
+<p>首先要搭建具有node、npm的环境，然后执行以下命令就好了：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">webpack</span> <span class="nx">webpack</span><span class="o">-</span><span class="nx">cli</span> 
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="核心概念之entry">核心概念之entry</h3>
+
+<p>单入口的时候，entry是一个字符串；</p>
+
+<p>多入口的时候(适合多页应用)，entry是一个对象，如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 单入口
+</span><span class="c1"></span><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">entry</span><span class="o">:</span> <span class="s1">&#39;./path/to/file/index.js&#39;</span>
+<span class="p">}</span>
+<span class="c1">// 多入口
+</span><span class="c1"></span><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">entry</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">app</span><span class="o">:</span> <span class="s1">&#39;./src/app.js&#39;</span><span class="p">,</span>
+    <span class="nx">adminApp</span><span class="o">:</span> <span class="s1">&#39;./src/adminApp.js&#39;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="核心概念之output">核心概念之output</h3>
+
+<p>用于输出文件。多入口的时候，要将文件名用占位符表示，如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">)</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">entry</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">index</span><span class="o">:</span> <span class="s1">&#39;./src/index.js&#39;</span><span class="p">,</span>
+        <span class="nx">hello</span><span class="o">:</span> <span class="s1">&#39;./src/hello.js&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">output</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;[name].js&#39;</span><span class="p">,</span> <span class="c1">// 但文件的时候，就直接是类似bundle.js这样的文件名
+</span><span class="c1"></span>        <span class="nx">path</span><span class="o">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;dist&#39;</span><span class="p">)</span>
+    <span class="p">},</span>
+    <span class="nx">mode</span><span class="o">:</span> <span class="s1">&#39;production&#39;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="核心概念之loader">核心概念之loader</h3>
+
+<p>loader本身是一个函数，接受源文件作为参数，返回转换结果。webpack开箱即用只支持js和json文件，通过loader去支持其他文件，将它们转化成有效的模块，并可以添加到依赖图。</p>
+
+<p>常见的loader：babel-loader, css-loader, less-loader, file-loader, thread-loader。用法举例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">entry</span><span class="o">:</span> <span class="s1">&#39;./src/index.js&#39;</span><span class="p">,</span> <span class="c1">// 打包的入口文件
+</span><span class="c1"></span>  <span class="nx">output</span><span class="o">:</span> <span class="s1">&#39;./dist/main.js&#39;</span><span class="p">,</span> <span class="c1">// 打包的输出
+</span><span class="c1"></span>  <span class="nx">mode</span><span class="o">:</span> <span class="s1">&#39;production&#39;</span><span class="p">,</span> <span class="c1">// 环境
+</span><span class="c1"></span>  <span class="nx">module</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">rules</span><span class="o">:</span> <span class="p">[</span>
+      <span class="p">{</span><span class="nx">test</span><span class="o">:</span> <span class="sr">/\.text/</span><span class="p">,</span> <span class="nx">use</span><span class="o">:</span> <span class="s1">&#39;raw-loader&#39;</span><span class="p">}</span>  <span class="c1">// test指定匹配规则，use用来指定使用的loader名称
+</span><span class="c1"></span>    <span class="p">]</span>
+  <span class="p">},</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="核心概念之plugin">核心概念之plugin</h3>
+
+<p>基本上所有loader不能解决的，plugin都可以解决。用于bundle文件优化，资源管理、环境变量注入等。</p>
+
+<p>常用的plugin：CommonChunkPlugin、HtmlWebpackPlugin、UglifyjsWebpackPlugin等。</p>
+
+<p>使用的时候，将用到的plugin放进plugin数组里面就可以了，使用举例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">entry</span><span class="o">:</span> <span class="s1">&#39;./src/index.js&#39;</span><span class="p">,</span> <span class="c1">// 打包的入口文件
+</span><span class="c1"></span>  <span class="nx">output</span><span class="o">:</span> <span class="s1">&#39;./dist/main.js&#39;</span><span class="p">,</span> <span class="c1">// 打包的输出
+</span><span class="c1"></span>  <span class="nx">plugin</span><span class="o">:</span> <span class="p">[</span>                                   <span class="c1">// plugin配置
+</span><span class="c1"></span>    <span class="k">new</span> <span class="nx">HtmlWebpackPlugin</span><span class="p">({</span>
+        <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;./src/index.html&#39;</span><span class="p">,</span> <span class="c1">// 所用的模版
+</span><span class="c1"></span>        <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="c1">// 打包后的文件名
+</span><span class="c1"></span>        <span class="nx">minify</span><span class="o">:</span> <span class="p">{</span>  <span class="c1">// 压缩html
+</span><span class="c1"></span>          <span class="nx">removeAttributeQuotes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 去掉双引号
+</span><span class="c1"></span>          <span class="nx">collapseWhiteSpace</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 变成一行
+</span><span class="c1"></span>        <span class="p">},</span>
+        <span class="nx">hash</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 添加hash
+</span><span class="c1"></span>      <span class="p">})</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="核心概念之mode">核心概念之mode</h3>
+
+<p>用来指定当前的构建环境，有三个默认的可选：production（默认）、development、none。</p>
+
+<p>指定mode可以使用webpack的一些内置函数。</p>
+
+<h3 id="基础用法">基础用法</h3>
+
+<h4 id="解析es6">解析ES6</h4>
+
+<ol>
+<li>安装一下安装必要插件与loader, 在命令行输入：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">npm install @babel/core @babel/preset-env babel-loader -D</code></pre></td></tr></table>
+</div>
+</div>
+<ol>
+<li>添加babel-loader配置文件（ 解析es6需要用到babel-loader，配置文件是 .babelrc ），并输入以下配置：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+  <span class="nt">&#34;presets&#34;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&#34;@babel/preset-env&#34;</span>
+  <span class="p">]</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<ol>
+<li>在webpack中配置module</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// ...other config
+</span><span class="c1"></span>  <span class="nx">module</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">rules</span><span class="o">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.js$/</span><span class="p">,</span>
+        <span class="nx">use</span><span class="o">:</span> <span class="s1">&#39;babel-loader&#39;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h4 id="解析css-less-sass">解析css、Less、Sass</h4>
+
+<ol>
+<li>安装css-loader、style-loader、 less、less-loader</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">npm i style-loader css-loader -D</code></pre></td></tr></table>
+</div>
+</div>
+<ol>
+<li>配置webpack</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// ...other config
+</span><span class="c1"></span>  <span class="nx">module</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">rules</span><span class="o">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.css$/</span><span class="p">,</span>
+        <span class="nx">use</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;style-loader&#39;</span><span class="p">,</span><span class="s1">&#39;css-loader&#39;</span><span class="p">]</span> <span class="c1">// 这里是链式调用，遵循从右到左，从上到下的执行顺序。style-loader的作用是将css插入到html的head里面
+</span><span class="c1"></span>      <span class="p">},</span>
+      <span class="c1">// 下面是配置less
+</span><span class="c1"></span>      <span class="p">{</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/.less$/</span><span class="p">,</span>
+        <span class="nx">use</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;style-loader&#39;</span><span class="p">,</span><span class="s1">&#39;css-loader&#39;</span><span class="p">,</span><span class="s1">&#39;less-loader&#39;</span><span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<ol>
+<li>Sass同理</li>
+</ol>
+
+<h4 id="解析图片与文字">解析图片与文字</h4>
+
+<ol>
+<li>安装file-loader</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">npm i file-loader -D</code></pre></td></tr></table>
+</div>
+</div>
+<ol>
+<li>配置webpack</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// ...other config
+</span><span class="c1"></span>  <span class="nx">module</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">rules</span><span class="o">:</span> <span class="p">[</span>
+      <span class="c1">// 图片
+</span><span class="c1"></span>      <span class="p">{</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/.(png|jpg|jpeg|gif)$/</span><span class="p">,</span>
+        <span class="nx">use</span><span class="o">:</span> <span class="s1">&#39;file-loader&#39;</span>
+      <span class="p">},</span>
+      <span class="c1">// 字体
+</span><span class="c1"></span>      <span class="p">{</span>
+        <span class="nx">test</span><span class="o">:</span> <span class="sr">/.(woff|woff2|eot|ttf|otf)$/</span><span class="p">,</span>
+        <span class="nx">use</span><span class="o">:</span> <span class="s1">&#39;file-loader&#39;</span>
+      <span class="p">},</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<ol>
+<li>也可以使用url-loader去解析图片与字体，可以设置使小文件自动转为base64</li>
+</ol>
+
+<h4 id="文件监听">文件监听</h4>
+
+<p>项目源码发生变化的时候，我们希望项目自动重新构建输出新的文件，用webpack开启监听模式有两种方式：</p>
+
+<ul>
+<li>在启动webpack命令后加上 —watch 参数（每次需要手动刷新浏览器）</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// package.json文件
+</span><span class="c1"></span><span class="p">{</span>
+  <span class="c1">// ... other config 
+</span><span class="c1"></span>  <span class="s2">&#34;script&#34;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&#34;build&#34;</span><span class="o">:</span> <span class="s2">&#34;webpack&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;watch&#34;</span><span class="o">:</span> <span class="s2">&#34;webpack --watch&#34;</span> <span class="c1">//add this line
+</span><span class="c1"></span>  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>配置webpack.config.js，设置watch为true</li>
+</ul>
+
+<p>文件监听的原理是轮询判断最后编辑时间是否变化，我们可以对其进行配置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// ... other config
+</span><span class="c1"></span>  <span class="c1">// 监控变动自动打包
+</span><span class="c1"></span>  <span class="nx">watch</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
+  <span class="nx">watchOptions</span><span class="o">:</span><span class="p">{</span> <span class="c1">// 监控的选项
+</span><span class="c1"></span>    <span class="nx">poll</span><span class="o">:</span><span class="mi">1000</span><span class="p">,</span> <span class="c1">// 每秒问我 1000次
+</span><span class="c1"></span>    <span class="nx">aggregateTimeout</span><span class="o">:</span><span class="mi">500</span><span class="p">,</span> <span class="c1">// 防抖 一直输入代码 
+</span><span class="c1"></span>    <span class="nx">ignored</span><span class="o">:</span><span class="sr">/node_modules/</span> <span class="c1">// 不需要进行监控哪个文件
+</span><span class="c1"></span>  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h4 id="热更新-webpack-dev-server">热更新（webpack-dev-server）</h4>
+
+<p>我们通过watch进行文件监听有一个问题就是每次都要手动刷新浏览器，为了可以自动展示最新的效果所以引入了热更新的方法。WDS（webpack-dev-server）不刷新浏览器，不输出文件而是保存在内存中，使用了HotModuleReplacementPlugin插件。使用方法：</p>
+
+<ol>
+<li>在package.json添加命令：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">{</span>
+  <span class="c1">// ... other config 
+</span><span class="c1"></span>  <span class="s2">&#34;script&#34;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&#34;build&#34;</span><span class="o">:</span> <span class="s2">&#34;webpack&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;watch&#34;</span><span class="o">:</span> <span class="s2">&#34;webpack --watch&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;dev&#34;</span><span class="o">:</span> <span class="s2">&#34;webpack-dev-server --open&#34;</span><span class="c1">//add this line
+</span><span class="c1"></span>  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<ol>
+<li>配置webpack.config.js</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 所用HotModuleReplacementPlugin插件是webpack自带的，这里引入webpack
+</span><span class="c1"></span><span class="k">const</span> <span class="nx">webpack</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;webpack&#39;</span><span class="p">)</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// ... other config
+</span><span class="c1"></span>  <span class="nx">plugin</span><span class="o">:</span> <span class="p">[</span>
+    <span class="k">new</span> <span class="nx">webpck</span><span class="p">.</span><span class="nx">HotModuleReplacementPlugin</span><span class="p">()</span>
+  <span class="p">],</span>
+  <span class="c1">// 配置一下devServer
+</span><span class="c1"></span>  <span class="nx">devServer</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">contentBase</span><span class="o">:</span> <span class="s1">&#39;./dist&#39;</span><span class="p">,</span>  <span class="c1">// 集成存放的路径
+</span><span class="c1"></span>    <span class="nx">hot</span><span class="o">:</span> <span class="kc">true</span> <span class="c1">// 开启热更新
+</span><span class="c1"></span>  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="代码压缩">代码压缩</h3>
+
+<ol>
+<li>css的压缩</li>
+</ol>
+
+<p>css的压缩可以用optimize-css-assets-webpack-plugin，同时需要使用cssnano预处理器，在webpack中可以这样设置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 引入插件
+</span><span class="c1"></span><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// ... other config
+</span><span class="c1"></span>  <span class="nx">plugin</span><span class="o">:</span> <span class="p">[</span>
+    <span class="k">new</span> <span class="nx">OptimizeCssAssetsWebpackPlugin</span><span class="p">({</span>
+      <span class="nx">assetsNameRegExp</span><span class="o">:</span> <span class="sr">/\.css$/</span><span class="p">,</span>
+      <span class="nx">cssProcessor</span><span class="o">:</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;cssnano&#39;</span><span class="p">)</span>
+    <span class="p">})</span>
+  <span class="p">],</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<ol>
+<li>html的压缩</li>
+</ol>
+
+<p>使用出名的html-webpack-plugin，配置一下参数即可。在命令行安装一下插件<code>yarn  add html-webpack-plugin</code>，然后在webpack.config.js配置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">)</span>
+<span class="kd">let</span> <span class="nx">HtmlWebpackPlugin</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;html-webpack-plugin&#39;</span><span class="p">)</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">entry</span><span class="o">:</span> <span class="s1">&#39;./index.js&#39;</span><span class="p">,</span> 
+  <span class="nx">output</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">mode</span><span class="o">:</span> <span class="s1">&#39;development&#39;</span><span class="p">,</span> 
+    <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;bundle.[hash:7].js&#39;</span><span class="p">,</span> <span class="c1">// 这里添加hash可以每次打包出不同的文件防止覆盖,：7表示只显示7位，可去掉
+</span><span class="c1"></span>    <span class="nx">path</span><span class="o">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">_dirname</span><span class="p">,</span> <span class="s1">&#39;dist&#39;</span><span class="p">),</span>
+    <span class="c1">// plugin是一个数组，存放所有插件
+</span><span class="c1"></span>    <span class="nx">plugin</span><span class="o">:</span> <span class="p">[</span>
+      <span class="c1">// 一般而言，一个页面对应一个HtmlWebpackPlugin
+</span><span class="c1"></span>      <span class="k">new</span> <span class="nx">HtmlWebpackPlugin</span><span class="p">({</span>
+        <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;./src/index.html&#39;</span><span class="p">,</span> <span class="c1">// 所用的模版
+</span><span class="c1"></span>        <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="c1">// 打包后的文件名
+</span><span class="c1"></span>        <span class="nx">minify</span><span class="o">:</span> <span class="p">{</span>  <span class="c1">// 压缩html
+</span><span class="c1"></span>          <span class="nx">removeAttributeQuotes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 去掉双引号
+</span><span class="c1"></span>          <span class="nx">collapseWhiteSpace</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 变成一行
+</span><span class="c1"></span>        <span class="p">},</span>
+        <span class="nx">hash</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 添加hash
+</span><span class="c1"></span>      <span class="p">})</span>
+    <span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<ol>
+<li>js的压缩</li>
+</ol>
+
+<p>当模式为生产模式的时候，webpack内置了uglifyjs-webpack-plugin，会自动压缩js代码，故可以不理会。</p>
+    </div>
+
+    
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/">
+            <span class="next-text nav-default">用css实现单行截断与多行截断，最后以省略号结尾</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2019-07-18 23:50:22 \x2b0800 CST',
+        title: 'Webpack入门教程',
+        clientID: '05974c1cc13d6148bcd0',
+        clientSecret: '1728004705e563e811c77fe4bd644836e33eed63',
+        repo: 'CJianYu.github.io',
+        owner: 'CJianYu',
+        admin: ['CJianYu'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/CJianYu" class="iconfont icon-github" title="github"></a>
+  <a href="https://cjianyu.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Jeffrey</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136354269-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?https:\/\/hm.baidu.com\/hm.js?11b3ab96fbe1187db509353824a1ff3b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+
+
+</body>
+</html>
