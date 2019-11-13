@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>JavaScript异步编程 - 懒人的梦呓</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Jeffrey" /><meta name="description" content="在讲JavaScript异步编程之前我们先来了解并发和并行的区别。 并发和并行的区别 Erlang 之父 Joe Armstrong用一张图解释了并发和并行的区别：" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://cjianyu.github.io/post/javascript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="JavaScript异步编程" />
+<meta property="og:description" content="在讲JavaScript异步编程之前我们先来了解并发和并行的区别。 并发和并行的区别 Erlang 之父 Joe Armstrong用一张图解释了并发和并行的区别：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cjianyu.github.io/post/javascript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/" />
+<meta property="article:published_time" content="2019-11-13T17:18:18&#43;08:00"/>
+<meta property="article:modified_time" content="2019-11-13T17:18:18&#43;08:00"/>
+
+<meta itemprop="name" content="JavaScript异步编程">
+<meta itemprop="description" content="在讲JavaScript异步编程之前我们先来了解并发和并行的区别。 并发和并行的区别 Erlang 之父 Joe Armstrong用一张图解释了并发和并行的区别：">
+
+
+<meta itemprop="datePublished" content="2019-11-13T17:18:18&#43;08:00" />
+<meta itemprop="dateModified" content="2019-11-13T17:18:18&#43;08:00" />
+<meta itemprop="wordCount" content="1423">
+
+
+
+<meta itemprop="keywords" content="JavaScript," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JavaScript异步编程"/>
+<meta name="twitter:description" content="在讲JavaScript异步编程之前我们先来了解并发和并行的区别。 并发和并行的区别 Erlang 之父 Joe Armstrong用一张图解释了并发和并行的区别："/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">懒人的梦呓</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">懒人的梦呓</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">JavaScript异步编程</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-11-13 </span>
+        <div class="post-category">
+            <a href="/categories/note/"> Note </a>
+            </div>
+          <span class="more-meta"> 1423 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#并发和并行的区别">并发和并行的区别</a></li>
+<li><a href="#回调函数">回调函数</a></li>
+<li><a href="#generator-function">Generator + function*</a></li>
+<li><a href="#promise">Promise</a>
+<ul>
+<li><a href="#promise的特点">Promise的特点</a></li>
+<li><a href="#promise对象的缺点">Promise对象的缺点</a></li>
+<li><a href="#promise-构造函数执行和-then-函数执行的区别">Promise 构造函数执行和 then 函数执行的区别</a></li>
+<li><a href="#手写简易promise-promise实现原理">手写简易Promise（Promise实现原理）</a></li>
+</ul></li>
+<li><a href="#async-await">async/await</a>
+<ul>
+<li><a href="#优点与缺点">优点与缺点</a></li>
+<li><a href="#await内部原理">await内部原理</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<p>在讲JavaScript异步编程之前我们先来了解并发和并行的区别。</p>
+
+<h3 id="并发和并行的区别">并发和并行的区别</h3>
+
+<p>Erlang 之父 Joe Armstrong用一张图解释了并发和并行的区别：</p>
+
+<p><img src="http://ww1.sinaimg.cn/large/007Gv6lPgy1g8oozqewr8j30go0cj0t7.jpg" alt="undefined" /></p>
+
+<p>并发是宏观概念，如果有任务AB，通过任务间的切换完成了这两个任务，我们可以称之为并发。</p>
+
+<p>并行是微观概念，如果某个系统可以同时执行AB任务，我们就说这个系统是并行的。同时完成两个或多个任务的情况我们称之为并行。</p>
+
+<h3 id="回调函数">回调函数</h3>
+
+<p>在JavaScript中处理异步返回结果的函数，我们称之为callback函数，常见的如下例子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">ajax</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// do something
+</span><span class="c1"></span><span class="p">})</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>但如果多个请求存在依赖性，我们很容易写出这样的代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">ajax</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">ajax</span><span class="p">(</span><span class="nx">url1</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">ajax</span><span class="p">(</span><span class="nx">url2</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="c1">// ...
+</span><span class="c1"></span>    <span class="p">})</span>
+  <span class="p">})</span>
+<span class="p">})</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>这就是回调地狱，这样写会导致两个问题：</p>
+
+<ol>
+<li>代码耦合性高，牵一发而动全身，不利于维护</li>
+<li>嵌套函数多，不利于处理错误</li>
+</ol>
+
+<p>了解更多回调地狱的内容请参考： <a href="http://callbackhell.com/">http://callbackhell.com/</a></p>
+
+<p>那么，如何解决回调地狱的问题？</p>
+
+<h3 id="generator-function">Generator + function*</h3>
+
+<p>Generator的特点是可以控制函数的执行，用法示例如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="o">*</span><span class="nx">gen</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="k">yield</span> <span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+  <span class="kd">let</span> <span class="nx">z</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">y</span> <span class="err">/ 3</span>
+  <span class="k">return</span> <span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">z</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">gen</span><span class="p">()</span> <span class="c1">// 返回迭代器
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">next</span><span class="p">())</span> <span class="c1">// =&gt; { value: 6, done: false}  第一次next()会忽略传参，函数停留在yield(5 + 1)
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">next</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span> <span class="c1">// =&gt; { value: 8, done: false} 第二次next要传入上一次yield的返回值，否则yield永远返回undefined。因为这里传的是12，所以y=2*12=24
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">next</span><span class="p">(</span><span class="mi">13</span><span class="p">))</span> <span class="c1">// =&gt; { value: 42, done: true} z = 13, x = 5, y = 24
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="promise">Promise</h3>
+
+<p>Promise 的特点是什么，分别有什么优缺点？什么是 Promise 链？Promise 构造函数执行和 then 函数执行有什么区别？手写promise（内部如何实现）</p>
+
+<h4 id="promise的特点">Promise的特点</h4>
+
+<ul>
+<li>Promise对象的状态不受外界影响 ，只有异步操作的结果，可以决定当前是哪一种状态</li>
+<li>一旦状态确定，就不会再变</li>
+</ul>
+
+<h4 id="promise对象的缺点">Promise对象的缺点</h4>
+
+<ul>
+<li>构造Promise的时候，构造函数内部的代码是立即执行，无法取消</li>
+<li>错误需要通过回调函数捕获</li>
+</ul>
+
+<h4 id="promise-构造函数执行和-then-函数执行的区别">Promise 构造函数执行和 then 函数执行的区别</h4>
+
+<p>Promise构造函数是同步执行的，then方法是异步执行的</p>
+
+<h4 id="手写简易promise-promise实现原理">手写简易Promise（Promise实现原理）</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">const</span> <span class="nx">PENDING</span> <span class="o">=</span> <span class="s1">&#39;pending&#39;</span>
+<span class="k">const</span> <span class="nx">RESOLVE</span> <span class="o">=</span> <span class="s1">&#39;resolve&#39;</span>
+<span class="k">const</span> <span class="nx">REJECT</span> <span class="o">=</span> <span class="s1">&#39;reject&#39;</span>
+<span class="kd">function</span> <span class="nx">MyPromise</span><span class="p">(</span><span class="nx">fn</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">const</span> <span class="nx">_this</span> <span class="o">=</span> <span class="k">this</span>
+  <span class="nx">_this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="nx">PENDING</span>
+  <span class="c1">// value 用来保存resolve或reject传入的参数
+</span><span class="c1"></span>  <span class="nx">_this</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="kc">null</span> 
+  <span class="nx">_this</span><span class="p">.</span><span class="nx">resolveCallbacks</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="nx">_this</span><span class="p">.</span><span class="nx">rejectCallbacks</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="kd">function</span> <span class="nx">resolve</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 只有pending状态的时候可以改状态
+</span><span class="c1"></span>    <span class="k">if</span><span class="p">(</span><span class="nx">_this</span><span class="p">.</span><span class="nx">state</span> <span class="o">===</span> <span class="nx">PENDING</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">_this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="nx">RESOLVE</span>
+      <span class="nx">_this</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">value</span>
+      <span class="c1">// 执行保存起来的函数
+</span><span class="c1"></span>      <span class="nx">_this</span><span class="p">.</span><span class="nx">resolveCallbacks</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">cb</span> <span class="p">=&gt;</span> <span class="nx">cb</span><span class="p">(</span><span class="nx">value</span><span class="p">))</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="kd">function</span> <span class="nx">reject</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">_this</span><span class="p">.</span><span class="nx">state</span> <span class="o">===</span> <span class="nx">PENDING</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">_this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="nx">REJECT</span>
+      <span class="nx">_this</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">value</span>
+      <span class="nx">_this</span><span class="p">.</span><span class="nx">rejectCallbacks</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">cb</span> <span class="p">=&gt;</span> <span class="nx">cb</span><span class="p">(</span><span class="nx">value</span><span class="p">))</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">try</span><span class="p">{</span>
+    <span class="nx">fn</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">reject</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// then的实现
+</span><span class="c1"></span><span class="nx">MyPromise</span><span class="p">.</span><span class="nx">ptototype</span><span class="p">.</span><span class="nx">then</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">onFullFilled</span><span class="p">,</span> <span class="nx">onRejected</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">const</span> <span class="nx">that</span> <span class="o">=</span> <span class="k">this</span>
+  <span class="nx">onFullFilled</span> <span class="o">=</span> <span class="nx">type</span> <span class="nx">onFullFilled</span> <span class="o">===</span> <span class="s1">&#39;function&#39;</span> <span class="o">?</span> <span class="nx">onFullFilled</span> <span class="o">:</span> <span class="nx">v</span> <span class="p">=&gt;</span> <span class="nx">v</span>
+  <span class="nx">onRejected</span> <span class="o">=</span> <span class="nx">type</span> <span class="nx">onRejected</span> <span class="o">===</span> <span class="s1">&#39;function&#39;</span> <span class="o">?</span> <span class="nx">onReject</span> <span class="o">:</span> <span class="nx">e</span> <span class="p">=&gt;</span> <span class="k">throw</span> <span class="nx">e</span>
+  <span class="c1">// 当状态不为成功或失败，将函数保存起来，执行resolve或reject的时候再调用
+</span><span class="c1"></span>  <span class="k">if</span><span class="p">(</span><span class="nx">that</span><span class="p">.</span><span class="nx">status</span> <span class="o">===</span> <span class="nx">PENDING</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">that</span><span class="p">.</span><span class="nx">resolveCallbacks</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">onFullFilled</span><span class="p">)</span>
+    <span class="nx">that</span><span class="p">.</span><span class="nx">rejectCallbacks</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">onRejected</span><span class="p">)</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">that</span><span class="p">.</span><span class="nx">status</span> <span class="o">===</span> <span class="nx">RESOLVE</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">onFullFilled</span><span class="p">(</span><span class="nx">that</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span>
+  <span class="p">}</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">that</span><span class="p">.</span><span class="nx">status</span> <span class="o">===</span> <span class="nx">REJECT</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">onRejected</span><span class="p">(</span><span class="nx">that</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="async-await">async/await</h3>
+
+<p>async/await是generate的语法糖，但async函数返回的是一个promise，所以也可以用then方法。async函数内部如果抛出错误，会导致promise对象变为reject状态：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">test</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">&#39;报错了&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">test</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span>
+<span class="p">},</span> <span class="nx">error</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="c1">// Error：报错了
+</span></code></pre></td></tr></table>
+</div>
+</div>
+<h4 id="优点与缺点">优点与缺点</h4>
+
+<ul>
+<li>优点：处理 <code>then</code> 的调用链，能够更清晰准确的写出代码，并且也能优雅地解决回调地狱问题</li>
+<li>缺点：因为 <code>await</code> 将异步代码改造成了同步代码，如果多个异步代码没有依赖性却使用了 <code>await</code> 会导致性能上的降低。</li>
+</ul>
+
+<h4 id="await内部原理">await内部原理</h4>
+
+<p><code>await</code> 内部实现了 <code>generator</code>，其实 <code>await</code> 就是 <code>generator</code> 加上 <code>Promise</code> 的语法糖，且内部实现了自动执行 <code>generator</code>。</p>
+
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/javascript/">JavaScript</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/">
+            <span class="next-text nav-default">浏览器缓存简短笔记</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2019-11-13 17:18:18 \x2b0800 CST',
+        title: 'JavaScript异步编程',
+        clientID: '05974c1cc13d6148bcd0',
+        clientSecret: '1728004705e563e811c77fe4bd644836e33eed63',
+        repo: 'CJianYu.github.io',
+        owner: 'CJianYu',
+        admin: ['CJianYu'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/CJianYu" class="iconfont icon-github" title="github"></a>
+  <a href="https://cjianyu.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Jeffrey</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136354269-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?https:\/\/hm.baidu.com\/hm.js?11b3ab96fbe1187db509353824a1ff3b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+
+
+</body>
+</html>
