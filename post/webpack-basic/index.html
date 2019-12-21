@@ -163,7 +163,7 @@ module.exports = {
 
 <meta itemprop="datePublished" content="2019-07-18T23:50:22&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-18T23:50:22&#43;08:00" />
-<meta itemprop="wordCount" content="2713">
+<meta itemprop="wordCount" content="2911">
 
 
 
@@ -299,7 +299,7 @@ module.exports = {
         <div class="post-category">
             <a href="/categories/note/"> Note </a>
             </div>
-          <span class="more-meta"> 2713 words </span>
+          <span class="more-meta"> 2911 words </span>
           <span class="more-meta"> 6 mins read </span>
         
       </div>
@@ -468,7 +468,7 @@ module.exports = {
         <span class="nx">hello</span><span class="o">:</span> <span class="s1">&#39;./src/hello.js&#39;</span>
     <span class="p">},</span>
     <span class="nx">output</span><span class="o">:</span> <span class="p">{</span>
-        <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;[name].js&#39;</span><span class="p">,</span> <span class="c1">// 但文件的时候，就直接是类似bundle.js这样的文件名
+        <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;[name].js&#39;</span><span class="p">,</span> <span class="c1">// 单文件的时候，就直接是类似bundle.js这样的文件名
 </span><span class="c1"></span>        <span class="nx">path</span><span class="o">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;dist&#39;</span><span class="p">)</span>
     <span class="p">},</span>
     <span class="nx">mode</span><span class="o">:</span> <span class="s1">&#39;production&#39;</span>
@@ -552,6 +552,12 @@ module.exports = {
 </code></pre></td></tr></table>
 </div>
 </div>
+<p>loader跟plugin的区别：</p>
+
+<p>loader，它是一个转换器，将A文件进行编译成B文件，比如：将A.less转换为A.css，单纯的文件转换过程。</p>
+
+<p>plugin是一个扩展器，它丰富了webpack本身，针对是loader结束后，webpack打包的整个过程，它并不直接操作文件，而是基于事件机制工作，会监听webpack打包过程中的某些节点，执行广泛的任务，比如打包优化、文件管理、环境注入等……</p>
+
 <h3 id="核心概念之mode">核心概念之mode</h3>
 
 <p>用来指定当前的构建环境，有三个默认的可选：production（默认）、development、none。</p>
