@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjianyu.github.io/post/%E5%86%99%E5%9C%A825%E5%B2%81%E7%94%9F%E6%97%A5%E4%B9%8B%E9%99%85/</loc>
+    <lastmod>2020-04-28T23:58:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/post/%E5%8C%BB%E7%94%9F%E6%9D%8E%E6%96%87%E4%BA%AE%E4%B9%8B%E6%AD%BB/</loc>
     <lastmod>2020-02-07T17:09:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -144,7 +151,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/tags/birthday/</loc>
-    <lastmod>2019-05-10T00:03:20+08:00</lastmod>
+    <lastmod>2020-04-28T23:58:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -206,7 +213,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/categories/ideas/</loc>
-    <lastmod>2020-02-07T17:09:23+08:00</lastmod>
+    <lastmod>2020-04-28T23:58:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -241,7 +248,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/post/</loc>
-    <lastmod>2020-02-07T17:09:23+08:00</lastmod>
+    <lastmod>2020-04-28T23:58:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -290,7 +297,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/</loc>
-    <lastmod>2020-02-07T17:09:23+08:00</lastmod>
+    <lastmod>2020-04-28T23:58:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
