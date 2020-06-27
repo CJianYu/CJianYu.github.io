@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjianyu.github.io/post/2020%E5%B9%B46%E6%9C%88%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
+    <lastmod>2020-06-27T15:06:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/post/%E7%BE%8E%E8%82%A1%E5%BC%80%E6%88%B7%E6%95%99%E7%A8%8B%E4%BD%A3%E9%87%91%E7%BB%88%E8%BA%AB%E5%85%AB%E6%8A%98&#43;%E9%80%81%E4%B8%80%E8%82%A1%E9%98%BF%E9%87%8C%E8%82%A1%E7%A5%A8/</loc>
     <lastmod>2020-06-07T22:45:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -220,7 +227,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/categories/ideas/</loc>
-    <lastmod>2020-04-28T23:58:53+08:00</lastmod>
+    <lastmod>2020-06-27T15:06:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -255,7 +262,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/post/</loc>
-    <lastmod>2020-06-07T22:45:52+08:00</lastmod>
+    <lastmod>2020-06-27T15:06:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -304,7 +311,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/</loc>
-    <lastmod>2020-06-07T22:45:52+08:00</lastmod>
+    <lastmod>2020-06-27T15:06:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -317,14 +324,21 @@
   </url>
   
   <url>
-    <loc>https://cjianyu.github.io/tags/%E7%BE%8E%E8%82%A1%E5%BC%80%E6%88%B7/</loc>
+    <loc>https://cjianyu.github.io/tags/%E6%B8%AF%E8%82%A1%E5%BC%80%E6%88%B7/</loc>
     <lastmod>2020-06-07T22:45:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://cjianyu.github.io/tags/%E7%BE%8E%E8%82%A1%E6%8A%95%E8%B5%84/</loc>
+    <loc>https://cjianyu.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
+    <lastmod>2020-06-27T15:06:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cjianyu.github.io/tags/%E7%BE%8E%E8%82%A1%E5%BC%80%E6%88%B7/</loc>
     <lastmod>2020-06-07T22:45:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
