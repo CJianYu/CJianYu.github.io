@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>浏览器缓存简短笔记 - 懒人的梦呓</title>
+  <title>珍惜产品的早期阶段 - 懒人的梦呓</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Jeffrey" /><meta name="description" content="浏览器缓存机制的关键： 浏览器每次发起请求，都会先在浏览器缓存中查找该请求的结果以及缓存标识 浏览器每次拿到返回的请求结果都会将该结果和缓存标识" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Jeffrey" /><meta name="description" content="Clubhouse没让我少熬夜。 我太喜欢Clubhouse了，已经好久没有一个app让人惊喜了，几年前Telegram算一个，之后再没让人眼" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
 
 
-<link rel="canonical" href="https://cjianyu.github.io/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/" />
+<link rel="canonical" href="https://cjianyu.github.io/post/%E7%8F%8D%E6%83%9C%E4%BA%A7%E5%93%81%E7%9A%84%E6%97%A9%E6%9C%9F%E9%98%B6%E6%AE%B5/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,27 +38,27 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="浏览器缓存简短笔记" />
-<meta property="og:description" content="浏览器缓存机制的关键： 浏览器每次发起请求，都会先在浏览器缓存中查找该请求的结果以及缓存标识 浏览器每次拿到返回的请求结果都会将该结果和缓存标识" />
+<meta property="og:title" content="珍惜产品的早期阶段" />
+<meta property="og:description" content="Clubhouse没让我少熬夜。 我太喜欢Clubhouse了，已经好久没有一个app让人惊喜了，几年前Telegram算一个，之后再没让人眼" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cjianyu.github.io/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/" />
-<meta property="article:published_time" content="2019-11-07T19:44:06&#43;08:00"/>
-<meta property="article:modified_time" content="2019-11-07T19:44:06&#43;08:00"/>
+<meta property="og:url" content="https://cjianyu.github.io/post/%E7%8F%8D%E6%83%9C%E4%BA%A7%E5%93%81%E7%9A%84%E6%97%A9%E6%9C%9F%E9%98%B6%E6%AE%B5/" />
+<meta property="article:published_time" content="2021-02-09T17:17:18&#43;08:00"/>
+<meta property="article:modified_time" content="2021-02-09T17:17:18&#43;08:00"/>
 
-<meta itemprop="name" content="浏览器缓存简短笔记">
-<meta itemprop="description" content="浏览器缓存机制的关键： 浏览器每次发起请求，都会先在浏览器缓存中查找该请求的结果以及缓存标识 浏览器每次拿到返回的请求结果都会将该结果和缓存标识">
-
-
-<meta itemprop="datePublished" content="2019-11-07T19:44:06&#43;08:00" />
-<meta itemprop="dateModified" content="2019-11-07T19:44:06&#43;08:00" />
-<meta itemprop="wordCount" content="1004">
+<meta itemprop="name" content="珍惜产品的早期阶段">
+<meta itemprop="description" content="Clubhouse没让我少熬夜。 我太喜欢Clubhouse了，已经好久没有一个app让人惊喜了，几年前Telegram算一个，之后再没让人眼">
 
 
+<meta itemprop="datePublished" content="2021-02-09T17:17:18&#43;08:00" />
+<meta itemprop="dateModified" content="2021-02-09T17:17:18&#43;08:00" />
+<meta itemprop="wordCount" content="1266">
 
-<meta itemprop="keywords" content="Browser," />
+
+
+<meta itemprop="keywords" content="product," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="浏览器缓存简短笔记"/>
-<meta name="twitter:description" content="浏览器缓存机制的关键： 浏览器每次发起请求，都会先在浏览器缓存中查找该请求的结果以及缓存标识 浏览器每次拿到返回的请求结果都会将该结果和缓存标识"/>
+<meta name="twitter:title" content="珍惜产品的早期阶段"/>
+<meta name="twitter:description" content="Clubhouse没让我少熬夜。 我太喜欢Clubhouse了，已经好久没有一个app让人惊喜了，几年前Telegram算一个，之后再没让人眼"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -125,14 +125,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">浏览器缓存简短笔记</h1>
+      <h1 class="post-title">珍惜产品的早期阶段</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-11-07 </span>
+        <span class="post-time"> 2021-02-09 </span>
         <div class="post-category">
-            <a href="/categories/note/"> Note </a>
+            <a href="/categories/ideas/"> Ideas </a>
             </div>
-          <span class="more-meta"> 1004 words </span>
+          <span class="more-meta"> 1266 words </span>
           <span class="more-meta"> 3 mins read </span>
         
       </div>
@@ -141,104 +141,43 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#强制缓存">强制缓存</a></li>
-<li><a href="#协商缓存">协商缓存</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+    
   </div>
 </div>
     <div class="post-content">
-      
+      <p>Clubhouse没让我少熬夜。</p>
 
-<p>浏览器缓存机制的关键：</p>
+<p>我太喜欢Clubhouse了，已经好久没有一个app让人惊喜了，几年前Telegram算一个，之后再没让人眼前一亮的产品。作为社交软件爱好者，Clubhouse确实吸引人，有一种可以上瘾的感觉。</p>
 
-<ul>
-<li>浏览器每次发起请求，都会先在浏览器缓存中查找该请求的结果以及缓存标识</li>
-<li>浏览器每次拿到返回的请求结果都会将该结果和缓存标识存入浏览器缓存中</li>
-</ul>
+<p>语音是唯一的交流方式，然后通过room区分不同的话题，speaker可以随意发言，听众可以举手发言，有点像圆桌会议，这就是Clubhouse的核心功能，简单，没有太多臃肿的附加功能。Clubhouse真正有趣的地方是里面的人，对，社交产品的核心价值永远是人。目前，因邀请制的存在，玩Clubhouse的还没有普及到大众。用户的职业虽然各不相同，有产品经理，有程序员，有天使投资人，有币圈大佬，还有一些公众人物，但好在早期用户的素质都比较高，在Clubhouse的交流还是很融洽的。</p>
 
-<p>缓存分为两个过程：强制缓存和协商缓存。发送请求的时候先进行强制缓存，如果强制缓存失效，则进行协商缓存。</p>
+<p>我曾听各个进入朝鲜旅游或者学习的朋友诉说他们进入朝鲜的新鲜事儿，让我更了解了真实的朝鲜；我曾听女生跟男生关于性爱的交流，发现原来女生的想法是这样的，而男生跟女生的想法差异可以这么大；我曾听一个名为「两岸大陆青年大乱聊」的room，国内的所谓「高知」青年一如既往秀优越感的同时让人觉得丢人；我还看到了「默哀李文亮」的room；我曾听一个小女生诉说自己的家境与经历，说着说着就哭了&hellip;</p>
 
-<h3 id="强制缓存">强制缓存</h3>
+<p>得益于匿名，人们可以大胆说出自己的想法，说出一些可能现实生活中永远也不可能说出的心声。得益于搜索，你很容易找到你想关注的人。得益于根据follow的人推荐相关的room，用户很容易发现各种奇怪的room，如此有源源不断的新的room出现，内容会永远新颖。另外，Clubhouse连接了世界各个地方的人，让他们可以很容易相遇，很容易碰撞。连接，就是社交的本质。</p>
 
-<p>强制缓存的过程有三种情况：</p>
+<p>这简直是社恐患者的福音，一方面，社恐患者害怕与人见面，害怕出现在公众场合，另一方面，他们又是孤独的，内心仍会希望有陪伴 。Clubhouse就起到了陪伴的作用，大大降低了社交成本，又解决了一部分孤独的渴望。加入一个闲聊群，跟人随便扯几句，就是一件很好的事情。</p>
 
-<ul>
-<li>不存在缓存，第一次发起请求，直接向服务器发起请求</li>
-<li>存在缓存，缓存未失效，强制缓存生效，直接返回结果</li>
-<li>存在缓存，缓存失效，进行协商缓存</li>
-</ul>
+<p>但是呢，美妙的时间总不会太晚，因为随着产品被越来越多人熟知，大众涌入，产品必定会陷入一种流量黑洞，用户变得素质没那么高了，杂音会变多，早期高净值人群会出逃，信息传递也会变得越来越没有价值。平台能做什么？尽可能推荐你喜欢的类型给你，这就又造成了信息茧房，跟抖音头条又有什么区别呢？</p>
 
-<p>缓存规则：</p>
+<p>如果你喜欢现在的Clubhouse，享受此刻的Clubhouse，以后的Clubhouse可能不再是这般模样。</p>
 
-<p>浏览器向服务器发起请求时，服务器将缓存规则放进响应报文中的http响应头里与请求结果一起返回给浏览器，控制强制缓存的字段有两个：</p>
+<p>另外，Clubhouse的缺陷也很明显：用户对隐私的担忧。</p>
 
-<ul>
-<li>Expires（HTTP/1.0）</li>
-<li>cache-control（HTTP/1.1，优先级高）</li>
-</ul>
+<p>我们知道，Clubhouse需要获取用户的通讯录才能获取邀请别人，这引发了人们对这个新秀的怀疑。另外，Clubhouse的底层用了声网（中国公司）的API，这又不得不让人怀疑，语音是否有缓存。另外，语音的交流会不会被黑客大量收集，然后通过AI进行训练，进行伪造人，这又是一个遐想。</p>
 
-<p>Expires值为服务器返回该请求结果缓存的到期时间，cache-control的值有下面这些：</p>
-
-<ul>
-<li>public：所有内容都缓存，包括客户端浏览器端</li>
-<li>private：默认取值，只有客户端可以缓存（可以通过public和private区分客户端上的缓存和代理上的缓存）</li>
-<li>no-store：不可以缓存</li>
-<li>no-cache： 可以缓存，但使用前必须要去服务器验证是否过期，是否是最新版（即协商缓存来验证）</li>
-<li>max-age：生存时间，max-age=xxx，缓存在xxx秒后失效</li>
-<li>must-revalidate：如果缓存不过期就可以继续使用，但过期了如果还想用就必须去服务器验证（注意no-cache是使用前，这个是过期后）</li>
-</ul>
-
-<p>缓存存放位置：</p>
-
-<ul>
-<li>from memory cache</li>
-<li>from disk cache</li>
-</ul>
-
-<p>读取缓存的顺序为memory –&gt; disk，js和图片等文件解析执行后直接存入内存缓存中，那么当刷新页面时只需直接从内存缓存中读取(from memory cache)；而css文件则会存入硬盘文件中，所以每次渲染页面都需要从硬盘读取缓存(from disk cache)</p>
-
-<h3 id="协商缓存">协商缓存</h3>
-
-<p>强制缓存失效后，就会进行协商缓存，浏览器将缓存标识向服务器发起请求，服务器根据缓存标识决定是否使用缓存，有两种情况：</p>
-
-<ul>
-<li>返回304not modified，协商缓存生效，从浏览器读取缓存</li>
-<li>返回200，协商缓存失效，获取更新资源，保存在浏览器</li>
-</ul>
-
-<p>缓存规则：</p>
-
-<ul>
-<li>Last-modified（服务器返回）/If-Modified-Since（浏览器发送上一次请求返回的Last-modified）</li>
-<li>Etag（服务器返回）/ If-None-Match（浏览器发送上一次请求返回的Etag）（优先级高）</li>
-</ul>
-
-<p>参考链接： <a href="https://juejin.im/entry/5ad86c16f265da505a77dca4">https://juejin.im/entry/5ad86c16f265da505a77dca4</a></p>
+<p>就在玩了Clubhouse一周差不多，发现了「胡锡进后援会」的room出现在了列表，喷了。。。</p>
 
     </div>
 
     
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/browser/">Browser</a>
+          <a href="/tags/product/">product</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/javascript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">JavaScript异步编程</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/webpack-basic/">
-            <span class="next-text nav-default">Webpack入门教程</span>
+        
+        <a class="next" href="/post/%E6%88%91%E7%9A%842020%E5%B9%B4%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/">
+            <span class="next-text nav-default">我的2020年个人总结</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -251,8 +190,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
       var gitalk = new Gitalk({
-        id: '2019-11-07 19:44:06 \x2b0800 CST',
-        title: '浏览器缓存简短笔记',
+        id: '2021-02-09 17:17:18 \x2b0800 CST',
+        title: '珍惜产品的早期阶段',
         clientID: '05974c1cc13d6148bcd0',
         clientSecret: '1728004705e563e811c77fe4bd644836e33eed63',
         repo: 'CJianYu.github.io',
