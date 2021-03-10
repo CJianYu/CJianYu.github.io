@@ -6,10 +6,19 @@
     <description>Recent content on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Feb 2021 17:17:18 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Mar 2021 22:29:44 +0800</lastBuildDate>
     
 	<atom:link href="https://cjianyu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Newsletter</title>
+      <link>https://cjianyu.github.io/post/newsletter/</link>
+      <pubDate>Wed, 10 Mar 2021 22:29:44 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/newsletter/</guid>
+      <description>最近，看到GaryVee的一个观点： document, don’t create （记录，而不是创造） 是的，每个人都在想着创造。创造是一个结果，而记录是一个过程。人们当然想</description>
+    </item>
     
     <item>
       <title>珍惜产品的早期阶段</title>
