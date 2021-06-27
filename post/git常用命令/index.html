@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Git常用命令 - 懒人的梦呓</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="virusyu" /><meta name="description" content="git log git branch -v 查看本地有哪些分支 git log &amp;ndash;oneline 更简洁查看git log git log -n2 &amp;ndash;oneline 查看最近两次log git log &amp;ndash;oneline &amp;ndash;all 查看所有的log git log &amp;ndash;oneline &amp;ndash;graph 图形化查看log git log develop &amp;ndash;graph 查看d" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://cjianyu.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Git常用命令" />
+<meta property="og:description" content="git log git branch -v 查看本地有哪些分支 git log &ndash;oneline 更简洁查看git log git log -n2 &ndash;oneline 查看最近两次log git log &ndash;oneline &ndash;all 查看所有的log git log &ndash;oneline &ndash;graph 图形化查看log git log develop &ndash;graph 查看d" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cjianyu.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
+<meta property="article:published_time" content="2021-06-27T23:28:58&#43;08:00"/>
+<meta property="article:modified_time" content="2021-06-27T23:28:58&#43;08:00"/>
+
+<meta itemprop="name" content="Git常用命令">
+<meta itemprop="description" content="git log git branch -v 查看本地有哪些分支 git log &ndash;oneline 更简洁查看git log git log -n2 &ndash;oneline 查看最近两次log git log &ndash;oneline &ndash;all 查看所有的log git log &ndash;oneline &ndash;graph 图形化查看log git log develop &ndash;graph 查看d">
+
+
+<meta itemprop="datePublished" content="2021-06-27T23:28:58&#43;08:00" />
+<meta itemprop="dateModified" content="2021-06-27T23:28:58&#43;08:00" />
+<meta itemprop="wordCount" content="746">
+
+
+
+<meta itemprop="keywords" content="Git," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git常用命令"/>
+<meta name="twitter:description" content="git log git branch -v 查看本地有哪些分支 git log &ndash;oneline 更简洁查看git log git log -n2 &ndash;oneline 查看最近两次log git log &ndash;oneline &ndash;all 查看所有的log git log &ndash;oneline &ndash;graph 图形化查看log git log develop &ndash;graph 查看d"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">懒人的梦呓</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">懒人的梦呓</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Git常用命令</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-06-27 </span>
+        <div class="post-category">
+            <a href="/categories/note/"> Note </a>
+            </div>
+          <span class="more-meta"> 746 words </span>
+          <span class="more-meta"> 2 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#git-log">git log</a></li>
+<li><a href="#git-rebase-的用法">git rebase 的用法</a></li>
+<li><a href="#开发分支改完合并到develop">开发分支改完合并到develop</a></li>
+<li><a href="#上线后的项目修改">上线后的项目修改</a></li>
+<li><a href="#某仓库更改用户名邮箱">某仓库更改用户名邮箱</a></li>
+<li><a href="#撤销git-add">撤销git add</a></li>
+<li><a href="#修改commit信息">修改commit信息</a></li>
+<li><a href="#撤销commit">撤销commit</a></li>
+<li><a href="#vim模式编辑">vim模式编辑</a></li>
+<li><a href="#commit之后撤销某个文件夹下的提交">commit之后撤销某个文件夹下的提交</a></li>
+<li><a href="#开发流程">开发流程</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<h3 id="git-log">git log</h3>
+
+<p>git branch -v 查看本地有哪些分支</p>
+
+<p>git log &ndash;oneline 更简洁查看git log</p>
+
+<p>git log -n2 &ndash;oneline 查看最近两次log</p>
+
+<p>git log  &ndash;oneline &ndash;all 查看所有的log</p>
+
+<p>git log &ndash;oneline &ndash;graph 图形化查看log</p>
+
+<p>git log  develop &ndash;graph 查看develop分支的log</p>
+
+<h3 id="git-rebase-的用法">git rebase 的用法</h3>
+
+<p>参考： <a href="https://www.yiibai.com/git/git_rebase.html">https://www.yiibai.com/git/git_rebase.html</a></p>
+
+<h3 id="开发分支改完合并到develop">开发分支改完合并到develop</h3>
+
+<p>开发分支：</p>
+
+<p>git add .</p>
+
+<p>git commit</p>
+
+<p>git push</p>
+
+<p>git log 拿到commitHash</p>
+
+<p>切换到develop：git checkout develop</p>
+
+<p>更新develop：git pull</p>
+
+<p>git cherry-pick <commitHash></p>
+
+<h3 id="上线后的项目修改">上线后的项目修改</h3>
+
+<p>方法一：</p>
+
+<p>切换到master分支，新建一个分支</p>
+
+<p>将开发分支的修改提交cherry-pick过来</p>
+
+<p>方法二：</p>
+
+<p>切换到master分支，新建一个分支，直接在新分支改</p>
+
+<h3 id="某仓库更改用户名邮箱">某仓库更改用户名邮箱</h3>
+
+<p>git config user.name &ldquo;gitlab&rsquo;s Name&rdquo;</p>
+
+<p>git config user.email &ldquo;gitlab@xx.com&rdquo;</p>
+
+<p>git config &ndash;list</p>
+
+<h3 id="撤销git-add">撤销git add</h3>
+
+<p>git reset HEAD .</p>
+
+<h3 id="修改commit信息">修改commit信息</h3>
+
+<p>git commit &ndash;amend -m &ldquo;an updated commit message&rdquo;</p>
+
+<h3 id="撤销commit">撤销commit</h3>
+
+<p>git reset &ndash;soft HEAD^   （HEAD^的意思是上一个版本，也可以写成HEAD~1，如果你进行了2次commit，想都撤回，可以使用HEAD~2）</p>
+
+<h3 id="vim模式编辑">vim模式编辑</h3>
+
+<p>那如何操作vim编辑器(这里只简单介绍 一下)：</p>
+
+<ol>
+<li>按下字母键<code>i</code>或<code>a</code>或<code>o</code>，此时进入到可编辑状态，这时就可以输入你的注释</li>
+<li>当你输入完之后，按下<code>Esc</code>键就可退出编辑状态，回到一般模式。</li>
+<li>最后就是怎么退出vim编辑器并提交commit， 有两种方法：
+
+<ul>
+<li>输入两字大写字母<code>ZZ</code>（记住是大写）</li>
+<li>输入<code>:wq</code>或<code>:wq!</code>(强行退出)</li>
+</ul></li>
+</ol>
+
+<h3 id="commit之后撤销某个文件夹下的提交">commit之后撤销某个文件夹下的提交</h3>
+
+<p>先撤销commit： git reset &ndash;soft HEAD^</p>
+
+<p>然后进入那个你不想回退的文件夹： git reset HEAD .</p>
+
+<p>这样就只有那个文件夹下的文件没有跟踪，再git add 之后commit就行了</p>
+
+<h3 id="开发流程">开发流程</h3>
+
+<p>feature分支开发，日常用git pull origin master:master拉取主干代码</p>
+
+<p>开发完成，转到develop分支，git pull之后用git merge &ndash;squash feature/xxx 合并</p>
+
+<p>修改，就用git cherry-pick 或者 git merge feature/xxx进行代码合并</p>
+
+<p>要合并到master的时候：</p>
+
+<p>git pull origin master:master</p>
+
+<p>git rebase master</p>
+
+<p>git rebase -i master</p>
+
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/git/">Git</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/">
+            <span class="next-text nav-default">几个常用的快捷键</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2021-06-27 23:28:58 \x2b0800 CST',
+        title: 'Git常用命令',
+        clientID: '05974c1cc13d6148bcd0',
+        clientSecret: '1728004705e563e811c77fe4bd644836e33eed63',
+        repo: 'CJianYu.github.io',
+        owner: 'CJianYu',
+        admin: ['CJianYu'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/CJianYu" class="iconfont icon-github" title="github"></a>
+  <a href="https://cjianyu.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018 - 
+    2021
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">virusyu</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136354269-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?https:\/\/hm.baidu.com\/hm.js?11b3ab96fbe1187db509353824a1ff3b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+
+
+</body>
+</html>

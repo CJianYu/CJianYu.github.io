@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Jeffrey" /><meta name="description" content="为什么要用构建工具 转换es6、转换jsx、css前缀补全/预处理器、压缩混淆、图片压缩
+<meta name="author" content="virusyu" /><meta name="description" content="为什么要用构建工具 转换es6、转换jsx、css前缀补全/预处理器、压缩混淆、图片压缩
 初识webpack webpack默认文件是webpack.config.js，当然，你也可以根据自己的需要进行更改，通过：webpack — config 指定配置文件，webpack一般包含以下内容：
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  module.exports = { entry: &amp;#39;./src/index.js&amp;#39;, // 打包的入口文件  output: &amp;#39;./dist/main.js&amp;#39;, // 打包的输出  mode: &amp;#39;production&amp;#39;, // 环境  module: { rules: [ {test: /\.text/, use: &amp;#39;raw-loader&amp;#39;} // Loader配置  ] }, plugin: [ // plugin配置  new HtmlWebpackPlugin({ template: &amp;#39;./src/index.html&amp;#39;, // 所用的模版  filename: &amp;#39;index.html&amp;#39;, // 打包后的文件名  minify: { // 压缩html  removeAttributeQuotes: true, // 去掉双引号  collapseWhiteSpace: true, // 变成一行  }, hash: true, // 添加hash  }) ] }   " /><meta name="keywords" content="Hugo, theme, even" />
 
@@ -1017,7 +1017,7 @@ module.exports = {
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
-    <span class="author">Jeffrey</span>
+    <span class="author">virusyu</span>
   </span>
 </div>
     </footer>
