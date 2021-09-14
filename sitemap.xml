@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjianyu.github.io/post/telegram%E9%A2%91%E9%81%93%E6%8E%A8%E8%8D%90/</loc>
+    <lastmod>2021-09-11T23:26:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2021-06-27T23:28:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -311,14 +318,14 @@
   
   <url>
     <loc>https://cjianyu.github.io/categories/note/</loc>
-    <lastmod>2021-06-27T23:28:58+08:00</lastmod>
+    <lastmod>2021-09-11T23:26:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cjianyu.github.io/post/</loc>
-    <lastmod>2021-06-27T23:28:58+08:00</lastmod>
+    <lastmod>2021-09-11T23:26:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -373,6 +380,13 @@
   </url>
   
   <url>
+    <loc>https://cjianyu.github.io/tags/telegram/</loc>
+    <lastmod>2021-09-11T23:26:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/tags/vscode/</loc>
     <lastmod>2021-06-27T23:26:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -381,7 +395,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/</loc>
-    <lastmod>2021-06-27T23:28:58+08:00</lastmod>
+    <lastmod>2021-09-11T23:26:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

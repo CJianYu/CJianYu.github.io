@@ -6,10 +6,19 @@
     <description>Recent content in Note on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Jun 2021 23:28:58 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Sep 2021 23:26:47 +0800</lastBuildDate>
     
 	<atom:link href="https://cjianyu.github.io/categories/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>telegram导航</title>
+      <link>https://cjianyu.github.io/post/telegram%E9%A2%91%E9%81%93%E6%8E%A8%E8%8D%90/</link>
+      <pubDate>Sat, 11 Sep 2021 23:26:47 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/telegram%E9%A2%91%E9%81%93%E6%8E%A8%E8%8D%90/</guid>
+      <description>我们知道社交产品要玩起来，首先得有人跟你产生连接，或者有内容可以消费。Telegram对于新用户来说，最大的困难不是科学上网，不是什么功能怎</description>
+    </item>
     
     <item>
       <title>Git常用命令</title>
