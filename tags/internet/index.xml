@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internet on 懒人的梦呓</title>
+    <link>https://cjianyu.github.io/tags/internet/</link>
+    <description>Recent content in Internet on 懒人的梦呓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Oct 2016 23:58:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://cjianyu.github.io/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我的NBA记忆</title>
+      <link>https://cjianyu.github.io/post/%E6%88%91%E7%9A%84nba%E8%AE%B0%E5%BF%86/</link>
+      <pubDate>Sun, 16 Oct 2016 23:58:53 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/%E6%88%91%E7%9A%84nba%E8%AE%B0%E5%BF%86/</guid>
+      <description>很平静看完这个赛季最后一场总决赛，没有任何悬念，骑士被勇士横扫出局。尽管第一场，第三场骑士很有机会赢，但，输了就是输了。上一次詹姆斯在总决赛</description>
+    </item>
+    
+    <item>
+      <title>白岩松三问互联网人背后的逻辑</title>
+      <link>https://cjianyu.github.io/post/%E7%99%BD%E5%B2%A9%E6%9D%BE%E4%B8%89%E9%97%AE%E4%BA%92%E8%81%94%E7%BD%91%E8%83%8C%E5%90%8E%E7%9A%84%E9%80%BB%E8%BE%91/</link>
+      <pubDate>Sun, 16 Oct 2016 23:58:53 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/%E7%99%BD%E5%B2%A9%E6%9D%BE%E4%B8%89%E9%97%AE%E4%BA%92%E8%81%94%E7%BD%91%E8%83%8C%E5%90%8E%E7%9A%84%E9%80%BB%E8%BE%91/</guid>
+      <description>在某电商峰会上，白岩松问了三个问题： 1、如果互联网只是使富人变得更富，而穷人只是在淘宝上买一些便宜的东西，请问互联网有什么意义？ 2、如果互联</description>
+    </item>
+    
+  </channel>
+</rss>
