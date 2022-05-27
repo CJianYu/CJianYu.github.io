@@ -51,7 +51,7 @@
 
 <meta itemprop="datePublished" content="2021-06-27T23:26:47&#43;08:00" />
 <meta itemprop="dateModified" content="2021-06-27T23:26:47&#43;08:00" />
-<meta itemprop="wordCount" content="134">
+<meta itemprop="wordCount" content="232">
 
 
 
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/note/"> Note </a>
             </div>
-          <span class="more-meta"> 134 words </span>
+          <span class="more-meta"> 232 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -187,9 +187,28 @@
 
 <h4 id="杀占用端口的进程">杀占用端口的进程</h4>
 
+<ul>
+<li>mac平台：</li>
+</ul>
+
 <p>lsof -i :port</p>
 
 <p>kill -9 PID</p>
+
+<ul>
+<li>windows平台</li>
+</ul>
+
+<p>netstat -ano|findstr &ldquo;PID :3000&rdquo;  （3000是查询占用的端口，可以换成任意你想要查询的端口号）</p>
+
+<p>然后会显示出所有占用端口的进程，如下：</p>
+
+<p>Proto Local Address Foreign Address State PID
+TCP 0.0.0.0:3000 0.0.0.0:0 LISTENING 18264</p>
+
+<p>最后，用以下命令进行杀进程：</p>
+
+<p>taskkill /pid 18264 /f</p>
 
     </div>
 
