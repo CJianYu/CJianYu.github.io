@@ -51,7 +51,7 @@
 
 <meta itemprop="datePublished" content="2021-06-27T23:26:47&#43;08:00" />
 <meta itemprop="dateModified" content="2021-06-27T23:26:47&#43;08:00" />
-<meta itemprop="wordCount" content="232">
+<meta itemprop="wordCount" content="234">
 
 
 
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/note/"> Note </a>
             </div>
-          <span class="more-meta"> 232 words </span>
+          <span class="more-meta"> 234 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -198,18 +198,36 @@
 <ul>
 <li>windows平台</li>
 </ul>
-
-<p>netstat -ano|findstr &ldquo;PID :3000&rdquo;  （3000是查询占用的端口，可以换成任意你想要查询的端口号）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">netstat -ano<span class="p">|</span>findstr <span class="s2">&#34;PID :3000&#34;</span> </code></pre></td></tr></table>
+</div>
+</div>
+<p>3000是查询占用的端口，可以换成任意你想要查询的端口号</p>
 
 <p>然后会显示出所有占用端口的进程，如下：</p>
-
-<p>Proto Local Address Foreign Address State PID
-TCP 0.0.0.0:3000 0.0.0.0:0 LISTENING 18264</p>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">Proto Local Address Foreign Address State PID 
+TCP <span class="m">0</span>.0.0.0:3000 <span class="m">0</span>.0.0.0:0 LISTENING <span class="m">18264</span></code></pre></td></tr></table>
+</div>
+</div>
 <p>最后，用以下命令进行杀进程：</p>
-
-<p>taskkill /pid 18264 /f</p>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">taskkill /pid <span class="m">18264</span> /f</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
