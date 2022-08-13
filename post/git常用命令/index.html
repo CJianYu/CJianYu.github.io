@@ -51,7 +51,7 @@
 
 <meta itemprop="datePublished" content="2021-06-27T23:28:58&#43;08:00" />
 <meta itemprop="dateModified" content="2021-06-27T23:28:58&#43;08:00" />
-<meta itemprop="wordCount" content="746">
+<meta itemprop="wordCount" content="851">
 
 
 
@@ -132,7 +132,7 @@
         <div class="post-category">
             <a href="/categories/note/"> Note </a>
             </div>
-          <span class="more-meta"> 746 words </span>
+          <span class="more-meta"> 851 words </span>
           <span class="more-meta"> 2 mins read </span>
         
       </div>
@@ -150,6 +150,10 @@
 <li><a href="#git-log">git log</a></li>
 <li><a href="#git-rebase-的用法">git rebase 的用法</a></li>
 <li><a href="#开发分支改完合并到develop">开发分支改完合并到develop</a></li>
+<li><a href="#删除远程分支">删除远程分支</a></li>
+<li><a href="#删除本地分支">删除本地分支</a></li>
+<li><a href="#已经提交的commit-如何合并">已经提交的commit，如何合并</a></li>
+<li><a href="#取消merge">取消merge</a></li>
 <li><a href="#上线后的项目修改">上线后的项目修改</a></li>
 <li><a href="#某仓库更改用户名邮箱">某仓库更改用户名邮箱</a></li>
 <li><a href="#撤销git-add">撤销git add</a></li>
@@ -203,6 +207,53 @@
 
 <p>git cherry-pick <commitHash></p>
 
+<h3 id="删除远程分支">删除远程分支</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">git push origin --delete branchName</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="删除本地分支">删除本地分支</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">git branch -d branchName</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="已经提交的commit-如何合并">已经提交的commit，如何合并</h3>
+
+<p>前面有n个提交记录，比如n是6，你要把这六个提交记录合并成一个</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">git rebase -i HEAD~6</code></pre></td></tr></table>
+</div>
+</div>
+<p>合并好之后，强制push到远程</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">git push -f</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="取消merge">取消merge</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">git merge --abort</code></pre></td></tr></table>
+</div>
+</div>
 <h3 id="上线后的项目修改">上线后的项目修改</h3>
 
 <p>方法一：</p>
