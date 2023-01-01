@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjianyu.github.io/post/%E5%90%91%E5%86%85%E6%8E%A2%E5%AF%BB%E5%90%91%E5%A4%96%E7%94%9F%E9%95%BF/</loc>
+    <lastmod>2022-12-31T23:03:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/post/%E6%AD%A3%E5%84%BF%E5%85%AB%E7%BB%8F%E8%81%8A%E8%81%8A%E6%88%91%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86/</loc>
     <lastmod>2022-08-13T17:11:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -89,13 +96,6 @@
   <url>
     <loc>https://cjianyu.github.io/post/%E7%BE%8E%E5%9B%BD%E6%95%A3%E6%88%B7%E5%A6%82%E4%BD%95%E6%9A%B4%E6%89%93%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%BA%E6%9E%84/</loc>
     <lastmod>2021-01-19T22:45:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cjianyu.github.io/post/%E5%90%91%E5%86%85%E6%8E%A2%E5%AF%BB%E5%90%91%E5%A4%96%E7%94%9F%E9%95%BF/</loc>
-    <lastmod>2020-12-31T23:03:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -423,7 +423,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/categories/ideas/</loc>
-    <lastmod>2022-08-13T17:11:07+08:00</lastmod>
+    <lastmod>2022-12-31T23:03:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -472,7 +472,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/post/</loc>
-    <lastmod>2022-08-13T17:11:07+08:00</lastmod>
+    <lastmod>2022-12-31T23:03:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -486,7 +486,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/tags/summary/</loc>
-    <lastmod>2021-12-31T23:03:50+08:00</lastmod>
+    <lastmod>2022-12-31T23:03:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -556,7 +556,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/</loc>
-    <lastmod>2022-08-13T17:11:07+08:00</lastmod>
+    <lastmod>2022-12-31T23:03:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
