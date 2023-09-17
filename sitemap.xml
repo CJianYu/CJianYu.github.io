@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjianyu.github.io/post/%E6%94%BE%E5%BC%83%E5%AF%B9%E8%B5%9A%E9%92%B1%E5%AF%B9%E6%89%A7%E5%BF%B5/</loc>
+    <lastmod>2023-09-17T14:44:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/post/%E5%90%91%E5%86%85%E6%8E%A2%E5%AF%BB%E5%90%91%E5%A4%96%E7%94%9F%E9%95%BF/</loc>
     <lastmod>2022-12-31T23:03:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -472,7 +479,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/post/</loc>
-    <lastmod>2022-12-31T23:03:50+08:00</lastmod>
+    <lastmod>2023-09-17T14:44:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -556,7 +563,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/</loc>
-    <lastmod>2022-12-31T23:03:50+08:00</lastmod>
+    <lastmod>2023-09-17T14:44:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
