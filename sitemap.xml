@@ -17,6 +17,13 @@
   </url>
   
   <url>
+    <loc>https://cjianyu.github.io/lists/</loc>
+    <lastmod>2024-03-16T15:22:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/post/howtosurfinternet/</loc>
     <lastmod>2024-03-03T21:35:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -515,6 +522,13 @@
   <url>
     <loc>https://cjianyu.github.io/categories/life/</loc>
     <lastmod>2022-03-20T22:29:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cjianyu.github.io/tags/lists/</loc>
+    <lastmod>2024-03-16T15:22:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
