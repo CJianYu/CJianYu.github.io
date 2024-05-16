@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjianyu.github.io/post/birthday_29/</loc>
+    <lastmod>2024-05-14T22:47:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/post/open_account_of_stock/</loc>
     <lastmod>2024-03-27T22:54:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -403,7 +410,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/tags/birthday/</loc>
-    <lastmod>2022-05-06T23:58:53+08:00</lastmod>
+    <lastmod>2024-05-14T22:47:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -556,7 +563,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/post/</loc>
-    <lastmod>2024-03-27T22:54:08+08:00</lastmod>
+    <lastmod>2024-05-14T22:47:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -654,7 +661,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/</loc>
-    <lastmod>2024-03-27T22:54:08+08:00</lastmod>
+    <lastmod>2024-05-14T22:47:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
