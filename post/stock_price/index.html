@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>股票定价的底层逻辑 - 懒人的梦呓</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="virusyu" /><meta name="description" content="很多新手朋友不知道一个公司的股价究竟多少是正常的，多少价位是低估或高估的，也不知道人们经常说的美联储降息加息为什么会影响股票的价格。看完这篇" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://cjianyu.github.io/post/stock_price/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="股票定价的底层逻辑" />
+<meta property="og:description" content="很多新手朋友不知道一个公司的股价究竟多少是正常的，多少价位是低估或高估的，也不知道人们经常说的美联储降息加息为什么会影响股票的价格。看完这篇" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cjianyu.github.io/post/stock_price/" />
+<meta property="article:published_time" content="2024-06-09T13:20:15&#43;08:00"/>
+<meta property="article:modified_time" content="2024-06-09T13:20:15&#43;08:00"/>
+
+<meta itemprop="name" content="股票定价的底层逻辑">
+<meta itemprop="description" content="很多新手朋友不知道一个公司的股价究竟多少是正常的，多少价位是低估或高估的，也不知道人们经常说的美联储降息加息为什么会影响股票的价格。看完这篇">
+
+
+<meta itemprop="datePublished" content="2024-06-09T13:20:15&#43;08:00" />
+<meta itemprop="dateModified" content="2024-06-09T13:20:15&#43;08:00" />
+<meta itemprop="wordCount" content="2037">
+
+
+
+<meta itemprop="keywords" content="StockPrice," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="股票定价的底层逻辑"/>
+<meta name="twitter:description" content="很多新手朋友不知道一个公司的股价究竟多少是正常的，多少价位是低估或高估的，也不知道人们经常说的美联储降息加息为什么会影响股票的价格。看完这篇"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">懒人的梦呓</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/lists/">
+        <li class="mobile-menu-item">Lists</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">懒人的梦呓</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/lists/">Lists</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">股票定价的底层逻辑</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-06-09 </span>
+        
+          <span class="more-meta"> 2037 words </span>
+          <span class="more-meta"> 5 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#从债券定价说起">从债券定价说起</a></li>
+<li><a href="#票面收益和实际收益">票面收益和实际收益</a></li>
+<li><a href="#未来现金流贴现定价">未来现金流贴现定价</a></li>
+<li><a href="#麦考雷久期和修正久期">麦考雷久期和修正久期</a></li>
+<li><a href="#现值的概念在股票中的应用">现值的概念在股票中的应用</a></li>
+<li><a href="#上市公司未来现金流的估计与贴现价值的计算">上市公司未来现金流的估计与贴现价值的计算</a>
+<ul>
+<li>
+<ul>
+<li><a href="#计算结果">计算结果</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#估值的艺术">估值的艺术</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<p>很多新手朋友不知道一个公司的股价究竟多少是正常的，多少价位是低估或高估的，也不知道人们经常说的美联储降息加息为什么会影响股票的价格。看完这篇文章，我想你应该可以自己判断一个公司是否便宜，是否值得买。你也能明白为什么美联储加息降息这么受投资者的关注，为什么说“美国十年期国债收益率”是全球资产定价之锚。</p>
+
+<h2 id="从债券定价说起">从债券定价说起</h2>
+
+<p>要理解股票定价，我们可以先从债券定价开始。债券是一种固定收益证券，投资者通过购买债券将资金借给发行债券的公司或政府，债券发行人则承诺定期支付利息，并在到期时偿还本金。</p>
+
+<p>债券定价的核心在于<strong>无风险利率</strong>，也就是投资者将资金投入完全没有风险的资产（如政府发行的短期国债）所能获得的收益。无风险利率是债券定价的基准，因为它代表了最低的投资回报预期。</p>
+
+<h2 id="票面收益和实际收益">票面收益和实际收益</h2>
+
+<p>债券的票面利率是发行时约定的利息支付比例。例如，一张票面利率为5%的债券每年支付本金的5%作为利息。然而，市场上的实际收益率可能与票面利率不同。如果市场无风险利率上升到6%，新发行的债券将提供更高的利息回报，投资者可能不再愿意以面值购买你的5%利息债券。因此，你可能不得不以低于面值的价格出售你的债券，使其实际收益率更具吸引力。</p>
+
+<p>举个简单的例子，如果你有一张面值1000元、票面利率5%的债券，每年可获得50元的利息。如果市场利率上升到6%，新债券每年支付60元利息。为了使你的旧债券同样具有吸引力，你可能需要以低于1000元的价格出售，比如900元，这样购买者就可以获得约5.6%的实际收益率。</p>
+
+<h2 id="未来现金流贴现定价">未来现金流贴现定价</h2>
+
+<p>债券的价值不仅仅是票面利率和市场利率的比较，而是基于未来所有现金流的现值。这意味着要将未来每一期的利息和本金支付按当前的无风险利率折现到现在。</p>
+
+<p>例如，假设你持有一张两年期的债券，每年支付50元利息，到期还本1000元，市场利率为5%。该债券的价格可以通过贴现未来现金流计算得出：</p>
+
+<p>$$
+\text{债券价格} = \frac{50}{(1+0.05)^1} + \frac{50}{(1+0.05)^2} + \frac{1000}{(1+0.05)^2}
+$$</p>
+
+<p>计算得出，债券价格约为952.38元。</p>
+
+<p>折现率的概念是关键。未来的钱由于存在时间和风险的因素，其价值通常低于现在的钱。这是因为无风险利率的存在，我们可以通过将未来的现金流量折现到当前来计算其现值。例如，假设折现率为2%，100元一年后的现值大约为98.03元，两年后的现值大约为96.11元。</p>
+
+<p>$$
+x \times (1 + 2\%) = 100 \Rightarrow x \approx 98.03
+$$</p>
+
+<p>$$
+x \times (1 + 2\%)^2 = 100 \Rightarrow x = \frac{100}{(1+2\%)^2} \approx 96.11
+$$</p>
+
+<h2 id="麦考雷久期和修正久期">麦考雷久期和修正久期</h2>
+
+<p>为了更好地理解债券价格对利率变化的敏感程度，我们引入了<strong>麦考雷久期</strong>和<strong>修正久期</strong>的概念。麦考雷久期是债券现金流的加权平均时间，可以理解为投资者需要多长时间才能收回债券的所有现金流。修正久期则是麦考雷久期经过调整后，用于实际操作中预测债券价格变化的指标。</p>
+
+<p>举个例子，假设有一张四年期、票面利率为1%的债券，每年支付10元利息，到期还本1000元。如果市场利率为1%，债券的价格可以通过计算未来现金流的现值得到：</p>
+
+<p>$$
+1000 = \frac{10}{(1 + r\%)^1} + \frac{10}{(1 + r\%)^2} + \frac{10}{(1 + r\%)^3} + \frac{1010}{(1 + r\%)^4}
+$$</p>
+
+<p>假设市场利率变为1.25%，债券价格会下降到约990.3元；如果市场利率变为0.75%，债券价格会升至约1009.8元。久期可以帮助我们理解这种变化，久期越长，债券价格对利率变化的敏感度越高。</p>
+
+<p>修正久期则是通过麦考雷久期调整得到的，它能更准确地预测债券价格对利率变化的反应。例如，如果麦考雷久期为4.889年，市场利率为1.25%，修正久期约为4.8286。也就是说，当利率变化1%时，债券价格将变化约4.8286%。</p>
+
+<p>$$
+\text{修正久期} = \frac{\text{麦考雷久期}}{1 + 利率} = \frac{4.889}{1 + 1.25\%} \approx 4.8286
+$$</p>
+
+<h2 id="现值的概念在股票中的应用">现值的概念在股票中的应用</h2>
+
+<p>现值的概念不仅适用于债券，同样适用于所有金融产品，包括股票。股票的价值同样基于未来现金流的现值。股票的现金流主要是公司未来的盈利和分红。</p>
+
+<h2 id="上市公司未来现金流的估计与贴现价值的计算">上市公司未来现金流的估计与贴现价值的计算</h2>
+
+<p>股票定价的核心在于未来现金流的贴现。这意味着我们需要估算公司未来可能产生的所有现金流，并将这些现金流按一定的贴现率折现到现在。</p>
+
+<p>让我们通过可口可乐的例子来计算其股票价格。假设我们在2015年底，根据当时的数据进行计算。</p>
+
+<ul>
+<li>每股净资产为5.91美元</li>
+<li>每年的每股盈利为1.69美元</li>
+<li>使用贴现率2.6%进行计算</li>
+</ul>
+
+<p>公式如下：</p>
+
+<p>$$
+\text{股票价格} = \frac{1.69}{(1 + 2.6\%)^1} + \frac{1.69}{(1 + 2.6\%)^2} + \cdots + \frac{1.69}{(1 + 2.6\%)^{30}} + 5.91
+$$</p>
+
+<p>通过逐项计算每年的现值并累加，再加上每股净资产5.91美元，我们可以得到可口可乐股票的估计价格。</p>
+
+<h4 id="计算结果">计算结果</h4>
+
+<ul>
+<li>未来30年的每股盈利现值总和为 <strong>34.91美元</strong>。</li>
+<li>加上每股净资产 <strong>5.91美元</strong>。</li>
+</ul>
+
+<p>因此，可口可乐股票的总估值约为 <strong>40.82美元</strong>。</p>
+
+<h2 id="估值的艺术">估值的艺术</h2>
+
+<p>那为什么股票价格能计算出来，当股票明显超过其应有价值的时候，股票还一直涨呢？或者当股票价格明显低于计算出来的值的时候，股票价格还跌跌不休呢？</p>
+
+<p>这就是涉及到了估值的艺术。每个人对每一家公司的看法是不一样的，有人觉得公司明年发展会更好，业绩突飞猛进，每股收益会更高，那自然愿意用更高的价格去购买公司的股价，反之亦然。</p>
+
+<p>而估值的艺术，又讨论出很多东西，限于篇幅就不展开了。</p>
+
+<p>祝投资愉快。</p>
+
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/stockprice/">StockPrice</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/birthday_29/">
+            <span class="next-text nav-default">写给29岁的自己</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2024-06-09 13:20:15 \x2b0800 CST',
+        title: '股票定价的底层逻辑',
+        clientID: '05974c1cc13d6148bcd0',
+        clientSecret: '1728004705e563e811c77fe4bd644836e33eed63',
+        repo: 'CJianYu.github.io',
+        owner: 'CJianYu',
+        admin: ['CJianYu'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/CJianYu" class="iconfont icon-github" title="github"></a>
+  <a href="https://cjianyu.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2016 - 
+    2024
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">virusyu</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136354269-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?https:\/\/hm.baidu.com\/hm.js?11b3ab96fbe1187db509353824a1ff3b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+
+
+</body>
+</html>
