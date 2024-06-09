@@ -17,7 +17,7 @@
       <pubDate>Thu, 06 Jun 2019 16:12:34 +0800</pubDate>
       
       <guid>https://cjianyu.github.io/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/</guid>
-      <description>有个很常见的业务场景，就是实现单行截断或者使用多行截断，最后要以省略号结尾。比如某个商品的标题太长，在有限区域内不能完全展示，如果要全部展示</description>
+      <description>&lt;p&gt;有个很常见的业务场景，就是实现单行截断或者使用多行截断，最后要以省略号结尾。比如某个商品的标题太长，在有限区域内不能完全展示，如果要全部展示，页面就会很丑，所以要单行或多行截断。这里记录一下常见的解决办法。&lt;/p&gt;</description>
     </item>
     
     <item>

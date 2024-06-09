@@ -17,7 +17,14 @@
       <pubDate>Thu, 07 Nov 2019 19:44:06 +0800</pubDate>
       
       <guid>https://cjianyu.github.io/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</guid>
-      <description>浏览器缓存机制的关键： 浏览器每次发起请求，都会先在浏览器缓存中查找该请求的结果以及缓存标识 浏览器每次拿到返回的请求结果都会将该结果和缓存标识</description>
+      <description>&lt;p&gt;浏览器缓存机制的关键：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;浏览器每次发起请求，都会先在浏览器缓存中查找该请求的结果以及缓存标识&lt;/li&gt;
+&lt;li&gt;浏览器每次拿到返回的请求结果都会将该结果和缓存标识存入浏览器缓存中&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;缓存分为两个过程：强制缓存和协商缓存。发送请求的时候先进行强制缓存，如果强制缓存失效，则进行协商缓存。&lt;/p&gt;</description>
     </item>
     
   </channel>
