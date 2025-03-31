@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>engineer on 懒人的梦呓</title>
+    <link>https://cjianyu.github.io/categories/engineer/</link>
+    <description>Recent content in engineer on 懒人的梦呓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 31 Mar 2025 23:04:52 +0800</lastBuildDate>
+    
+	<atom:link href="https://cjianyu.github.io/categories/engineer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>几个前端笔试题</title>
+      <link>https://cjianyu.github.io/post/interview/</link>
+      <pubDate>Mon, 31 Mar 2025 23:04:52 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/interview/</guid>
+      <description>最近面试，有几个笔试题出现的频率很高，记录一下，给在找工作的朋友们一些参考。 实现前端的并发控制，用AI写的代码如下： 1 2 3 4 5 6 7 8 9 10 11 12</description>
+    </item>
+    
+  </channel>
+</rss>
