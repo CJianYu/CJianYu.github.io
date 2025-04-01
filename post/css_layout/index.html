@@ -4,16 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>聊聊css布局 - 懒人的梦呓</title>
-  
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C84T5K6MFP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C84T5K6MFP');
-</script> 
-<meta name="renderer" content="webkit" />
+  <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -22,7 +13,99 @@
 <meta name="theme-color" content="#f8f5ec" />
 <meta name="msapplication-navbutton-color" content="#f8f5ec">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="virusyu" /><meta name="description" content="从normal flow说起 我们知道，书本印刷的排版是从上而下，从左到右，一行装不下换行，依次排列的规则，css中正常流也是这种规则。不同的是，css标准中有格式化上下文的概念。
+Css标准中，规定如何排布文字或盒的算法，这个算法依赖一个排版的“当前现状”，css把这个当前状态称为“格式化上下文”。
+格式化上下文又分为块级格式化上下文和行内级格式化上下文。块级格式化上下文从上到下依次排列，行内级格式化上下文从左到右依次排列，排不下换行。
+所以，遇到一个元素需要排版，一般有以下三种情况： * 遇到块级盒，排入块级格式化上下文 * 遇到行内级盒或文字，排入行内级格式化上下文，排不下创建一个行盒排版，行盒会创建一个行内级格式化上下文。（行盒是块级，所以又到上一种情况） * 遇到float盒，将float盒的顶部盒当前行内级上下文上边缘对齐，float方向的那条边对齐，重新排版
+" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://cjianyu.github.io/post/css_layout/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="聊聊css布局" />
+<meta property="og:description" content="从normal flow说起
+
+我们知道，书本印刷的排版是从上而下，从左到右，一行装不下换行，依次排列的规则，css中正常流也是这种规则。不同的是，css标准中有格式化上下文的概念。
+
+Css标准中，规定如何排布文字或盒的算法，这个算法依赖一个排版的“当前现状”，css把这个当前状态称为“格式化上下文”。
+
+格式化上下文又分为块级格式化上下文和行内级格式化上下文。块级格式化上下文从上到下依次排列，行内级格式化上下文从左到右依次排列，排不下换行。
+
+所以，遇到一个元素需要排版，一般有以下三种情况：
+* 遇到块级盒，排入块级格式化上下文
+* 遇到行内级盒或文字，排入行内级格式化上下文，排不下创建一个行盒排版，行盒会创建一个行内级格式化上下文。（行盒是块级，所以又到上一种情况）
+* 遇到float盒，将float盒的顶部盒当前行内级上下文上边缘对齐，float方向的那条边对齐，重新排版" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cjianyu.github.io/post/css_layout/" />
+<meta property="article:published_time" content="2019-03-24T00:17:03&#43;08:00"/>
+<meta property="article:modified_time" content="2019-03-24T00:17:03&#43;08:00"/>
+
+<meta itemprop="name" content="聊聊css布局">
+<meta itemprop="description" content="从normal flow说起
+
+我们知道，书本印刷的排版是从上而下，从左到右，一行装不下换行，依次排列的规则，css中正常流也是这种规则。不同的是，css标准中有格式化上下文的概念。
+
+Css标准中，规定如何排布文字或盒的算法，这个算法依赖一个排版的“当前现状”，css把这个当前状态称为“格式化上下文”。
+
+格式化上下文又分为块级格式化上下文和行内级格式化上下文。块级格式化上下文从上到下依次排列，行内级格式化上下文从左到右依次排列，排不下换行。
+
+所以，遇到一个元素需要排版，一般有以下三种情况：
+* 遇到块级盒，排入块级格式化上下文
+* 遇到行内级盒或文字，排入行内级格式化上下文，排不下创建一个行盒排版，行盒会创建一个行内级格式化上下文。（行盒是块级，所以又到上一种情况）
+* 遇到float盒，将float盒的顶部盒当前行内级上下文上边缘对齐，float方向的那条边对齐，重新排版">
+
+
+<meta itemprop="datePublished" content="2019-03-24T00:17:03&#43;08:00" />
+<meta itemprop="dateModified" content="2019-03-24T00:17:03&#43;08:00" />
+<meta itemprop="wordCount" content="1523">
+
+
+
+<meta itemprop="keywords" content="Css," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="聊聊css布局"/>
+<meta name="twitter:description" content="从normal flow说起
+
+我们知道，书本印刷的排版是从上而下，从左到右，一行装不下换行，依次排列的规则，css中正常流也是这种规则。不同的是，css标准中有格式化上下文的概念。
+
+Css标准中，规定如何排布文字或盒的算法，这个算法依赖一个排版的“当前现状”，css把这个当前状态称为“格式化上下文”。
+
+格式化上下文又分为块级格式化上下文和行内级格式化上下文。块级格式化上下文从上到下依次排列，行内级格式化上下文从左到右依次排列，排不下换行。
+
+所以，遇到一个元素需要排版，一般有以下三种情况：
+* 遇到块级盒，排入块级格式化上下文
+* 遇到行内级盒或文字，排入行内级格式化上下文，排不下创建一个行盒排版，行盒会创建一个行内级格式化上下文。（行盒是块级，所以又到上一种情况）
+* 遇到float盒，将float盒的顶部盒当前行内级上下文上边缘对齐，float方向的那条边对齐，重新排版"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
 </head>
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
@@ -323,6 +406,7 @@ if (!doNotTrack) {
 
 
 
+<script src="/js/google-analytics.js"></script>
 
 
 </body>

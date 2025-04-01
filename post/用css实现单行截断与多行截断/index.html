@@ -4,16 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>用css实现单行截断与多行截断，最后以省略号结尾 - 懒人的梦呓</title>
-  
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C84T5K6MFP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C84T5K6MFP');
-</script> 
-<meta name="renderer" content="webkit" />
+  <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -22,7 +13,63 @@
 <meta name="theme-color" content="#f8f5ec" />
 <meta name="msapplication-navbutton-color" content="#f8f5ec">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="virusyu" /><meta name="description" content="有个很常见的业务场景，就是实现单行截断或者使用多行截断，最后要以省略号结尾。比如某个商品的标题太长，在有限区域内不能完全展示，如果要全部展示，页面就会很丑，所以要单行或多行截断。这里记录一下常见的解决办法。
+" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://cjianyu.github.io/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="用css实现单行截断与多行截断，最后以省略号结尾" />
+<meta property="og:description" content="有个很常见的业务场景，就是实现单行截断或者使用多行截断，最后要以省略号结尾。比如某个商品的标题太长，在有限区域内不能完全展示，如果要全部展示，页面就会很丑，所以要单行或多行截断。这里记录一下常见的解决办法。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cjianyu.github.io/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/" />
+<meta property="article:published_time" content="2019-06-06T16:12:34&#43;08:00"/>
+<meta property="article:modified_time" content="2019-06-06T16:12:34&#43;08:00"/>
+
+<meta itemprop="name" content="用css实现单行截断与多行截断，最后以省略号结尾">
+<meta itemprop="description" content="有个很常见的业务场景，就是实现单行截断或者使用多行截断，最后要以省略号结尾。比如某个商品的标题太长，在有限区域内不能完全展示，如果要全部展示，页面就会很丑，所以要单行或多行截断。这里记录一下常见的解决办法。">
+
+
+<meta itemprop="datePublished" content="2019-06-06T16:12:34&#43;08:00" />
+<meta itemprop="dateModified" content="2019-06-06T16:12:34&#43;08:00" />
+<meta itemprop="wordCount" content="550">
+
+
+
+<meta itemprop="keywords" content="Css," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="用css实现单行截断与多行截断，最后以省略号结尾"/>
+<meta name="twitter:description" content="有个很常见的业务场景，就是实现单行截断或者使用多行截断，最后要以省略号结尾。比如某个商品的标题太长，在有限区域内不能完全展示，如果要全部展示，页面就会很丑，所以要单行或多行截断。这里记录一下常见的解决办法。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
 </head>
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
@@ -296,6 +343,7 @@ if (!doNotTrack) {
 
 
 
+<script src="/js/google-analytics.js"></script>
 
 
 </body>
