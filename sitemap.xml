@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjianyu.github.io/post/naval_2025/</loc>
+    <lastmod>2025-05-18T18:51:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/post/30/</loc>
     <lastmod>2025-05-03T19:41:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -626,7 +633,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/post/</loc>
-    <lastmod>2025-05-03T19:41:06+08:00</lastmod>
+    <lastmod>2025-05-18T18:51:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -730,6 +737,13 @@
   </url>
   
   <url>
+    <loc>https://cjianyu.github.io/tags/naval/</loc>
+    <lastmod>2025-05-18T18:51:16+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/tags/political/</loc>
     <lastmod>2020-02-07T17:09:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -766,7 +780,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/</loc>
-    <lastmod>2025-05-03T19:41:06+08:00</lastmod>
+    <lastmod>2025-05-18T18:51:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
