@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Finance on 懒人的梦呓</title>
+    <link>https://cjianyu.github.io/categories/finance/</link>
+    <description>Recent content in Finance on 懒人的梦呓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Jun 2025 14:30:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://cjianyu.github.io/categories/finance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我想捡点钱：拖拉机套利怎么玩</title>
+      <link>https://cjianyu.github.io/post/tuolaji/</link>
+      <pubDate>Tue, 03 Jun 2025 14:30:35 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/tuolaji/</guid>
+      <description>我很少谈套利，是因为套利一般有时效性，机会稍纵即逝，不能保证持久盈利。但掌握一些常见的套利方式，当机会来临的时候，还是可以捡点钱的。 今天先来</description>
+    </item>
+    
+  </channel>
+</rss>
