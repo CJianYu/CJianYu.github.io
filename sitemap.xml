@@ -3,6 +3,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjianyu.github.io/post/insurance/</loc>
+    <lastmod>2025-08-09T14:18:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cjianyu.github.io/post/survive_by_stock/</loc>
+    <lastmod>2025-08-09T14:17:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/post/stable_coin/</loc>
     <lastmod>2025-07-03T22:20:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -569,15 +583,15 @@
   </url>
   
   <url>
-    <loc>https://cjianyu.github.io/categories/finance/</loc>
-    <lastmod>2025-06-03T14:30:35+08:00</lastmod>
+    <loc>https://cjianyu.github.io/tags/finance/</loc>
+    <lastmod>2023-10-22T20:39:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://cjianyu.github.io/tags/finance/</loc>
-    <lastmod>2023-10-22T20:39:47+08:00</lastmod>
+    <loc>https://cjianyu.github.io/categories/finance/</loc>
+    <lastmod>2025-06-03T14:30:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -618,15 +632,15 @@
   </url>
   
   <url>
-    <loc>https://cjianyu.github.io/categories/invest/</loc>
-    <lastmod>2025-06-19T15:22:04+08:00</lastmod>
+    <loc>https://cjianyu.github.io/tags/invest/</loc>
+    <lastmod>2024-03-27T22:54:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://cjianyu.github.io/tags/invest/</loc>
-    <lastmod>2024-03-27T22:54:08+08:00</lastmod>
+    <loc>https://cjianyu.github.io/categories/invest/</loc>
+    <lastmod>2025-06-19T15:22:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -675,7 +689,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/post/</loc>
-    <lastmod>2025-07-03T22:20:51+08:00</lastmod>
+    <lastmod>2025-08-09T14:18:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -758,14 +772,14 @@
   </url>
   
   <url>
-    <loc>https://cjianyu.github.io/categories/entrepreneurship/</loc>
+    <loc>https://cjianyu.github.io/tags/entrepreneurship/</loc>
     <lastmod>2025-03-31T23:02:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://cjianyu.github.io/tags/entrepreneurship/</loc>
+    <loc>https://cjianyu.github.io/categories/entrepreneurship/</loc>
     <lastmod>2025-03-31T23:02:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -829,7 +843,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/</loc>
-    <lastmod>2025-07-03T22:20:51+08:00</lastmod>
+    <lastmod>2025-08-09T14:18:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
