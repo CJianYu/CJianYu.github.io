@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cjianyu.github.io/post/levelupgrade/</loc>
+    <lastmod>2025-09-06T10:47:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/post/insurance/</loc>
     <lastmod>2025-08-09T14:18:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -618,6 +625,13 @@
   </url>
   
   <url>
+    <loc>https://cjianyu.github.io/tags/ideas/</loc>
+    <lastmod>2025-09-06T10:47:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cjianyu.github.io/categories/ideas/</loc>
     <lastmod>2025-05-03T19:41:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -689,7 +703,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/post/</loc>
-    <lastmod>2025-08-09T14:18:08+08:00</lastmod>
+    <lastmod>2025-09-06T10:47:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -843,7 +857,7 @@
   
   <url>
     <loc>https://cjianyu.github.io/</loc>
-    <lastmod>2025-08-09T14:18:08+08:00</lastmod>
+    <lastmod>2025-09-06T10:47:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
