@@ -73,13 +73,6 @@
   </url>
   
   <url>
-    <loc>https://cjianyu.github.io/post/startup/</loc>
-    <lastmod>2025-03-31T23:02:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://cjianyu.github.io/post/2024/</loc>
     <lastmod>2024-12-25T14:45:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -781,20 +774,6 @@
   <url>
     <loc>https://cjianyu.github.io/categories/engineer/</loc>
     <lastmod>2025-03-31T23:04:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cjianyu.github.io/tags/entrepreneurship/</loc>
-    <lastmod>2025-03-31T23:02:22+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cjianyu.github.io/categories/entrepreneurship/</loc>
-    <lastmod>2025-03-31T23:02:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
