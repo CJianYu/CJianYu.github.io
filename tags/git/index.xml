@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on 懒人的梦呓</title>
+    <link>https://cjianyu.github.io/tags/git/</link>
+    <description>Recent content in Git on 懒人的梦呓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 27 Jun 2021 23:28:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://cjianyu.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git常用命令</title>
+      <link>https://cjianyu.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 27 Jun 2021 23:28:58 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>git log git branch -v 查看本地有哪些分支 git log &amp;ndash;oneline 更简洁查看git log git log -n2 &amp;ndash;oneline 查看最近两次log git log &amp;ndash;oneline &amp;ndash;all 查看所有的log git log &amp;ndash;oneline &amp;ndash;graph 图形化查看log git log develop &amp;ndash;graph 查看d</description>
+    </item>
+    
+  </channel>
+</rss>

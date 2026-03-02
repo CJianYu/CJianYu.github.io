@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vscode on 懒人的梦呓</title>
+    <link>https://cjianyu.github.io/tags/vscode/</link>
+    <description>Recent content in vscode on 懒人的梦呓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 27 Jun 2021 23:26:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://cjianyu.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>几个常用的快捷键</title>
+      <link>https://cjianyu.github.io/post/%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <pubDate>Sun, 27 Jun 2021 23:26:47 +0800</pubDate>
+      
+      <guid>https://cjianyu.github.io/post/%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <description>打开Chrome跨域模式 要关闭浏览器所有页面才会执行 1 open -n &amp;#34;/Applications/Google Chrome.app&amp;#34; --args --disable-web-security --user-data-dir=/Users/jeffrey/MyChromeDevUserData/ vscode快捷键 command + left/right: 一行左右切换 option + left/right: 单词切分，左右切换 option + delete: del</description>
+    </item>
+    
+  </channel>
+</rss>

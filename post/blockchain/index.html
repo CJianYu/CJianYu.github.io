@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>浅谈区块链这把火 - 懒人的梦呓</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="virusyu" /><meta name="description" content="区块链火了，区块链已然成为人工智能后的另一大超级热点，它本是一项技术，却早已超脱于技术人的圈子，被人所知，当然，包括中国大妈 :)
+那么，区块链到底是什么？
+维基百科里这样定义：区块链是用分布式数据库识别、传播和记载信息的智能化对等网络, 也称为价值互联网。
+很晦涩，对吧？简单来说，区块链就是一个特殊的分布式数据库。这个数据库没有管理员，彻底的去中心化。区块链由一个个区块组成，每一个区块，都连着记载着另一个区块的相关信息。这样就形成了链状，一旦修改了某个区块的信息，必然引起连锁反应，整个区块链都会随之更改。打个比方，小明考试考了59分，成绩已经出来了。但是，小明可是校长的儿子，校长希望评卷老师做点手脚，改下数据库的成绩。这时候只要评卷老师、校长偷偷做事，是能瞒天过海的，只有他们知道。但是，如果有区块链，评卷老师改了成绩，会让旁边任课老师知道，而任课老师又告诉小明的班主任，班主任会告诉班长。。。一连串下来，所有人都会知道小明的成绩被篡改了。这就是区块链的作用。
+" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://cjianyu.github.io/post/blockchain/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="浅谈区块链这把火" />
+<meta property="og:description" content="区块链火了，区块链已然成为人工智能后的另一大超级热点，它本是一项技术，却早已超脱于技术人的圈子，被人所知，当然，包括中国大妈 :)
+
+那么，区块链到底是什么？
+
+维基百科里这样定义：区块链是用分布式数据库识别、传播和记载信息的智能化对等网络, 也称为价值互联网。
+
+很晦涩，对吧？简单来说，区块链就是一个特殊的分布式数据库。这个数据库没有管理员，彻底的去中心化。区块链由一个个区块组成，每一个区块，都连着记载着另一个区块的相关信息。这样就形成了链状，一旦修改了某个区块的信息，必然引起连锁反应，整个区块链都会随之更改。打个比方，小明考试考了59分，成绩已经出来了。但是，小明可是校长的儿子，校长希望评卷老师做点手脚，改下数据库的成绩。这时候只要评卷老师、校长偷偷做事，是能瞒天过海的，只有他们知道。但是，如果有区块链，评卷老师改了成绩，会让旁边任课老师知道，而任课老师又告诉小明的班主任，班主任会告诉班长。。。一连串下来，所有人都会知道小明的成绩被篡改了。这就是区块链的作用。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cjianyu.github.io/post/blockchain/" />
+<meta property="article:published_time" content="2018-02-13T16:12:34&#43;08:00"/>
+<meta property="article:modified_time" content="2018-02-13T16:12:34&#43;08:00"/>
+
+<meta itemprop="name" content="浅谈区块链这把火">
+<meta itemprop="description" content="区块链火了，区块链已然成为人工智能后的另一大超级热点，它本是一项技术，却早已超脱于技术人的圈子，被人所知，当然，包括中国大妈 :)
+
+那么，区块链到底是什么？
+
+维基百科里这样定义：区块链是用分布式数据库识别、传播和记载信息的智能化对等网络, 也称为价值互联网。
+
+很晦涩，对吧？简单来说，区块链就是一个特殊的分布式数据库。这个数据库没有管理员，彻底的去中心化。区块链由一个个区块组成，每一个区块，都连着记载着另一个区块的相关信息。这样就形成了链状，一旦修改了某个区块的信息，必然引起连锁反应，整个区块链都会随之更改。打个比方，小明考试考了59分，成绩已经出来了。但是，小明可是校长的儿子，校长希望评卷老师做点手脚，改下数据库的成绩。这时候只要评卷老师、校长偷偷做事，是能瞒天过海的，只有他们知道。但是，如果有区块链，评卷老师改了成绩，会让旁边任课老师知道，而任课老师又告诉小明的班主任，班主任会告诉班长。。。一连串下来，所有人都会知道小明的成绩被篡改了。这就是区块链的作用。">
+
+
+<meta itemprop="datePublished" content="2018-02-13T16:12:34&#43;08:00" />
+<meta itemprop="dateModified" content="2018-02-13T16:12:34&#43;08:00" />
+<meta itemprop="wordCount" content="1218">
+
+
+
+<meta itemprop="keywords" content="Blockchain," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="浅谈区块链这把火"/>
+<meta name="twitter:description" content="区块链火了，区块链已然成为人工智能后的另一大超级热点，它本是一项技术，却早已超脱于技术人的圈子，被人所知，当然，包括中国大妈 :)
+
+那么，区块链到底是什么？
+
+维基百科里这样定义：区块链是用分布式数据库识别、传播和记载信息的智能化对等网络, 也称为价值互联网。
+
+很晦涩，对吧？简单来说，区块链就是一个特殊的分布式数据库。这个数据库没有管理员，彻底的去中心化。区块链由一个个区块组成，每一个区块，都连着记载着另一个区块的相关信息。这样就形成了链状，一旦修改了某个区块的信息，必然引起连锁反应，整个区块链都会随之更改。打个比方，小明考试考了59分，成绩已经出来了。但是，小明可是校长的儿子，校长希望评卷老师做点手脚，改下数据库的成绩。这时候只要评卷老师、校长偷偷做事，是能瞒天过海的，只有他们知道。但是，如果有区块链，评卷老师改了成绩，会让旁边任课老师知道，而任课老师又告诉小明的班主任，班主任会告诉班长。。。一连串下来，所有人都会知道小明的成绩被篡改了。这就是区块链的作用。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">懒人的梦呓</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/lists/">
+        <li class="mobile-menu-item">Lists</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">懒人的梦呓</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/lists/">Lists</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">浅谈区块链这把火</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-02-13 </span>
+        <div class="post-category">
+            <a href="/categories/ideas/"> Ideas </a>
+            </div>
+          <span class="more-meta"> 1218 words </span>
+          <span class="more-meta"> 3 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    
+  </div>
+</div>
+    <div class="post-content">
+      <p>区块链火了，区块链已然成为人工智能后的另一大超级热点，它本是一项技术，却早已超脱于技术人的圈子，被人所知，当然，包括中国大妈 :)</p>
+
+<p>那么，区块链到底是什么？</p>
+
+<p>维基百科里这样定义：区块链是用分布式数据库识别、传播和记载信息的智能化对等网络, 也称为价值互联网。</p>
+
+<p>很晦涩，对吧？简单来说，区块链就是一个特殊的分布式数据库。这个数据库没有管理员，彻底的去中心化。区块链由一个个区块组成，每一个区块，都连着记载着另一个区块的相关信息。这样就形成了链状，一旦修改了某个区块的信息，必然引起连锁反应，整个区块链都会随之更改。打个比方，小明考试考了59分，成绩已经出来了。但是，小明可是校长的儿子，校长希望评卷老师做点手脚，改下数据库的成绩。这时候只要评卷老师、校长偷偷做事，是能瞒天过海的，只有他们知道。但是，如果有区块链，评卷老师改了成绩，会让旁边任课老师知道，而任课老师又告诉小明的班主任，班主任会告诉班长。。。一连串下来，所有人都会知道小明的成绩被篡改了。这就是区块链的作用。</p>
+
+<p>这就给人很多想象空间。而利用区块链改变金融行业，是最让人看好的前景。我们都知道，央妈拼命印钞，我们手里的钱越不值钱，谁也抵挡不了通货膨胀带来的财富丢失。但如果，通过区块链，已经没人能决定印钞多少，没了央妈的存在，没了中心化的管制，财富不再缩水，区块链会不会是下一次的金融革命？</p>
+
+<p>所以很多人称数字货币为未来货币。</p>
+
+<p>那么，比特币又是什么？</p>
+
+<p>比特币是用区块链技术产生的一个应用。但是，比特币是以区块链为基础产生的数字货币的鼻祖。早在几年前，比特币还很便宜，一个一块钱，现在，以万为单位计算。早入场并且长期持有的人，早已实现财富自由。那些莱特币、以太坊、比特币荣耀等又是什么？这些也是基于区块链而成的应用，在一些地方做了修改而已。</p>
+
+<p>有人做成一个平台，供人们自由交易这些“币”，称之为交易所。如此，大大小小的交易所，成为世界上的赌场，每个人都希望自己持有的币在未来变为一百倍，一千倍。有些人觉得是投资，有些人明知是泡沫，却也奋不顾身勇往直前发，以为自己在割韭菜，其实他们本身就是韭菜。有些人自信自己在泡沫破裂之前能全身而退，有些人觉得自己总不会是最后的接盘侠。</p>
+
+<p>牛顿曾说，我能算出天体运行的轨道，却算不出人类的疯狂。</p>
+
+<p>当一个比特币的价值冲破十亿元，当随便发行一个山寨币都有成百上千倍的回报，当每一个人茶余饭后都聊两句币圈的事，当大爷大妈都进场的时候，或许你该回顾下历史。互联网火起来的时候，随便一个创业公司，打着互联网的旗帜，轻轻松松融得资金，互联网泡沫破裂的时候，还剩多少做正经事的公司？当股市红利期，随便买个股都涨涨涨的时候，股价暴跌之日多少人倾家荡产？而历史，总会惊人的相似。</p>
+
+<p>我不否认区块链的价值，反倒是，我很看好区块链的未来。但是，每一项技术的成熟，都要经历一个过程，循序渐进，不可能一触而就，你说一觉醒来，世界就不再用美元，不再用人民币，而用比特币，这不可能。</p>
+
+<p>当潮水退去，才能知道谁在裸泳。</p>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/blockchain/">Blockchain</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E9%87%91%E8%9E%8D%E5%AD%A6%E7%AC%94%E8%AE%B0/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">金融学笔记</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/%E5%BF%83%E7%90%86%E5%AD%A6%E4%B9%8B%E8%87%AA%E6%8E%A7/">
+            <span class="next-text nav-default">心理学之自控</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2018-02-13 16:12:34 \x2b0800 CST',
+        title: '浅谈区块链这把火',
+        clientID: '05974c1cc13d6148bcd0',
+        clientSecret: '1728004705e563e811c77fe4bd644836e33eed63',
+        repo: 'CJianYu.github.io',
+        owner: 'CJianYu',
+        admin: ['CJianYu'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/CJianYu" class="iconfont icon-github" title="github"></a>
+  <a href="https://cjianyu.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2016 - 
+    2026
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">virusyu</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136354269-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?https:\/\/hm.baidu.com\/hm.js?11b3ab96fbe1187db509353824a1ff3b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+<script src="/js/google-analytics.js"></script>
+
+
+</body>
+</html>
