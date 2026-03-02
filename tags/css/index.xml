@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Css on 懒人的梦呓</title>
-    <link>https://cjianyu.github.io/tags/css/</link>
+    <link>https://webnotes.dev/tags/css/</link>
     <description>Recent content in Css on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 06 Jun 2019 16:12:34 +0800</lastBuildDate>
     
-	<atom:link href="https://cjianyu.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://webnotes.dev/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>用css实现单行截断与多行截断，最后以省略号结尾</title>
-      <link>https://cjianyu.github.io/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/</link>
+      <link>https://webnotes.dev/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/</link>
       <pubDate>Thu, 06 Jun 2019 16:12:34 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/</guid>
+      <guid>https://webnotes.dev/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/</guid>
       <description>&lt;p&gt;有个很常见的业务场景，就是实现单行截断或者使用多行截断，最后要以省略号结尾。比如某个商品的标题太长，在有限区域内不能完全展示，如果要全部展示，页面就会很丑，所以要单行或多行截断。这里记录一下常见的解决办法。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>聊聊css布局</title>
-      <link>https://cjianyu.github.io/post/css_layout/</link>
+      <link>https://webnotes.dev/post/css_layout/</link>
       <pubDate>Sun, 24 Mar 2019 00:17:03 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/css_layout/</guid>
+      <guid>https://webnotes.dev/post/css_layout/</guid>
       <description>&lt;h3 id=&#34;从normal-flow说起&#34;&gt;从normal flow说起&lt;/h3&gt;
 
 &lt;p&gt;我们知道，书本印刷的排版是从上而下，从左到右，一行装不下换行，依次排列的规则，css中正常流也是这种规则。不同的是，css标准中有格式化上下文的概念。&lt;/p&gt;
