@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Webpack on 懒人的梦呓</title>
-    <link>https://cjianyu.github.io/tags/webpack/</link>
+    <link>https://webnotes.dev/tags/webpack/</link>
     <description>Recent content in Webpack on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 18 Jul 2019 23:50:22 +0800</lastBuildDate>
     
-	<atom:link href="https://cjianyu.github.io/tags/webpack/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://webnotes.dev/tags/webpack/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Webpack入门教程</title>
-      <link>https://cjianyu.github.io/post/webpack-basic/</link>
+      <link>https://webnotes.dev/post/webpack-basic/</link>
       <pubDate>Thu, 18 Jul 2019 23:50:22 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/webpack-basic/</guid>
+      <guid>https://webnotes.dev/post/webpack-basic/</guid>
       <description>&lt;h3 id=&#34;为什么要用构建工具&#34;&gt;为什么要用构建工具&lt;/h3&gt;
 
 &lt;p&gt;转换es6、转换jsx、css前缀补全/预处理器、压缩混淆、图片压缩&lt;/p&gt;

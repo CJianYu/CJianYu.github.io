@@ -2,30 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>懒人的梦呓</title>
-    <link>https://cjianyu.github.io/</link>
+    <link>https://webnotes.dev/</link>
     <description>Recent content on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 01 Jan 2026 16:01:57 +0800</lastBuildDate>
     
-	<atom:link href="https://cjianyu.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://webnotes.dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2025年概况</title>
-      <link>https://cjianyu.github.io/post/2025_overview/</link>
+      <link>https://webnotes.dev/post/2025_overview/</link>
       <pubDate>Thu, 01 Jan 2026 16:01:57 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/2025_overview/</guid>
-      <description>今年年初拿了大礼包离开了一家很喜欢的公司，说实话后劲很大，像谈了一场恋爱分手了，久久没缓过来。 一直没有跟它好好告别，是因为很长一段时间都不太</description>
+      <guid>https://webnotes.dev/post/2025_overview/</guid>
+      <description>&lt;p&gt;今年年初拿了大礼包离开了一家很喜欢的公司，说实话后劲很大，像谈了一场恋爱分手了，久久没缓过来。&lt;/p&gt;
+
+&lt;p&gt;一直没有跟它好好告别，是因为很长一段时间都不太相信，一切都变成了过往了，回不去了。&lt;/p&gt;
+
+&lt;p&gt;虽然公司与员工只是商业合作关系，但是一个公司的文化以及与很好的员工共事，实实在在极大影响了工作体验，时间久了人又情不自禁的产生情感。&lt;/p&gt;
+
+&lt;p&gt;我想我会永远怀念它，感谢这一段经历，感谢这段时间遇到的人。&lt;/p&gt;
+
+&lt;p&gt;尝试找了一两个月的工作无果，我就开始了自由职业的尝试。而自由职业，我尝试了两个方向，一个是日内交易员，一个是做海外工具站。&lt;/p&gt;
+
+&lt;p&gt;白天做网站，晚上做交易员。两个方向都取得了一定的正反馈，代价是作息不规律，没有社会认同感，也没有社会关系。&lt;/p&gt;
+
+&lt;p&gt;眼看春去秋来，一年很快又将过去，而正反馈又没达到我所想要的预期。&lt;/p&gt;
+
+&lt;p&gt;有一天醒来，我感觉全世界抛弃了我，时间在流逝，生命力在消失。不上班的状态比上班的状态可差太多了，我想我还是找个班上吧。&lt;/p&gt;
+
+&lt;p&gt;王小波写道：那时雨季刚过。云从四面八方升起来。天顶上闪过一缕缕阳光。我们有各种选择，可以到各方向去。所以我在路口上站了很久。&lt;/p&gt;
+
+&lt;p&gt;很符合我今年的心境。&lt;/p&gt;
+
+&lt;p&gt;Gap了九个月之后，我重新找了份工作，想换个心情，调整一下状态。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>阶层跃迁随想</title>
-      <link>https://cjianyu.github.io/post/levelupgrade/</link>
+      <link>https://webnotes.dev/post/levelupgrade/</link>
       <pubDate>Sat, 06 Sep 2025 10:47:05 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/levelupgrade/</guid>
+      <guid>https://webnotes.dev/post/levelupgrade/</guid>
       <description>&lt;p&gt;随着房地产市场的下跌，居民的财富也在不断缩水，这是正常的，是周期的必然。&lt;/p&gt;
 
 &lt;p&gt;但，痛感是真实存在的。不存在说刚需房不卖就不亏的说法，纸面财富也是财富。经济增速放缓的同时，越来越多的人害怕的是阶层的滑落，不再奢望阶级跃迁。&lt;/p&gt;
@@ -43,10 +63,10 @@
     
     <item>
       <title>从投资的角度看社保问题</title>
-      <link>https://cjianyu.github.io/post/insurance/</link>
+      <link>https://webnotes.dev/post/insurance/</link>
       <pubDate>Sat, 09 Aug 2025 14:18:08 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/insurance/</guid>
+      <guid>https://webnotes.dev/post/insurance/</guid>
       <description>&lt;p&gt;最近出了个社保新规，员工放弃社保无效，用人单位违规成本变大，引发了很多朋友的讨论。&lt;/p&gt;
 
 &lt;p&gt;其实这件事也没那么复杂，我们只需要想清楚两件事：&lt;/p&gt;
@@ -65,10 +85,10 @@
     
     <item>
       <title>能不能靠股市活</title>
-      <link>https://cjianyu.github.io/post/survive_by_stock/</link>
+      <link>https://webnotes.dev/post/survive_by_stock/</link>
       <pubDate>Sat, 09 Aug 2025 14:17:44 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/survive_by_stock/</guid>
+      <guid>https://webnotes.dev/post/survive_by_stock/</guid>
       <description>&lt;p&gt;我对资水老师曾说过炒股的三重境界印象很深：&lt;/p&gt;
 
 &lt;ol&gt;
@@ -100,10 +120,10 @@
     
     <item>
       <title>从天才法案到美元霸权扩张：稳定币为什么突然成了头条</title>
-      <link>https://cjianyu.github.io/post/stable_coin/</link>
+      <link>https://webnotes.dev/post/stable_coin/</link>
       <pubDate>Thu, 03 Jul 2025 22:20:51 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/stable_coin/</guid>
+      <guid>https://webnotes.dev/post/stable_coin/</guid>
       <description>&lt;p&gt;最近稳定币好像频繁出现在大众的视野，主要原因是美国通过了《天才法案》，在法律层面为合规美元稳定币清除不确定性，并可能吸引更多银行和支付机构进入该赛道。&lt;/p&gt;
 
 &lt;p&gt;美国通过后，香港迅速跟进，承诺将发放牌照并鼓励将稳定币接入跨境支付、零售场景，各大公司摩拳擦掌，纷纷准备入局。&lt;/p&gt;
@@ -132,10 +152,10 @@
     
     <item>
       <title>AI是可爱的洪水猛兽</title>
-      <link>https://cjianyu.github.io/post/aiinvestlogic/</link>
+      <link>https://webnotes.dev/post/aiinvestlogic/</link>
       <pubDate>Thu, 19 Jun 2025 15:22:04 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/aiinvestlogic/</guid>
+      <guid>https://webnotes.dev/post/aiinvestlogic/</guid>
       <description>&lt;p&gt;在上篇文章中，有些人有不同的观点，这很正常，君子和而不同，大家用钱投票。&lt;/p&gt;
 
 &lt;p&gt;你梭哈了房产，
@@ -171,10 +191,10 @@
     
     <item>
       <title>房地产完蛋了，已经</title>
-      <link>https://cjianyu.github.io/post/house_over/</link>
+      <link>https://webnotes.dev/post/house_over/</link>
       <pubDate>Sat, 14 Jun 2025 21:48:46 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/house_over/</guid>
+      <guid>https://webnotes.dev/post/house_over/</guid>
       <description>&lt;p&gt;过去二十年，随着中国经济的腾飞，中国的房地产也是水涨船高，泡沫逐渐扩大，直到这几年经济增速放缓，很多人才意识到，原来房子不是永远涨的。但在两三年以前，普通大众可不是这么想的。&lt;/p&gt;
 
 &lt;p&gt;十几年房价的疯狂上涨，让房地产成为了很多人的信仰，只要凑够首付就上车，更有甚者，把杠杆加到极致，利用信用卡套现的方式，拼命囤房。典型的就是以欧神为代表的水库一群人。&lt;/p&gt;
@@ -214,10 +234,10 @@
     
     <item>
       <title>我想捡点钱：拖拉机套利怎么玩</title>
-      <link>https://cjianyu.github.io/post/tuolaji/</link>
+      <link>https://webnotes.dev/post/tuolaji/</link>
       <pubDate>Tue, 03 Jun 2025 14:30:35 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/tuolaji/</guid>
+      <guid>https://webnotes.dev/post/tuolaji/</guid>
       <description>&lt;p&gt;我很少谈套利，是因为套利一般有时效性，机会稍纵即逝，不能保证持久盈利。但掌握一些常见的套利方式，当机会来临的时候，还是可以捡点钱的。&lt;/p&gt;
 
 &lt;p&gt;今天先来讲讲拖拉机套利，之后再慢慢聊其他玩法。&lt;/p&gt;
@@ -251,10 +271,10 @@
     
     <item>
       <title>对话纳瓦尔：关于人性的44个残酷真相</title>
-      <link>https://cjianyu.github.io/post/naval_2025/</link>
+      <link>https://webnotes.dev/post/naval_2025/</link>
       <pubDate>Sun, 18 May 2025 18:51:16 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/naval_2025/</guid>
+      <guid>https://webnotes.dev/post/naval_2025/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/CJianYu/PictureBed/BlogImg/20250518180628.jpg&#34; alt=&#34;naval&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;这是Youtube上Chris Williamson跟Naval的访谈对话内容，我将其文字版翻译成了中文，方便大家理解，具体视频可以在 &lt;a href=&#34;https://www.youtube.com/watch?v=KyfUysrNaco&amp;amp;list=WL&amp;amp;index=5&amp;amp;t=762s&#34;&gt;https://www.youtube.com/watch?v=KyfUysrNaco&amp;amp;list=WL&amp;amp;index=5&amp;amp;t=762s&lt;/a&gt; 上看，当然播客上也有音频版。以下是访谈完整版内容，全文六万多字，可以收藏后慢慢看。&lt;/p&gt;
@@ -302,10 +322,10 @@
     
     <item>
       <title>三十未立</title>
-      <link>https://cjianyu.github.io/post/30/</link>
+      <link>https://webnotes.dev/post/30/</link>
       <pubDate>Sat, 03 May 2025 19:41:06 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/30/</guid>
+      <guid>https://webnotes.dev/post/30/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/CJianYu/PictureBed/BlogImg/20250504194346.JPG&#34; alt=&#34;&#34; /&gt;
 又一次站在人生的十字路口，驻足，观望，不知道去往何方。&lt;/p&gt;
 
@@ -330,19 +350,19 @@
     
     <item>
       <title>几个前端笔试题</title>
-      <link>https://cjianyu.github.io/post/interview/</link>
+      <link>https://webnotes.dev/post/interview/</link>
       <pubDate>Mon, 31 Mar 2025 23:04:52 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/interview/</guid>
+      <guid>https://webnotes.dev/post/interview/</guid>
       <description>最近面试，有几个笔试题出现的频率很高，记录一下，给在找工作的朋友们一些参考。 实现前端的并发控制，用AI写的代码如下： 1 2 3 4 5 6 7 8 9 10 11 12</description>
     </item>
     
     <item>
       <title>2024年概况</title>
-      <link>https://cjianyu.github.io/post/2024/</link>
+      <link>https://webnotes.dev/post/2024/</link>
       <pubDate>Wed, 25 Dec 2024 14:45:00 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/2024/</guid>
+      <guid>https://webnotes.dev/post/2024/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/CJianYu/PictureBed/BlogImg/20241225144129.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;今年在日本旅游的时候，去贵船神社求了个水签，是中吉，我用Google翻译了一下，有几条内容是这样的：&lt;/p&gt;
@@ -372,10 +392,10 @@
     
     <item>
       <title>坏时代生存手册</title>
-      <link>https://cjianyu.github.io/post/survive/</link>
+      <link>https://webnotes.dev/post/survive/</link>
       <pubDate>Fri, 20 Sep 2024 22:14:57 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/survive/</guid>
+      <guid>https://webnotes.dev/post/survive/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/CJianYu/PictureBed/BlogImg/20240920221625.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;相信在国内生活的朋友这几年都能感受到深深的寒意，无论是疫情期间各种封控乱象，还是疫情后经济的持续低迷，亦或是个体赚钱变难，被降薪裁员成为常态，又或者是地缘政治的影响，世界动荡不安，虽没有直接发生世界大战，但孤立主义与民粹主义盛行，这无疑是一个坏时代。&lt;/p&gt;
@@ -387,10 +407,10 @@
     
     <item>
       <title>如何更低成本获取生产资料</title>
-      <link>https://cjianyu.github.io/post/get_stocks_with_low_price/</link>
+      <link>https://webnotes.dev/post/get_stocks_with_low_price/</link>
       <pubDate>Sun, 18 Aug 2024 17:35:42 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/get_stocks_with_low_price/</guid>
+      <guid>https://webnotes.dev/post/get_stocks_with_low_price/</guid>
       <description>&lt;p&gt;我在之前的几篇文章里都提到，扩大生产资料的占有比重是获得财富也是衡量财富的唯一手段。就比如你拥有着苹果1%的股份，你还担心自己未来因通货膨胀吃不上饭吗？只要世界上的人还在用iPhone，苹果公司就能给你创造源源不断的利润，商品的价格也是会根据通货膨胀而提高，其本质就是，你在获取未来苹果员工的劳动结余。&lt;/p&gt;
 
 &lt;p&gt;所以，不断增加优质生产资料的持有占比，才能再未来获取他人的劳动结余，从而保全自己的财富积累。那么，如何更低成本地获取优质公司的股权呢？&lt;/p&gt;
@@ -406,19 +426,19 @@
     
     <item>
       <title>股票定价的底层逻辑</title>
-      <link>https://cjianyu.github.io/post/stock_price/</link>
+      <link>https://webnotes.dev/post/stock_price/</link>
       <pubDate>Sun, 09 Jun 2024 13:20:15 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/stock_price/</guid>
+      <guid>https://webnotes.dev/post/stock_price/</guid>
       <description>&lt;p&gt;很多新手朋友不知道一个公司的股价究竟多少是正常的，多少价位是低估或高估的，也不知道人们经常说的美联储降息加息为什么会影响股票的价格。看完这篇文章，我想你应该可以自己判断一个公司是否便宜，是否值得买。你也能明白为什么美联储加息降息这么受投资者的关注，为什么说“美国十年期国债收益率”是全球资产定价之锚。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>写给29岁的自己</title>
-      <link>https://cjianyu.github.io/post/birthday_29/</link>
+      <link>https://webnotes.dev/post/birthday_29/</link>
       <pubDate>Tue, 14 May 2024 22:47:49 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/birthday_29/</guid>
+      <guid>https://webnotes.dev/post/birthday_29/</guid>
       <description>&lt;p&gt;我一直以为，给自己足够多的时间思考，给自己更多的独处时间，会更好的看清自己。可是我错了，想更好的看清自己有时候会更看不清自己。&lt;/p&gt;
 
 &lt;p&gt;人需要一面镜子，才能知道自己长什么样。人还需要很多面镜子，才能知道自己的脾气、性格、智识、内心的真实想法，这许许多多的镜子合在一起，你才能看到相对比较完整的自我。&lt;/p&gt;
@@ -430,10 +450,10 @@
     
     <item>
       <title>一份完整的美股开户指南</title>
-      <link>https://cjianyu.github.io/post/open_account_of_stock/</link>
+      <link>https://webnotes.dev/post/open_account_of_stock/</link>
       <pubDate>Wed, 27 Mar 2024 22:54:08 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/open_account_of_stock/</guid>
+      <guid>https://webnotes.dev/post/open_account_of_stock/</guid>
       <description>&lt;p&gt;我在上篇文章写到：&lt;/p&gt;
 
 &lt;p&gt;“扩大生产资料的占有比重是获得财富也是衡量财富的唯一手段“&lt;/p&gt;
@@ -445,10 +465,10 @@
     
     <item>
       <title>正本清源，财富的本质究竟是什么</title>
-      <link>https://cjianyu.github.io/post/what_is_real_wealth/</link>
+      <link>https://webnotes.dev/post/what_is_real_wealth/</link>
       <pubDate>Mon, 25 Mar 2024 20:01:59 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/what_is_real_wealth/</guid>
+      <guid>https://webnotes.dev/post/what_is_real_wealth/</guid>
       <description>&lt;p&gt;这段时间对财富，对金钱游戏有了一些新的认识，是时候开始记录一下这个阶段的认知，并且交一些新朋友。&lt;/p&gt;
 
 &lt;p&gt;每个人对财富的定义是不一样的。金本位的人说，我账上有多少钱，我就有多少财富；房本位的人说，我有多少本房产证，我就有多少财富；币本位的人说，财富是看你有多少个比特币；更有甚者，娃本位的人说，孩子才是财富，我有多少个孩子说明我有多少财富。&lt;/p&gt;
@@ -458,32 +478,28 @@
     
     <item>
       <title>Lists</title>
-      <link>https://cjianyu.github.io/lists/</link>
+      <link>https://webnotes.dev/lists/</link>
       <pubDate>Sat, 16 Mar 2024 15:22:55 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/lists/</guid>
+      <guid>https://webnotes.dev/lists/</guid>
       <description>这里会推荐一些我正在用的产品与服务，类似于一个awesome list，有需要的朋友可以参考。 美股券商 终身免佣的美股券商：长桥证券 美国本土券商</description>
     </item>
     
     <item>
-      <title>如何正确科学上网</title>
-      <link>https://cjianyu.github.io/post/howtosurfinternet/</link>
-      <pubDate>Sun, 03 Mar 2024 21:35:38 +0800</pubDate>
+      <title>Privacy Policy</title>
+      <link>https://webnotes.dev/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/howtosurfinternet/</guid>
-      <description>&lt;p&gt;有时候朋友问我，怎么科学上网，我总是需要一遍又一遍的教他们，给他们信息，告诉他们怎么做怎么做。即使我已经说的很明白了，哪怕他们会简单进行搜索一下，也就搞定了，但很多朋友觉得麻烦，就放弃了。这篇文章讲清楚如何进行科学上网，以后别人再问我类似的问题，我就丢文章链接就好了。&lt;/p&gt;
-
-&lt;p&gt;对于嫌麻烦的朋友，我建议直接用&lt;a href=&#34;https://github.com/geph-official/geph4/wiki/%E8%BF%B7%E9%9B%BE%E9%80%9A%EF%BC%88%E5%85%8D%E7%BF%BB%E5%A2%99%E9%95%9C%E5%83%8F%EF%BC%89&#34;&gt;迷雾通&lt;/a&gt;，但只在非iPhone的设备上能用。这个软件非常稳定，我经常作为备用。下载安装好软件之后，随便注册一个账号，然后点击连接按钮就可以用了，完全免费。如果你对速度有要求，也可以直接付费，取消速度限制。&lt;/p&gt;
-
-&lt;p&gt;至于iPhone用户，就有点麻烦。首先，你需要有一个非国区的Apple ID，登陆app store，然后下载一个代理软件，比如shadowrocket（几块钱）、surge(贵）、potatso light(免费），如果你有选择困难症，不用纠结，直接买shadowrocket。&lt;/p&gt;</description>
+      <guid>https://webnotes.dev/privacy-policy/</guid>
+      <description>Last updated: 2025-01-01 Introduction Welcome to 懒人的梦呓 (&amp;ldquo;webnotes.dev&amp;rdquo;, &amp;ldquo;we&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, or &amp;ldquo;our&amp;rdquo;). We respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website. Information We Collect Automatically Collected Information When you visit our website, certain information may be collected automatically, including: Your IP address</description>
     </item>
     
     <item>
       <title>2023年概况</title>
-      <link>https://cjianyu.github.io/post/2023review/</link>
+      <link>https://webnotes.dev/post/2023review/</link>
       <pubDate>Wed, 13 Dec 2023 20:15:28 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/2023review/</guid>
+      <guid>https://webnotes.dev/post/2023review/</guid>
       <description>&lt;p&gt;每年差不多这个时候我都会写一篇文章用来回顾这一年来的变化与感想，今年也不例外，只是文章不再叫「年终总结」，而变成了「概况」，「总结」太过严肃功利，隐含了目的性，而我只想记录一些想法。&lt;/p&gt;
 
 &lt;p&gt;今年是我在上海生活的第二年，明年是第三年，很快就是我工作以来待得最久的城市。想起这几年的搬迁史，无论是在安逸的佛山，浪漫的珠海，还是热闹的广州，尽管我的肉身在这些地方确实呆过一段时间，但总感觉缺少点什么，离开的时候没有一丝留恋。&lt;/p&gt;
@@ -493,10 +509,10 @@
     
     <item>
       <title>选择合适的土壤做投资</title>
-      <link>https://cjianyu.github.io/post/%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84%E5%9C%9F%E5%A3%A4%E5%81%9A%E6%8A%95%E8%B5%84/</link>
+      <link>https://webnotes.dev/post/%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84%E5%9C%9F%E5%A3%A4%E5%81%9A%E6%8A%95%E8%B5%84/</link>
       <pubDate>Sun, 22 Oct 2023 20:39:47 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84%E5%9C%9F%E5%A3%A4%E5%81%9A%E6%8A%95%E8%B5%84/</guid>
+      <guid>https://webnotes.dev/post/%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84%E5%9C%9F%E5%A3%A4%E5%81%9A%E6%8A%95%E8%B5%84/</guid>
       <description>&lt;p&gt;这几天A股又跌上热搜，遭到很多人调侃，段子也频出，比如：&lt;/p&gt;
 
 &lt;p&gt;“全球正在进行的三场战争：
@@ -510,10 +526,10 @@
     
     <item>
       <title>香港卡办理最强攻略</title>
-      <link>https://cjianyu.github.io/post/%E9%A6%99%E6%B8%AF%E5%8D%A1%E5%8A%9E%E7%90%86%E6%9C%80%E5%BC%BA%E6%94%BB%E7%95%A5/</link>
+      <link>https://webnotes.dev/post/%E9%A6%99%E6%B8%AF%E5%8D%A1%E5%8A%9E%E7%90%86%E6%9C%80%E5%BC%BA%E6%94%BB%E7%95%A5/</link>
       <pubDate>Sat, 07 Oct 2023 22:45:52 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E9%A6%99%E6%B8%AF%E5%8D%A1%E5%8A%9E%E7%90%86%E6%9C%80%E5%BC%BA%E6%94%BB%E7%95%A5/</guid>
+      <guid>https://webnotes.dev/post/%E9%A6%99%E6%B8%AF%E5%8D%A1%E5%8A%9E%E7%90%86%E6%9C%80%E5%BC%BA%E6%94%BB%E7%95%A5/</guid>
       <description>&lt;p&gt;众所周知，国内的银行对个人资金的监管有点严，对于搞金融的朋友，搞web 3的朋友，搞跨境的朋友都很不友好，所以办一张香港卡（或美国银行卡等境外卡）很有必要。我想办香港卡也有一段时间了，之前一直没排计划去香港，以及不会当冤大头去找国内的中介被收高昂的中介费。国庆刚好有计划去香港，顺带把香港卡办好了。&lt;/p&gt;
 
 &lt;p&gt;我会一五一十地将办汇丰 one卡的经历以及要准备的东西写明，方便后面想办的人参考。看完这篇免费的文章，你可以省下几千块的中介费，少走弯路，并且保证能下卡。&lt;/p&gt;</description>
@@ -521,10 +537,10 @@
     
     <item>
       <title>黄金时代渐行渐远</title>
-      <link>https://cjianyu.github.io/post/%E9%BB%84%E9%87%91%E6%97%B6%E4%BB%A3%E6%B8%90%E8%A1%8C%E6%B8%90%E8%BF%9C/</link>
+      <link>https://webnotes.dev/post/%E9%BB%84%E9%87%91%E6%97%B6%E4%BB%A3%E6%B8%90%E8%A1%8C%E6%B8%90%E8%BF%9C/</link>
       <pubDate>Sun, 17 Sep 2023 17:07:12 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E9%BB%84%E9%87%91%E6%97%B6%E4%BB%A3%E6%B8%90%E8%A1%8C%E6%B8%90%E8%BF%9C/</guid>
+      <guid>https://webnotes.dev/post/%E9%BB%84%E9%87%91%E6%97%B6%E4%BB%A3%E6%B8%90%E8%A1%8C%E6%B8%90%E8%BF%9C/</guid>
       <description>&lt;p&gt;很多人怀念18年以前的生活。&lt;/p&gt;
 
 &lt;p&gt;那时候中美还没有脱钩，没有贸易战，经济增长强劲，遍地的工作机会，热钱滚滚，没有固化的阶层，普通人只需要稍微努力一下就能得到很好的机会，更重要的是，民众对未来充满希望。&lt;/p&gt;
@@ -540,10 +556,10 @@
     
     <item>
       <title>放弃对赚钱对执念</title>
-      <link>https://cjianyu.github.io/post/%E6%94%BE%E5%BC%83%E5%AF%B9%E8%B5%9A%E9%92%B1%E5%AF%B9%E6%89%A7%E5%BF%B5/</link>
+      <link>https://webnotes.dev/post/%E6%94%BE%E5%BC%83%E5%AF%B9%E8%B5%9A%E9%92%B1%E5%AF%B9%E6%89%A7%E5%BF%B5/</link>
       <pubDate>Sun, 17 Sep 2023 14:44:39 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E6%94%BE%E5%BC%83%E5%AF%B9%E8%B5%9A%E9%92%B1%E5%AF%B9%E6%89%A7%E5%BF%B5/</guid>
+      <guid>https://webnotes.dev/post/%E6%94%BE%E5%BC%83%E5%AF%B9%E8%B5%9A%E9%92%B1%E5%AF%B9%E6%89%A7%E5%BF%B5/</guid>
       <description>&lt;p&gt;我曾经也一度被各种赚钱效应的事情所吸引。比如前两年币圈暴富神话一个接一个，又比如生财的各种靠副业赚得拼满钵满的人，再比如炒股实现财务自由的人的那些分享。&lt;/p&gt;
 
 &lt;p&gt;我像个贪婪的小孩，追逐沿途迷人的蝴蝶，追着追着逐渐迷了路。到头来发现什么也没捞到。甚至丢了一些自己已有的鲜花。&lt;/p&gt;
@@ -557,10 +573,10 @@
     
     <item>
       <title>当技术奇点来临</title>
-      <link>https://cjianyu.github.io/post/%E5%BD%93%E6%8A%80%E6%9C%AF%E5%A5%87%E7%82%B9%E6%9D%A5%E4%B8%B4/</link>
+      <link>https://webnotes.dev/post/%E5%BD%93%E6%8A%80%E6%9C%AF%E5%A5%87%E7%82%B9%E6%9D%A5%E4%B8%B4/</link>
       <pubDate>Fri, 17 Mar 2023 14:58:22 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E5%BD%93%E6%8A%80%E6%9C%AF%E5%A5%87%E7%82%B9%E6%9D%A5%E4%B8%B4/</guid>
+      <guid>https://webnotes.dev/post/%E5%BD%93%E6%8A%80%E6%9C%AF%E5%A5%87%E7%82%B9%E6%9D%A5%E4%B8%B4/</guid>
       <description>&lt;p&gt;我想你已经看到扑面而来的各种chatGPT的消息，并且各种大V也磨刀霍霍火速推出了各种创富社群，你大概还可能买了AI概念股，有可能你还报了一些课程，希望那些老师能带自己上船，站在风口一飞冲天。&lt;/p&gt;
 
 &lt;p&gt;很明显，你FOMO（fear of missing out）了。&lt;/p&gt;
@@ -570,10 +586,10 @@
     
     <item>
       <title>向内探寻，向外生长</title>
-      <link>https://cjianyu.github.io/post/%E5%90%91%E5%86%85%E6%8E%A2%E5%AF%BB%E5%90%91%E5%A4%96%E7%94%9F%E9%95%BF/</link>
+      <link>https://webnotes.dev/post/%E5%90%91%E5%86%85%E6%8E%A2%E5%AF%BB%E5%90%91%E5%A4%96%E7%94%9F%E9%95%BF/</link>
       <pubDate>Sat, 31 Dec 2022 23:03:50 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E5%90%91%E5%86%85%E6%8E%A2%E5%AF%BB%E5%90%91%E5%A4%96%E7%94%9F%E9%95%BF/</guid>
+      <guid>https://webnotes.dev/post/%E5%90%91%E5%86%85%E6%8E%A2%E5%AF%BB%E5%90%91%E5%A4%96%E7%94%9F%E9%95%BF/</guid>
       <description>&lt;p&gt;好久没写东西了，主要是这段时间没有太多的表达欲，但照例每年年终还是要写一下自己这一年来的变化。&lt;/p&gt;
 
 &lt;p&gt;今年年初辞职来了上海，换了份工作，从广漂到沪漂，我开始了新生活。我不能说这是个好的还是不好的选择，但从目前来看是极好的，毕竟今年国内的互联网大厂们纷纷裁员，我倒是提前离开了互联网公司而去了外企。拉长时间来看，都是一段过程，从后往前看，所有的经历你都会淡淡一笑：“我也开心饮过酒”。&lt;/p&gt;</description>
@@ -581,32 +597,21 @@
     
     <item>
       <title>正儿八经聊聊我的工作经历</title>
-      <link>https://cjianyu.github.io/post/%E6%AD%A3%E5%84%BF%E5%85%AB%E7%BB%8F%E8%81%8A%E8%81%8A%E6%88%91%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86/</link>
+      <link>https://webnotes.dev/post/%E6%AD%A3%E5%84%BF%E5%85%AB%E7%BB%8F%E8%81%8A%E8%81%8A%E6%88%91%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86/</link>
       <pubDate>Sat, 13 Aug 2022 17:11:07 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E6%AD%A3%E5%84%BF%E5%85%AB%E7%BB%8F%E8%81%8A%E8%81%8A%E6%88%91%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86/</guid>
+      <guid>https://webnotes.dev/post/%E6%AD%A3%E5%84%BF%E5%85%AB%E7%BB%8F%E8%81%8A%E8%81%8A%E6%88%91%E7%9A%84%E5%B7%A5%E4%BD%9C%E7%BB%8F%E5%8E%86/</guid>
       <description>&lt;p&gt;我大三的时候，在图书馆自学了点前端的皮毛，着急找实习，为秋招做准备。那时我还很稚嫩，没有做过任何编程相关的工作，对工作有一种本能的敬畏。那时候很卑微，心里想的是有公司要我我就去。毕竟自己没太多实践经验，进公司也是抱着学习的态度。&lt;/p&gt;
 
 &lt;p&gt;不记得面了几家公司，然后有一家创业公司问了我几个简单的问题，跟其他候选人对比之后，选择了我。那时候拿着一两千块钱的工资，跟着差不多时间入职的几个实习生一起干活儿，每天在外面吃快餐，工作的时候还是用的自己带的电脑。虽然待遇低的可怜，但那段时间，真的是为数不多的，让我工作期间感觉到快乐的时候。当一个人感觉到快乐，满足的时候，身体也会发生变化。那段时间我每天都感觉到饥饿，总觉得没吃够。大概，这就是心情影响了食欲吧。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>币安注册教程，币安实名认证教程</title>
-      <link>https://cjianyu.github.io/post/%E5%B8%81%E5%AE%89%E6%B3%A8%E5%86%8C%E6%95%99%E7%A8%8B%E5%B8%81%E5%AE%89%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81kyc%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Sat, 14 May 2022 23:58:53 +0800</pubDate>
-      
-      <guid>https://cjianyu.github.io/post/%E5%B8%81%E5%AE%89%E6%B3%A8%E5%86%8C%E6%95%99%E7%A8%8B%E5%B8%81%E5%AE%89%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81kyc%E6%95%99%E7%A8%8B/</guid>
-      <description>&lt;p&gt;注册时在推荐人ID里填写175026511。&lt;/p&gt;
-
-&lt;p&gt;我们知道大陆已经禁止了数字货币的交易，但如果要投身web 3，怎么可能不在交易所购买点币呢。这篇文章会手把手教你如何进行币安注册并且实名认证，获得现货购买以及合约交易的全部功能。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>二十七岁没有春天</title>
-      <link>https://cjianyu.github.io/post/%E4%BA%8C%E5%8D%81%E4%B8%83%E5%B2%81%E6%B2%A1%E6%9C%89%E6%98%A5%E5%A4%A9/</link>
+      <link>https://webnotes.dev/post/%E4%BA%8C%E5%8D%81%E4%B8%83%E5%B2%81%E6%B2%A1%E6%9C%89%E6%98%A5%E5%A4%A9/</link>
       <pubDate>Fri, 06 May 2022 23:58:53 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E4%BA%8C%E5%8D%81%E4%B8%83%E5%B2%81%E6%B2%A1%E6%9C%89%E6%98%A5%E5%A4%A9/</guid>
+      <guid>https://webnotes.dev/post/%E4%BA%8C%E5%8D%81%E4%B8%83%E5%B2%81%E6%B2%A1%E6%9C%89%E6%98%A5%E5%A4%A9/</guid>
       <description>&lt;p&gt;大年初五，我拖着一个行李箱，备着一个双肩背包就出发了，独自一人飞来上海，感受到了寒冷的天气，看到了掉光叶子的树木，以及空荡荡的大街上，插肩而过的那些行色匆匆包裹在大衣里的人儿。&lt;/p&gt;
 
 &lt;p&gt;我似乎已经习惯了，一个人迁移到陌生的城市里生活。但我知道，每一次换城市，都是要付出一些成本与代价。打碎以前的生活规律，丢弃熟悉的环境，离开那些可以吃饭喝酒的朋友，一切从零开始。&lt;/p&gt;
@@ -616,10 +621,10 @@
     
     <item>
       <title>Naval的财富与幸福指南</title>
-      <link>https://cjianyu.github.io/post/naval%E7%9A%84%E8%B4%A2%E5%AF%8C%E4%B8%8E%E5%B9%B8%E7%A6%8F%E6%8C%87%E5%8D%97/</link>
+      <link>https://webnotes.dev/post/naval%E7%9A%84%E8%B4%A2%E5%AF%8C%E4%B8%8E%E5%B9%B8%E7%A6%8F%E6%8C%87%E5%8D%97/</link>
       <pubDate>Sun, 20 Mar 2022 22:29:44 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/naval%E7%9A%84%E8%B4%A2%E5%AF%8C%E4%B8%8E%E5%B9%B8%E7%A6%8F%E6%8C%87%E5%8D%97/</guid>
+      <guid>https://webnotes.dev/post/naval%E7%9A%84%E8%B4%A2%E5%AF%8C%E4%B8%8E%E5%B9%B8%E7%A6%8F%E6%8C%87%E5%8D%97/</guid>
       <description>&lt;h2 id=&#34;关于naval&#34;&gt;关于Naval&lt;/h2&gt;
 
 &lt;p&gt;Naval出生于印度，后面贫穷移民美国，父母离异之后，在母亲的关爱下长大。通过努力考上藤校主修计算机与经济学，后来他创办了几个公司，现在是知名天使投资人，投资了多家知名公司，比如Twitter, Uber。&lt;/p&gt;
@@ -631,10 +636,10 @@
     
     <item>
       <title>失去的2021</title>
-      <link>https://cjianyu.github.io/post/%E5%A4%B1%E5%8E%BB%E7%9A%842021/</link>
+      <link>https://webnotes.dev/post/%E5%A4%B1%E5%8E%BB%E7%9A%842021/</link>
       <pubDate>Fri, 31 Dec 2021 23:03:50 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E5%A4%B1%E5%8E%BB%E7%9A%842021/</guid>
+      <guid>https://webnotes.dev/post/%E5%A4%B1%E5%8E%BB%E7%9A%842021/</guid>
       <description>&lt;p&gt;大概是2021太过无聊与乏味，到年底竟没什么太多想说的事情。这一年对我来说，没有多少欣喜，没有太多成长，却在很长一段时间被负能量围绕着。今年也不写总结了，聊聊自己的一些感悟。&lt;/p&gt;
 
 &lt;p&gt;这也就是标题的意思，我称之为失去的2021。&lt;/p&gt;</description>
@@ -642,10 +647,10 @@
     
     <item>
       <title>Telegram导航</title>
-      <link>https://cjianyu.github.io/post/telegram%E9%A2%91%E9%81%93%E6%8E%A8%E8%8D%90/</link>
+      <link>https://webnotes.dev/post/telegram%E9%A2%91%E9%81%93%E6%8E%A8%E8%8D%90/</link>
       <pubDate>Sat, 11 Sep 2021 23:26:47 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/telegram%E9%A2%91%E9%81%93%E6%8E%A8%E8%8D%90/</guid>
+      <guid>https://webnotes.dev/post/telegram%E9%A2%91%E9%81%93%E6%8E%A8%E8%8D%90/</guid>
       <description>&lt;p&gt;我们知道社交产品要玩起来，首先得有人跟你产生连接，或者有内容可以消费。Telegram对于新用户来说，最大的困难不是科学上网，不是什么功能怎么用，而是，刚注册不知道接下来干什么，不知道和谁聊天。我在这篇文章里推荐一些我觉得好的频道或者群组，可以让新人快速用起来。&lt;/p&gt;
 
 &lt;p&gt;这篇文章会长期更新，有好的频道我会加上去。当然，你也可以通过Google搜索相应的群或者频道，比如「英语 telegram群」进行搜索，一般都会有。你还可以通过一些telegram里的bot进行探索，这类bot也挺多的。不过鱼龙混杂，我在这里只推荐值得推荐的。&lt;/p&gt;</description>
@@ -653,37 +658,37 @@
     
     <item>
       <title>Git常用命令</title>
-      <link>https://cjianyu.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https://webnotes.dev/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sun, 27 Jun 2021 23:28:58 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://webnotes.dev/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>git log git branch -v 查看本地有哪些分支 git log &amp;ndash;oneline 更简洁查看git log git log -n2 &amp;ndash;oneline 查看最近两次log git log &amp;ndash;oneline &amp;ndash;all 查看所有的log git log &amp;ndash;oneline &amp;ndash;graph 图形化查看log git log develop &amp;ndash;graph 查看d</description>
     </item>
     
     <item>
       <title>几个常用的快捷键</title>
-      <link>https://cjianyu.github.io/post/%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <link>https://webnotes.dev/post/%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Sun, 27 Jun 2021 23:26:47 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <guid>https://webnotes.dev/post/%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description>打开Chrome跨域模式 要关闭浏览器所有页面才会执行 1 open -n &amp;#34;/Applications/Google Chrome.app&amp;#34; --args --disable-web-security --user-data-dir=/Users/jeffrey/MyChromeDevUserData/ vscode快捷键 command + left/right: 一行左右切换 option + left/right: 单词切分，左右切换 option + delete: del</description>
     </item>
     
     <item>
       <title>Javascript之模拟实现</title>
-      <link>https://cjianyu.github.io/post/javascript%E4%B9%8B%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0/</link>
+      <link>https://webnotes.dev/post/javascript%E4%B9%8B%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Sun, 27 Jun 2021 23:24:34 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/javascript%E4%B9%8B%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>https://webnotes.dev/post/javascript%E4%B9%8B%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0/</guid>
       <description>模拟实现call 1 2 3 4 5 6 7 8 9 10 11 12 Function.prototype.myCall = function(context) { // 判断调用call的函数（也就是this）是否是函数 if(typeof this === &amp;#39;function&amp;#39;) { throw new TypeError(&amp;#39;Error&amp;#39;) } context = context || window context.fn = this const args =</description>
     </item>
     
     <item>
       <title>一无所有</title>
-      <link>https://cjianyu.github.io/post/%E4%B8%80%E6%97%A0%E6%89%80%E6%9C%89/</link>
+      <link>https://webnotes.dev/post/%E4%B8%80%E6%97%A0%E6%89%80%E6%9C%89/</link>
       <pubDate>Mon, 17 May 2021 00:03:20 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E4%B8%80%E6%97%A0%E6%89%80%E6%9C%89/</guid>
+      <guid>https://webnotes.dev/post/%E4%B8%80%E6%97%A0%E6%89%80%E6%9C%89/</guid>
       <description>&lt;p&gt;今年，我二十六周岁。一无所有。&lt;/p&gt;
 
 &lt;p&gt;跟身边的朋友聊聊近况，有些人在得瑟自己在大厂搬砖拿着不错的薪水，有些人在感叹生活不易能活着就好了。但很少人跟我聊，他们这一生要做些什么事情，他们喜欢做什么。这也是我一直在探寻的问题，独处的时候，内心深处总有一个声音在逼问你，你这一生，想做些什么？&lt;/p&gt;</description>
@@ -691,19 +696,19 @@
     
     <item>
       <title>Document, don&#39;t create</title>
-      <link>https://cjianyu.github.io/post/newsletter/</link>
+      <link>https://webnotes.dev/post/newsletter/</link>
       <pubDate>Wed, 10 Mar 2021 22:29:44 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/newsletter/</guid>
+      <guid>https://webnotes.dev/post/newsletter/</guid>
       <description>最近，看到GaryVee的一个观点： document, don’t create （记录，而不是创造） 是的，每个人都在想着创造。创造是一个结果，而记录是一个过程。人们当然想</description>
     </item>
     
     <item>
       <title>珍惜产品的早期阶段</title>
-      <link>https://cjianyu.github.io/post/%E7%8F%8D%E6%83%9C%E4%BA%A7%E5%93%81%E7%9A%84%E6%97%A9%E6%9C%9F%E9%98%B6%E6%AE%B5/</link>
+      <link>https://webnotes.dev/post/%E7%8F%8D%E6%83%9C%E4%BA%A7%E5%93%81%E7%9A%84%E6%97%A9%E6%9C%9F%E9%98%B6%E6%AE%B5/</link>
       <pubDate>Tue, 09 Feb 2021 17:17:18 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E7%8F%8D%E6%83%9C%E4%BA%A7%E5%93%81%E7%9A%84%E6%97%A9%E6%9C%9F%E9%98%B6%E6%AE%B5/</guid>
+      <guid>https://webnotes.dev/post/%E7%8F%8D%E6%83%9C%E4%BA%A7%E5%93%81%E7%9A%84%E6%97%A9%E6%9C%9F%E9%98%B6%E6%AE%B5/</guid>
       <description>&lt;p&gt;Clubhouse没让我少熬夜。&lt;/p&gt;
 
 &lt;p&gt;我太喜欢Clubhouse了，已经好久没有一个app让人惊喜了，几年前Telegram算一个，之后再没让人眼前一亮的产品。作为社交软件爱好者，Clubhouse确实吸引人，有一种可以上瘾的感觉。&lt;/p&gt;</description>
@@ -711,19 +716,19 @@
     
     <item>
       <title>美国散户如何暴打华尔街机构</title>
-      <link>https://cjianyu.github.io/post/%E7%BE%8E%E5%9B%BD%E6%95%A3%E6%88%B7%E5%A6%82%E4%BD%95%E6%9A%B4%E6%89%93%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%BA%E6%9E%84/</link>
+      <link>https://webnotes.dev/post/%E7%BE%8E%E5%9B%BD%E6%95%A3%E6%88%B7%E5%A6%82%E4%BD%95%E6%9A%B4%E6%89%93%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%BA%E6%9E%84/</link>
       <pubDate>Tue, 19 Jan 2021 22:45:52 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E7%BE%8E%E5%9B%BD%E6%95%A3%E6%88%B7%E5%A6%82%E4%BD%95%E6%9A%B4%E6%89%93%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%BA%E6%9E%84/</guid>
+      <guid>https://webnotes.dev/post/%E7%BE%8E%E5%9B%BD%E6%95%A3%E6%88%B7%E5%A6%82%E4%BD%95%E6%9A%B4%E6%89%93%E5%8D%8E%E5%B0%94%E8%A1%97%E6%9C%BA%E6%9E%84/</guid>
       <description>&lt;p&gt;过去一周，散户与空头的史诗级对决，是整个金融圈最热的话题，吸引了全球资本市场的眼球，作为一个见证者，必须记录一下，我尽量把事情的来龙去脉讲清楚，让小白也能吃瓜。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>我的2020年个人总结</title>
-      <link>https://cjianyu.github.io/post/%E6%88%91%E7%9A%842020%E5%B9%B4%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/</link>
+      <link>https://webnotes.dev/post/%E6%88%91%E7%9A%842020%E5%B9%B4%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/</link>
       <pubDate>Thu, 31 Dec 2020 23:03:50 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E6%88%91%E7%9A%842020%E5%B9%B4%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://webnotes.dev/post/%E6%88%91%E7%9A%842020%E5%B9%B4%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;2020年就像一部美剧，剧情跌宕起伏，连绵不断。&lt;/p&gt;
 
 &lt;p&gt;一场席卷全球的新冠病毒，历经一年仍未消退；中国在多个城市实施封城；无数人在社交媒体求救却发不出声；美股经历了多次熔断现在又屡创新高；科比在乘坐私人飞机不幸遇难；马斯克的公司将宇航员送上了太空；美国BLM运动；意大利等多国进行游行抗议；美国大选特朗普落选，却争议投票有舞弊作假行为；好不容易等来了疫苗，英国爆发了变异的新冠病毒而封城。。。&lt;/p&gt;
@@ -733,10 +738,10 @@
     
     <item>
       <title>资本永不眠</title>
-      <link>https://cjianyu.github.io/post/%E8%B5%84%E6%9C%AC%E6%B0%B8%E4%B8%8D%E7%9C%A0/</link>
+      <link>https://webnotes.dev/post/%E8%B5%84%E6%9C%AC%E6%B0%B8%E4%B8%8D%E7%9C%A0/</link>
       <pubDate>Sat, 14 Nov 2020 20:34:33 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E8%B5%84%E6%9C%AC%E6%B0%B8%E4%B8%8D%E7%9C%A0/</guid>
+      <guid>https://webnotes.dev/post/%E8%B5%84%E6%9C%AC%E6%B0%B8%E4%B8%8D%E7%9C%A0/</guid>
       <description>&lt;p&gt;投资是一场无限游戏，在漫长的时间长河里，生生不息。&lt;/p&gt;
 
 &lt;p&gt;很多人怀着一夜暴富的梦想进场，短时间厮杀过后又黯然离去；很多人觉得「富贵险中求」，加大了杠杆一把梭哈，最后断送了自己的人生；有些人小心谨慎，把控风险，和时间做朋友，在游戏中存活了下来；有些人嗅觉敏锐，在一次又一次的投机中赚得盆满钵满；有些人相信复利的力量，慢慢将小雪球越滚越大&amp;hellip;&lt;/p&gt;</description>
@@ -744,37 +749,37 @@
     
     <item>
       <title>美股港股开户教程：佣金终身八折&#43;送一股阿里股票</title>
-      <link>https://cjianyu.github.io/post/%E7%BE%8E%E8%82%A1%E5%BC%80%E6%88%B7%E6%95%99%E7%A8%8B%E4%BD%A3%E9%87%91%E7%BB%88%E8%BA%AB%E5%85%AB%E6%8A%98&#43;%E9%80%81%E4%B8%80%E8%82%A1%E9%98%BF%E9%87%8C%E8%82%A1%E7%A5%A8/</link>
+      <link>https://webnotes.dev/post/%E7%BE%8E%E8%82%A1%E5%BC%80%E6%88%B7%E6%95%99%E7%A8%8B%E4%BD%A3%E9%87%91%E7%BB%88%E8%BA%AB%E5%85%AB%E6%8A%98&#43;%E9%80%81%E4%B8%80%E8%82%A1%E9%98%BF%E9%87%8C%E8%82%A1%E7%A5%A8/</link>
       <pubDate>Sun, 07 Jun 2020 22:45:52 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E7%BE%8E%E8%82%A1%E5%BC%80%E6%88%B7%E6%95%99%E7%A8%8B%E4%BD%A3%E9%87%91%E7%BB%88%E8%BA%AB%E5%85%AB%E6%8A%98&#43;%E9%80%81%E4%B8%80%E8%82%A1%E9%98%BF%E9%87%8C%E8%82%A1%E7%A5%A8/</guid>
+      <guid>https://webnotes.dev/post/%E7%BE%8E%E8%82%A1%E5%BC%80%E6%88%B7%E6%95%99%E7%A8%8B%E4%BD%A3%E9%87%91%E7%BB%88%E8%BA%AB%E5%85%AB%E6%8A%98&#43;%E9%80%81%E4%B8%80%E8%82%A1%E9%98%BF%E9%87%8C%E8%82%A1%E7%A5%A8/</guid>
       <description>很多人经常跟我说，看到心仪的公司，比如Google，Apple，特斯拉或者喜欢的中概股，想投资但是不知道怎么买这些公司的股票，或者想港股打新</description>
     </item>
     
     <item>
       <title>雪盈证券开户教程篇：不需要香港卡也能港股打新</title>
-      <link>https://cjianyu.github.io/post/%E9%9B%AA%E7%9B%88%E8%AF%81%E5%88%B8%E5%BC%80%E6%88%B7%E6%95%99%E7%A8%8B%E7%AF%87%E4%B8%8D%E9%9C%80%E8%A6%81%E9%A6%99%E6%B8%AF%E5%8D%A1%E4%B9%9F%E8%83%BD%E6%B8%AF%E8%82%A1%E6%89%93%E6%96%B0/</link>
+      <link>https://webnotes.dev/post/%E9%9B%AA%E7%9B%88%E8%AF%81%E5%88%B8%E5%BC%80%E6%88%B7%E6%95%99%E7%A8%8B%E7%AF%87%E4%B8%8D%E9%9C%80%E8%A6%81%E9%A6%99%E6%B8%AF%E5%8D%A1%E4%B9%9F%E8%83%BD%E6%B8%AF%E8%82%A1%E6%89%93%E6%96%B0/</link>
       <pubDate>Sat, 06 Jun 2020 22:45:52 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E9%9B%AA%E7%9B%88%E8%AF%81%E5%88%B8%E5%BC%80%E6%88%B7%E6%95%99%E7%A8%8B%E7%AF%87%E4%B8%8D%E9%9C%80%E8%A6%81%E9%A6%99%E6%B8%AF%E5%8D%A1%E4%B9%9F%E8%83%BD%E6%B8%AF%E8%82%A1%E6%89%93%E6%96%B0/</guid>
+      <guid>https://webnotes.dev/post/%E9%9B%AA%E7%9B%88%E8%AF%81%E5%88%B8%E5%BC%80%E6%88%B7%E6%95%99%E7%A8%8B%E7%AF%87%E4%B8%8D%E9%9C%80%E8%A6%81%E9%A6%99%E6%B8%AF%E5%8D%A1%E4%B9%9F%E8%83%BD%E6%B8%AF%E8%82%A1%E6%89%93%E6%96%B0/</guid>
       <description>上一次介绍了老虎证券的开户教程之后，有些朋友问我还有没有其他券商可以选择，今天我再给大家介绍一个券商：雪盈证券。雪盈证券也是我当前使用的券商</description>
     </item>
     
     <item>
       <title>写给普通人的投资入门手册</title>
-      <link>https://cjianyu.github.io/post/%E5%86%99%E7%BB%99%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E6%8A%95%E8%B5%84%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C/</link>
+      <link>https://webnotes.dev/post/%E5%86%99%E7%BB%99%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E6%8A%95%E8%B5%84%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C/</link>
       <pubDate>Sat, 06 Jun 2020 16:12:34 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E5%86%99%E7%BB%99%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E6%8A%95%E8%B5%84%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C/</guid>
+      <guid>https://webnotes.dev/post/%E5%86%99%E7%BB%99%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E6%8A%95%E8%B5%84%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C/</guid>
       <description>全球大水漫灌，货币迅速贬值，越来越多人意识到投资理财的重要性。但是，新人往往一开始不知道如何开始理财，也不知道方向在哪，所以有了这篇文章，帮</description>
     </item>
     
     <item>
       <title>写在25岁生日之际</title>
-      <link>https://cjianyu.github.io/post/%E5%86%99%E5%9C%A825%E5%B2%81%E7%94%9F%E6%97%A5%E4%B9%8B%E9%99%85/</link>
+      <link>https://webnotes.dev/post/%E5%86%99%E5%9C%A825%E5%B2%81%E7%94%9F%E6%97%A5%E4%B9%8B%E9%99%85/</link>
       <pubDate>Tue, 28 Apr 2020 23:58:53 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E5%86%99%E5%9C%A825%E5%B2%81%E7%94%9F%E6%97%A5%E4%B9%8B%E9%99%85/</guid>
+      <guid>https://webnotes.dev/post/%E5%86%99%E5%9C%A825%E5%B2%81%E7%94%9F%E6%97%A5%E4%B9%8B%E9%99%85/</guid>
       <description>&lt;p&gt;25岁，听起来多么美好的年纪。&lt;/p&gt;
 
 &lt;p&gt;年长者大概羡慕这个年纪的年轻人，就像我羡慕现在还在读书的小年轻一样，经历了年月，都会有一些悔恨与遗憾。如果那个时候的自己如何如何，自己早就比现在好多了吧，早就可以达到所想要的目标了吧。但即使重新来过，抹去你经历的那些认知，大部分人还是会活成ta应该有的样子吧。&lt;/p&gt;
@@ -783,20 +788,11 @@
     </item>
     
     <item>
-      <title>医生李文亮之死</title>
-      <link>https://cjianyu.github.io/post/%E5%8C%BB%E7%94%9F%E6%9D%8E%E6%96%87%E4%BA%AE%E4%B9%8B%E6%AD%BB/</link>
-      <pubDate>Fri, 07 Feb 2020 17:09:23 +0800</pubDate>
-      
-      <guid>https://cjianyu.github.io/post/%E5%8C%BB%E7%94%9F%E6%9D%8E%E6%96%87%E4%BA%AE%E4%B9%8B%E6%AD%BB/</guid>
-      <description>李文亮，男，武汉市中心医院眼科医生，曾在 2019 年底率先向外界披露新型冠状病毒疫情，而被称为“疫情吹哨人”。2020 年 2 月 1 日，李文亮确诊为新型冠</description>
-    </item>
-    
-    <item>
       <title>我的2019年终总结</title>
-      <link>https://cjianyu.github.io/post/2019/</link>
+      <link>https://webnotes.dev/post/2019/</link>
       <pubDate>Sat, 28 Dec 2019 17:09:23 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/2019/</guid>
+      <guid>https://webnotes.dev/post/2019/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://ww1.sinaimg.cn/large/007Gv6lPgy1gadgwepvnxj33h01il1eh.jpg&#34; alt=&#34;winter.jpg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;我清晰记得年初有听过这样一句话：“2019年可能会是过去十年里最差的一年，但却是未来十年里最好的一年。“经济的持续下行，让资本勒紧口袋，企业纷纷削减开支，裁员的裁员，关门的关门。不单是互联网寒冬，各行业都不太好。看这形势，很难让人可以乐观起来。但作为普通人，很多时候面对不可控因素变坏的情况，沉下心来，打好基础，努力提升自己才是正确的做法。&lt;/p&gt;</description>
@@ -804,28 +800,28 @@
     
     <item>
       <title>如何先于他人一步买到大麦网的演唱会门票</title>
-      <link>https://cjianyu.github.io/post/%E5%A6%82%E4%BD%95%E5%85%88%E4%BA%8E%E4%BB%96%E4%BA%BA%E4%B8%80%E6%AD%A5%E4%B9%B0%E5%88%B0%E5%A4%A7%E9%BA%A6%E7%BD%91%E7%9A%84%E6%BC%94%E5%94%B1%E4%BC%9A%E9%97%A8%E7%A5%A8/</link>
+      <link>https://webnotes.dev/post/%E5%A6%82%E4%BD%95%E5%85%88%E4%BA%8E%E4%BB%96%E4%BA%BA%E4%B8%80%E6%AD%A5%E4%B9%B0%E5%88%B0%E5%A4%A7%E9%BA%A6%E7%BD%91%E7%9A%84%E6%BC%94%E5%94%B1%E4%BC%9A%E9%97%A8%E7%A5%A8/</link>
       <pubDate>Sat, 21 Dec 2019 23:22:38 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E5%A6%82%E4%BD%95%E5%85%88%E4%BA%8E%E4%BB%96%E4%BA%BA%E4%B8%80%E6%AD%A5%E4%B9%B0%E5%88%B0%E5%A4%A7%E9%BA%A6%E7%BD%91%E7%9A%84%E6%BC%94%E5%94%B1%E4%BC%9A%E9%97%A8%E7%A5%A8/</guid>
+      <guid>https://webnotes.dev/post/%E5%A6%82%E4%BD%95%E5%85%88%E4%BA%8E%E4%BB%96%E4%BA%BA%E4%B8%80%E6%AD%A5%E4%B9%B0%E5%88%B0%E5%A4%A7%E9%BA%A6%E7%BD%91%E7%9A%84%E6%BC%94%E5%94%B1%E4%BC%9A%E9%97%A8%E7%A5%A8/</guid>
       <description>前些日子很多人在哭诉抢不到周杰伦的演唱会门票，我想起几个月前发现过大麦网的一个bug，能在门票开售的时候先于他人一步进入到下单页面，也就是说</description>
     </item>
     
     <item>
       <title>JavaScript异步编程</title>
-      <link>https://cjianyu.github.io/post/javascript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</link>
+      <link>https://webnotes.dev/post/javascript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</link>
       <pubDate>Wed, 13 Nov 2019 17:18:18 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/javascript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</guid>
+      <guid>https://webnotes.dev/post/javascript%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</guid>
       <description>在讲JavaScript异步编程之前我们先来了解并发和并行的区别。 并发和并行的区别 Erlang 之父 Joe Armstrong用一张图解释了并发和并行的区别：</description>
     </item>
     
     <item>
       <title>浏览器缓存简短笔记</title>
-      <link>https://cjianyu.github.io/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</link>
+      <link>https://webnotes.dev/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</link>
       <pubDate>Thu, 07 Nov 2019 19:44:06 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</guid>
+      <guid>https://webnotes.dev/post/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</guid>
       <description>&lt;p&gt;浏览器缓存机制的关键：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -838,10 +834,10 @@
     
     <item>
       <title>Webpack入门教程</title>
-      <link>https://cjianyu.github.io/post/webpack-basic/</link>
+      <link>https://webnotes.dev/post/webpack-basic/</link>
       <pubDate>Thu, 18 Jul 2019 23:50:22 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/webpack-basic/</guid>
+      <guid>https://webnotes.dev/post/webpack-basic/</guid>
       <description>&lt;h3 id=&#34;为什么要用构建工具&#34;&gt;为什么要用构建工具&lt;/h3&gt;
 
 &lt;p&gt;转换es6、转换jsx、css前缀补全/预处理器、压缩混淆、图片压缩&lt;/p&gt;
@@ -902,28 +898,28 @@
     
     <item>
       <title>用css实现单行截断与多行截断，最后以省略号结尾</title>
-      <link>https://cjianyu.github.io/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/</link>
+      <link>https://webnotes.dev/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/</link>
       <pubDate>Thu, 06 Jun 2019 16:12:34 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/</guid>
+      <guid>https://webnotes.dev/post/%E7%94%A8css%E5%AE%9E%E7%8E%B0%E5%8D%95%E8%A1%8C%E6%88%AA%E6%96%AD%E4%B8%8E%E5%A4%9A%E8%A1%8C%E6%88%AA%E6%96%AD/</guid>
       <description>&lt;p&gt;有个很常见的业务场景，就是实现单行截断或者使用多行截断，最后要以省略号结尾。比如某个商品的标题太长，在有限区域内不能完全展示，如果要全部展示，页面就会很丑，所以要单行或多行截断。这里记录一下常见的解决办法。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>生日快乐，懒人先生</title>
-      <link>https://cjianyu.github.io/post/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90%E6%87%92%E4%BA%BA%E5%85%88%E7%94%9F/</link>
+      <link>https://webnotes.dev/post/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90%E6%87%92%E4%BA%BA%E5%85%88%E7%94%9F/</link>
       <pubDate>Fri, 10 May 2019 00:03:20 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90%E6%87%92%E4%BA%BA%E5%85%88%E7%94%9F/</guid>
+      <guid>https://webnotes.dev/post/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90%E6%87%92%E4%BA%BA%E5%85%88%E7%94%9F/</guid>
       <description>&lt;p&gt;不知道从哪一年开始，印象中每一次生日，我都会感冒，这样直接导致我本可以吃很多想吃的食物都会因为要忌口而不得已吃不到，过后想补回来又没有了这种兴致。今年也不例外，喉咙又不行了，多喝热水喝了三天，还没恢复完好。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>台湾旅游不完全指南</title>
-      <link>https://cjianyu.github.io/post/taiwan/</link>
+      <link>https://webnotes.dev/post/taiwan/</link>
       <pubDate>Sun, 21 Apr 2019 15:40:16 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/taiwan/</guid>
+      <guid>https://webnotes.dev/post/taiwan/</guid>
       <description>&lt;p&gt;去年就想写一篇关于台湾旅游的文章，因为懒一直拖着。最近很多朋友想去台湾旅游，问起相关话题，都是差不多的问题，这里做个攻略，统一回答一些疑问。&lt;/p&gt;
 
 &lt;h4 id=&#34;台湾好玩吗-值得去吗&#34;&gt;台湾好玩吗？值得去吗？&lt;/h4&gt;
@@ -947,10 +943,10 @@
     
     <item>
       <title>正则表达式必知必会</title>
-      <link>https://cjianyu.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <link>https://webnotes.dev/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
       <pubDate>Wed, 27 Mar 2019 20:34:33 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <guid>https://webnotes.dev/post/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
       <description>&lt;p&gt;正则表达式主要还是知识点多而杂，看过很容易忘，所以，看完知识点及时练习很重要。&lt;/p&gt;
 
 &lt;h4 id=&#34;首先-掌握一些常用的元字符&#34;&gt;首先，掌握一些常用的元字符：&lt;/h4&gt;
@@ -970,10 +966,10 @@
     
     <item>
       <title>聊聊css布局</title>
-      <link>https://cjianyu.github.io/post/css_layout/</link>
+      <link>https://webnotes.dev/post/css_layout/</link>
       <pubDate>Sun, 24 Mar 2019 00:17:03 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/css_layout/</guid>
+      <guid>https://webnotes.dev/post/css_layout/</guid>
       <description>&lt;h3 id=&#34;从normal-flow说起&#34;&gt;从normal flow说起&lt;/h3&gt;
 
 &lt;p&gt;我们知道，书本印刷的排版是从上而下，从左到右，一行装不下换行，依次排列的规则，css中正常流也是这种规则。不同的是，css标准中有格式化上下文的概念。&lt;/p&gt;
@@ -990,10 +986,10 @@
     
     <item>
       <title>谈谈小人物努力的意义</title>
-      <link>https://cjianyu.github.io/post/%E5%B0%8F%E4%BA%BA%E7%89%A9%E5%8A%AA%E5%8A%9B%E7%9A%84%E6%84%8F%E4%B9%89/</link>
+      <link>https://webnotes.dev/post/%E5%B0%8F%E4%BA%BA%E7%89%A9%E5%8A%AA%E5%8A%9B%E7%9A%84%E6%84%8F%E4%B9%89/</link>
       <pubDate>Tue, 12 Feb 2019 16:12:34 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E5%B0%8F%E4%BA%BA%E7%89%A9%E5%8A%AA%E5%8A%9B%E7%9A%84%E6%84%8F%E4%B9%89/</guid>
+      <guid>https://webnotes.dev/post/%E5%B0%8F%E4%BA%BA%E7%89%A9%E5%8A%AA%E5%8A%9B%E7%9A%84%E6%84%8F%E4%B9%89/</guid>
       <description>&lt;p&gt;《新喜剧之王》讲述了一个跑龙套的女孩（如梦），凭借自己对演戏的执着，虽然经历无数沉重的打击，也有过放弃，但最后成功实现梦想的故事。星爷对小人物的描述是悲惨的，无论是一次又一次别人骂如梦是“神经病”，还是直接说“从现在直到宇宙毁灭“如梦也当不了演员，甚至在肉体上的毒打，连唯一鼓励她的一个智障男友都是出来卖的，足以见星爷心中小人物之难。&lt;/p&gt;
 
 &lt;p&gt;说回到现实生活中，草根通过努力功成名就，走上了社会顶端的有吗？有，很少。因为有些时候巨大的成功不是靠努力就可以实现的，还要有运气。但草根通过自己的奋斗改变了自己的原有的生活环境，实现了阶级的越迁的人有吗？有，很多。不过现在的很多年轻人似乎非常佛系，对自己的生活似乎已经失去了改变的信心，也没有努力的动力，不再相信灰姑娘可以变成白雪公主的故事。&lt;/p&gt;</description>
@@ -1001,10 +997,10 @@
     
     <item>
       <title>我的2018年终总结</title>
-      <link>https://cjianyu.github.io/post/2018/</link>
+      <link>https://webnotes.dev/post/2018/</link>
       <pubDate>Wed, 12 Dec 2018 16:12:34 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/2018/</guid>
+      <guid>https://webnotes.dev/post/2018/</guid>
       <description>&lt;p&gt;翻了下上一年对这一年的期待与目标，竟找不到了，可能我上一年只希望这一年可以过得快乐一些吧，当然，这是个玩笑话。&lt;/p&gt;
 
 &lt;p&gt;这一年社会发生了很多事，但当你真正想回顾一下记忆中那些全民讨论的事情时，你才发现你的记忆就像鱼的记忆一样，短暂得让自己怀疑这一年是不是都睡过去了。热点事件的讨论似乎不会超过一周，新的热点会夺走人们的注意力，这就是为什么舆论监督已经不能解决任何问题，娱乐致死的年代里，人们会用一个又一个的刺激点麻醉自己，一天又一天，一年又一年。&lt;/p&gt;
@@ -1016,10 +1012,10 @@
     
     <item>
       <title>你到底该怎样学习英语？</title>
-      <link>https://cjianyu.github.io/post/english_learn/</link>
+      <link>https://webnotes.dev/post/english_learn/</link>
       <pubDate>Sat, 24 Nov 2018 00:17:03 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/english_learn/</guid>
+      <guid>https://webnotes.dev/post/english_learn/</guid>
       <description>&lt;p&gt;英语可能是有些人一生的噩梦，从初中高中英语拉低平均分，到后来因为英语成绩与梦想大学失之交臂，再到后面遭受四六级考试的蹂躏，最后放弃治疗，彻底与英语不再有交集，这可能就是很多人的真实写照。&lt;/p&gt;
 
 &lt;p&gt;你是不是很多次下决心，背很多很多的单词，最后只记住了前面几个，例如abondon？&lt;/p&gt;
@@ -1033,10 +1029,10 @@
     
     <item>
       <title>江湖有儿女，山河无故人</title>
-      <link>https://cjianyu.github.io/post/%E6%B1%9F%E6%B9%96%E5%84%BF%E5%A5%B3/</link>
+      <link>https://webnotes.dev/post/%E6%B1%9F%E6%B9%96%E5%84%BF%E5%A5%B3/</link>
       <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E6%B1%9F%E6%B9%96%E5%84%BF%E5%A5%B3/</guid>
+      <guid>https://webnotes.dev/post/%E6%B1%9F%E6%B9%96%E5%84%BF%E5%A5%B3/</guid>
       <description>&lt;p&gt;国庆期间看完《江湖儿女》，让我想起了一个人。每一部能折射现实并引人深思的电影，都是好电影。尽管这类电影并不会被大多数人喜欢。&lt;/p&gt;
 
 &lt;p&gt;刚看完没有太多感触，只有一些感伤，但是电影情节却不断地在我脑海中浮现，不断地让我去想，我们的世界，不正是这样子的吗？&lt;/p&gt;
@@ -1048,10 +1044,10 @@
     
     <item>
       <title>数字极权与楚门的世界</title>
-      <link>https://cjianyu.github.io/post/%E6%95%B0%E5%AD%97%E6%9E%81%E6%9D%83%E4%B8%8E%E6%A5%9A%E9%97%A8%E7%9A%84%E4%B8%96%E7%95%8C/</link>
+      <link>https://webnotes.dev/post/%E6%95%B0%E5%AD%97%E6%9E%81%E6%9D%83%E4%B8%8E%E6%A5%9A%E9%97%A8%E7%9A%84%E4%B8%96%E7%95%8C/</link>
       <pubDate>Sun, 19 Aug 2018 23:58:53 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E6%95%B0%E5%AD%97%E6%9E%81%E6%9D%83%E4%B8%8E%E6%A5%9A%E9%97%A8%E7%9A%84%E4%B8%96%E7%95%8C/</guid>
+      <guid>https://webnotes.dev/post/%E6%95%B0%E5%AD%97%E6%9E%81%E6%9D%83%E4%B8%8E%E6%A5%9A%E9%97%A8%E7%9A%84%E4%B8%96%E7%95%8C/</guid>
       <description>&lt;p&gt;电影《楚门的世界》讲述的是男主角楚门从一出生就被直播于世界，他的一举一动，都被世界看到。而他的真实的世界，也被节目组安排着。随着剧情的发展，楚门逐渐对世界的真实性感到困惑，一步一步寻求突破，最后离开了被构建出来的世界，不再成为世界的super star。&lt;/p&gt;
 
 &lt;p&gt;很多年前看的时候，并没有太多的感触。而如今，我们的世界正慢慢变成楚门的世界，甚至更为可怕。楚门的世界里其他人尚只能看到楚门的行为举止，并不能揣测楚门的思想，如果有一天，你所在的世界，连思想都被人监视与操控着呢？下面讲几个现象：&lt;/p&gt;</description>
@@ -1059,10 +1055,10 @@
     
     <item>
       <title>金融学笔记</title>
-      <link>https://cjianyu.github.io/post/%E9%87%91%E8%9E%8D%E5%AD%A6%E7%AC%94%E8%AE%B0/</link>
+      <link>https://webnotes.dev/post/%E9%87%91%E8%9E%8D%E5%AD%A6%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 06 Jun 2018 16:12:34 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E9%87%91%E8%9E%8D%E5%AD%A6%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://webnotes.dev/post/%E9%87%91%E8%9E%8D%E5%AD%A6%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;p&gt;金融的第一定理：时间是有价值的。&lt;/p&gt;
 
 &lt;p&gt;老生常谈的“时间就是金钱”，在金融里面，同样是常识的存在。体现在哪里呢？时间通过金融工具的包装，可以将我们今天的本钱，在未来增值很多倍。比如说，十年前，你在一线城市买了房。又比如说，十年前，你买了腾讯的股票。所以我们常说的理财，就是希望通过金融决策，将时间加工，将未来转化成完全不一样的价值，而不是等着财富因通货膨胀而缩水。&lt;/p&gt;</description>
@@ -1070,19 +1066,19 @@
     
     <item>
       <title>About Me</title>
-      <link>https://cjianyu.github.io/about/</link>
+      <link>https://webnotes.dev/about/</link>
       <pubDate>Fri, 16 Mar 2018 15:22:55 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/about/</guid>
-      <description>希望可以记录一些思考与想法，当我回首的时候才不是只有当时匆忙。 Twitter: @hackepoch Telegram channel: 懒人的梦呓 公众号: 懒人的梦呓 微博：马尔萨斯很忙（已被封，不再玩了）</description>
+      <guid>https://webnotes.dev/about/</guid>
+      <description>关于这个博客 「懒人的梦呓」是一个个人博客，创建于 2016 年。这里记录了我对技术、投资、阅读与生活的思考与想法。希望当我回首的时候，不是只有当时匆忙</description>
     </item>
     
     <item>
       <title>浅谈区块链这把火</title>
-      <link>https://cjianyu.github.io/post/blockchain/</link>
+      <link>https://webnotes.dev/post/blockchain/</link>
       <pubDate>Tue, 13 Feb 2018 16:12:34 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/blockchain/</guid>
+      <guid>https://webnotes.dev/post/blockchain/</guid>
       <description>&lt;p&gt;区块链火了，区块链已然成为人工智能后的另一大超级热点，它本是一项技术，却早已超脱于技术人的圈子，被人所知，当然，包括中国大妈 :)&lt;/p&gt;
 
 &lt;p&gt;那么，区块链到底是什么？&lt;/p&gt;
@@ -1094,10 +1090,10 @@
     
     <item>
       <title>心理学之自控</title>
-      <link>https://cjianyu.github.io/post/%E5%BF%83%E7%90%86%E5%AD%A6%E4%B9%8B%E8%87%AA%E6%8E%A7/</link>
+      <link>https://webnotes.dev/post/%E5%BF%83%E7%90%86%E5%AD%A6%E4%B9%8B%E8%87%AA%E6%8E%A7/</link>
       <pubDate>Mon, 14 Nov 2016 23:58:53 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E5%BF%83%E7%90%86%E5%AD%A6%E4%B9%8B%E8%87%AA%E6%8E%A7/</guid>
+      <guid>https://webnotes.dev/post/%E5%BF%83%E7%90%86%E5%AD%A6%E4%B9%8B%E8%87%AA%E6%8E%A7/</guid>
       <description>&lt;p&gt;双十一的时候忍不住疯狂购物，学习与工作的时候忍不住刷社交媒体网站，减肥的时候忍不住吃甜食，失眠的时候越是想入睡越睡不着，这背后发生了什么？为什么人总是控制不住自己？&lt;/p&gt;
 
 &lt;p&gt;凯利·麦格尼格尔的《自控力》为你揭示了自控的本质以及如何提高自控力。&lt;/p&gt;
@@ -1107,19 +1103,19 @@
     
     <item>
       <title>光环何以影响判断</title>
-      <link>https://cjianyu.github.io/post/%E5%85%89%E7%8E%AF%E4%BD%95%E4%BB%A5%E5%BD%B1%E5%93%8D%E5%88%A4%E6%96%AD/</link>
+      <link>https://webnotes.dev/post/%E5%85%89%E7%8E%AF%E4%BD%95%E4%BB%A5%E5%BD%B1%E5%93%8D%E5%88%A4%E6%96%AD/</link>
       <pubDate>Sun, 30 Oct 2016 23:58:53 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E5%85%89%E7%8E%AF%E4%BD%95%E4%BB%A5%E5%BD%B1%E5%93%8D%E5%88%A4%E6%96%AD/</guid>
+      <guid>https://webnotes.dev/post/%E5%85%89%E7%8E%AF%E4%BD%95%E4%BB%A5%E5%BD%B1%E5%93%8D%E5%88%A4%E6%96%AD/</guid>
       <description>根据近日数据，第三季度，OPPO的市场份额占16.6%，vivo的市场占有率为16.2%，名列全国第一第二，而华为的市场占有率却从去年三季度</description>
     </item>
     
     <item>
       <title>我的NBA记忆</title>
-      <link>https://cjianyu.github.io/post/%E6%88%91%E7%9A%84nba%E8%AE%B0%E5%BF%86/</link>
+      <link>https://webnotes.dev/post/%E6%88%91%E7%9A%84nba%E8%AE%B0%E5%BF%86/</link>
       <pubDate>Sun, 16 Oct 2016 23:58:53 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E6%88%91%E7%9A%84nba%E8%AE%B0%E5%BF%86/</guid>
+      <guid>https://webnotes.dev/post/%E6%88%91%E7%9A%84nba%E8%AE%B0%E5%BF%86/</guid>
       <description>&lt;p&gt;很平静看完这个赛季最后一场总决赛，没有任何悬念，骑士被勇士横扫出局。尽管第一场，第三场骑士很有机会赢，但，输了就是输了。上一次詹姆斯在总决赛被横扫，是十一年前。&lt;/p&gt;
 
 &lt;p&gt;我第一次接触NBA的时候，记得那时候是在放每日五佳球，其中有一个是JR斯密斯的，还有一个是詹姆斯的。而我那时候对外国人特别陌生，傻傻的问别人为什么外国人都长一个样，怎么辨别并认出他们。那时候只听说詹姆斯很牛逼，然后就记下了这个名字。&lt;/p&gt;
@@ -1129,28 +1125,19 @@
     
     <item>
       <title>白岩松三问互联网人背后的逻辑</title>
-      <link>https://cjianyu.github.io/post/%E7%99%BD%E5%B2%A9%E6%9D%BE%E4%B8%89%E9%97%AE%E4%BA%92%E8%81%94%E7%BD%91%E8%83%8C%E5%90%8E%E7%9A%84%E9%80%BB%E8%BE%91/</link>
+      <link>https://webnotes.dev/post/%E7%99%BD%E5%B2%A9%E6%9D%BE%E4%B8%89%E9%97%AE%E4%BA%92%E8%81%94%E7%BD%91%E8%83%8C%E5%90%8E%E7%9A%84%E9%80%BB%E8%BE%91/</link>
       <pubDate>Sun, 16 Oct 2016 23:58:53 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E7%99%BD%E5%B2%A9%E6%9D%BE%E4%B8%89%E9%97%AE%E4%BA%92%E8%81%94%E7%BD%91%E8%83%8C%E5%90%8E%E7%9A%84%E9%80%BB%E8%BE%91/</guid>
+      <guid>https://webnotes.dev/post/%E7%99%BD%E5%B2%A9%E6%9D%BE%E4%B8%89%E9%97%AE%E4%BA%92%E8%81%94%E7%BD%91%E8%83%8C%E5%90%8E%E7%9A%84%E9%80%BB%E8%BE%91/</guid>
       <description>在某电商峰会上，白岩松问了三个问题： 1、如果互联网只是使富人变得更富，而穷人只是在淘宝上买一些便宜的东西，请问互联网有什么意义？ 2、如果互联</description>
     </item>
     
     <item>
-      <title>不是所有领导都为民着想</title>
-      <link>https://cjianyu.github.io/post/%E4%B8%8D%E6%98%AF%E6%89%80%E6%9C%89%E9%A2%86%E5%AF%BC%E9%83%BD%E4%B8%BA%E6%B0%91%E7%9D%80%E6%83%B3/</link>
-      <pubDate>Wed, 21 Sep 2016 23:58:53 +0800</pubDate>
-      
-      <guid>https://cjianyu.github.io/post/%E4%B8%8D%E6%98%AF%E6%89%80%E6%9C%89%E9%A2%86%E5%AF%BC%E9%83%BD%E4%B8%BA%E6%B0%91%E7%9D%80%E6%83%B3/</guid>
-      <description>从一场洪灾说起。 2016年7月20日凌晨，河北省邢台地区突然出现洪水灾情，导致多个村子被淹。中共邢台市委对外宣传办公室官方微博“邢台发布”公</description>
-    </item>
-    
-    <item>
       <title>折叠已经发生了</title>
-      <link>https://cjianyu.github.io/post/%E6%8A%98%E5%8F%A0%E5%B7%B2%E7%BB%8F%E5%8F%91%E7%94%9F%E4%BA%86/</link>
+      <link>https://webnotes.dev/post/%E6%8A%98%E5%8F%A0%E5%B7%B2%E7%BB%8F%E5%8F%91%E7%94%9F%E4%BA%86/</link>
       <pubDate>Mon, 19 Sep 2016 23:58:53 +0800</pubDate>
       
-      <guid>https://cjianyu.github.io/post/%E6%8A%98%E5%8F%A0%E5%B7%B2%E7%BB%8F%E5%8F%91%E7%94%9F%E4%BA%86/</guid>
+      <guid>https://webnotes.dev/post/%E6%8A%98%E5%8F%A0%E5%B7%B2%E7%BB%8F%E5%8F%91%E7%94%9F%E4%BA%86/</guid>
       <description>&lt;p&gt;科幻小说《北京折叠》描绘了一个分级的社会，一个城市被分为三个空间，每个空间代表了不同的阶级，而你所处的阶级决定着，你呼吸的空气，你生活的土壤，你面对的人群。这是一个残酷的世界，用行政制度强行将人划分在不同区域，致使不同空间的人，连呼吸的空气，看到的天空，都不是一样的。&lt;/p&gt;
 
 &lt;p&gt;似乎，现实并不比小说残酷。小说中，至少主人公还可以通过在不同空间中送信迅速赚取一大笔财富，虽然冒有一定的风险。但在现在的社会，一个穷苦的人，没有过人的能力，在短短几天内，不偷不抢不做违背道德的事情，想迅速获得超越自身阶级的财富，几乎不可能。主人公（垃圾工）还可以努力让自己的女儿上好的幼儿园，而大城市的垃圾工，可能连这样的幻想都不敢常有。&lt;/p&gt;</description>
