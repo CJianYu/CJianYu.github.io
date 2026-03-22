@@ -5,10 +5,19 @@
     <link>https://webnotes.dev/categories/</link>
     <description>Recent content in Categories on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>zh-cn</language>
     
 	<atom:link href="https://webnotes.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Experience</title>
+      <link>https://webnotes.dev/categories/experience/</link>
+      <pubDate>Sat, 07 Oct 2023 22:45:52 +0800</pubDate>
+      
+      <guid>https://webnotes.dev/categories/experience/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Finance</title>
@@ -58,7 +67,7 @@
     <item>
       <title>Note</title>
       <link>https://webnotes.dev/categories/note/</link>
-      <pubDate>Wed, 27 Mar 2024 22:54:08 +0800</pubDate>
+      <pubDate>Sat, 11 Sep 2021 23:26:47 +0800</pubDate>
       
       <guid>https://webnotes.dev/categories/note/</guid>
       <description></description>
@@ -88,24 +97,6 @@
       <pubDate>Mon, 31 Mar 2025 23:04:52 +0800</pubDate>
       
       <guid>https://webnotes.dev/categories/engineer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>开户教程</title>
-      <link>https://webnotes.dev/categories/%E5%BC%80%E6%88%B7%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Sat, 07 Oct 2023 22:45:52 +0800</pubDate>
-      
-      <guid>https://webnotes.dev/categories/%E5%BC%80%E6%88%B7%E6%95%99%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>投资教程</title>
-      <link>https://webnotes.dev/categories/%E6%8A%95%E8%B5%84%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Sun, 07 Jun 2020 22:45:52 +0800</pubDate>
-      
-      <guid>https://webnotes.dev/categories/%E6%8A%95%E8%B5%84%E6%95%99%E7%A8%8B/</guid>
       <description></description>
     </item>
     

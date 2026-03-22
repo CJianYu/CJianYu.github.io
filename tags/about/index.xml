@@ -5,19 +5,19 @@
     <link>https://webnotes.dev/tags/about/</link>
     <description>Recent content in About on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>zh-cn</language>
     <lastBuildDate>Fri, 16 Mar 2018 15:22:55 +0800</lastBuildDate>
     
 	<atom:link href="https://webnotes.dev/tags/about/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About Me</title>
+      <title>About</title>
       <link>https://webnotes.dev/about/</link>
       <pubDate>Fri, 16 Mar 2018 15:22:55 +0800</pubDate>
       
       <guid>https://webnotes.dev/about/</guid>
-      <description>关于这个博客 「懒人的梦呓」是一个个人博客，创建于 2016 年。这里记录了我对技术、投资、阅读与生活的思考与想法。希望当我回首的时候，不是只有当时匆忙</description>
+      <description>关于这个博客 「懒人的梦呓」是一个个人博客，创建于 2016 年。这里主要记录我对技术、投资、阅读与生活的思考，也会保留一些阶段性的观察与复盘。它不是媒</description>
     </item>
     
   </channel>

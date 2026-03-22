@@ -5,7 +5,7 @@
     <link>https://webnotes.dev/tags/</link>
     <description>Recent content in Tags on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>zh-cn</language>
     <lastBuildDate>Thu, 19 Jun 2025 15:22:04 +0800</lastBuildDate>
     
 	<atom:link href="https://webnotes.dev/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -138,6 +138,15 @@
     </item>
     
     <item>
+      <title>HongKong</title>
+      <link>https://webnotes.dev/tags/hongkong/</link>
+      <pubDate>Sat, 07 Oct 2023 22:45:52 +0800</pubDate>
+      
+      <guid>https://webnotes.dev/tags/hongkong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ideas</title>
       <link>https://webnotes.dev/tags/ideas/</link>
       <pubDate>Sat, 06 Sep 2025 10:47:05 +0800</pubDate>
@@ -156,11 +165,11 @@
     </item>
     
     <item>
-      <title>Invest</title>
-      <link>https://webnotes.dev/tags/invest/</link>
-      <pubDate>Wed, 27 Mar 2024 22:54:08 +0800</pubDate>
+      <title>Investing</title>
+      <link>https://webnotes.dev/tags/investing/</link>
+      <pubDate>Sun, 22 Oct 2023 20:39:47 +0800</pubDate>
       
-      <guid>https://webnotes.dev/tags/invest/</guid>
+      <guid>https://webnotes.dev/tags/investing/</guid>
       <description></description>
     </item>
     
@@ -170,15 +179,6 @@
       <pubDate>Sun, 27 Jun 2021 23:24:34 +0800</pubDate>
       
       <guid>https://webnotes.dev/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lists</title>
-      <link>https://webnotes.dev/tags/lists/</link>
-      <pubDate>Sat, 16 Mar 2024 15:22:55 +0800</pubDate>
-      
-      <guid>https://webnotes.dev/tags/lists/</guid>
       <description></description>
     </item>
     
@@ -197,6 +197,15 @@
       <pubDate>Wed, 10 Mar 2021 22:29:44 +0800</pubDate>
       
       <guid>https://webnotes.dev/tags/newsletter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://webnotes.dev/tags/resources/</link>
+      <pubDate>Sat, 16 Mar 2024 15:22:55 +0800</pubDate>
+      
+      <guid>https://webnotes.dev/tags/resources/</guid>
       <description></description>
     </item>
     
@@ -275,7 +284,7 @@
     <item>
       <title>naval</title>
       <link>https://webnotes.dev/tags/naval/</link>
-      <pubDate>Sun, 18 May 2025 18:51:16 +0800</pubDate>
+      <pubDate>Sun, 20 Mar 2022 22:29:44 +0800</pubDate>
       
       <guid>https://webnotes.dev/tags/naval/</guid>
       <description></description>
@@ -327,29 +336,11 @@
     </item>
     
     <item>
-      <title>港股开户</title>
-      <link>https://webnotes.dev/tags/%E6%B8%AF%E8%82%A1%E5%BC%80%E6%88%B7/</link>
-      <pubDate>Sun, 22 Oct 2023 20:39:47 +0800</pubDate>
-      
-      <guid>https://webnotes.dev/tags/%E6%B8%AF%E8%82%A1%E5%BC%80%E6%88%B7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>稳定币</title>
       <link>https://webnotes.dev/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</link>
       <pubDate>Thu, 03 Jul 2025 22:20:51 +0800</pubDate>
       
       <guid>https://webnotes.dev/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>美股开户</title>
-      <link>https://webnotes.dev/tags/%E7%BE%8E%E8%82%A1%E5%BC%80%E6%88%B7/</link>
-      <pubDate>Sun, 22 Oct 2023 20:39:47 +0800</pubDate>
-      
-      <guid>https://webnotes.dev/tags/%E7%BE%8E%E8%82%A1%E5%BC%80%E6%88%B7/</guid>
       <description></description>
     </item>
     
