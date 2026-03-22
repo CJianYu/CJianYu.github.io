@@ -1,7 +1,7 @@
 ---
 title: "对话纳瓦尔：关于人性的44个残酷真相"
 date: 2025-05-18T18:51:16+08:00
-draft: false
+draft: true
 tags: [naval]
 ---
 

@@ -56,8 +56,10 @@
 {{- end -}}
 
 <!-- Google AdSense -->
+{{- if .Site.Params.adsense -}}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039259657242077"
      crossorigin="anonymous"></script>
+{{- end -}}
 
 <!-- busuanzi -->
 {{- if .Site.Params.busuanzi.enable -}}

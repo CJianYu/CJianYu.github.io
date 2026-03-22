@@ -4,86 +4,120 @@ date: 2024-01-01T00:00:00+08:00
 draft: false
 ---
 
-Last updated: 2025-01-01
+Last updated: 2026-03-22
 
-## Introduction
+## 概述
 
-Welcome to 懒人的梦呓 ("webnotes.dev", "we", "us", or "our"). We respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
+欢迎访问「懒人的梦呓」`webnotes.dev`。本页说明当你访问本站时，可能会收集哪些信息、这些信息将如何被使用，以及你可以如何管理自己的隐私偏好。
 
-## Information We Collect
+## 我们收集的信息
 
-### Automatically Collected Information
+### 自动收集的信息
 
-When you visit our website, certain information may be collected automatically, including:
+当你访问本站时，服务器或第三方统计服务可能会自动记录以下信息：
 
-- Your IP address (anonymized)
-- Browser type and version
-- Operating system
-- Referring website
-- Pages visited and time spent on each page
-- Date and time of your visit
+- 经匿名化处理后的 IP 信息
+- 浏览器类型与版本
+- 操作系统信息
+- 来源页面
+- 浏览页面与停留时间
+- 访问时间
 
 ### Cookies
 
-Our website uses cookies to enhance your browsing experience. Cookies are small text files stored on your device. We use the following types of cookies:
+本站可能使用 Cookie 来维持基础功能并帮助理解访问情况。Cookie 是保存在你设备上的小型文本文件。当前可能涉及的类型包括：
 
-- **Essential cookies**: Required for the website to function properly.
-- **Analytics cookies**: Used to understand how visitors interact with our website (via Google Analytics).
-- **Advertising cookies**: Used by Google AdSense to serve relevant advertisements.
+- **必要 Cookie**：用于维持网站的基本功能。
+- **统计 Cookie**：用于了解访问者如何使用本站，例如通过 Google Analytics 生成统计报告。
 
-You can control cookie settings through your browser preferences. Disabling cookies may affect website functionality.
+你可以通过浏览器设置管理或禁用 Cookie。禁用后，部分功能或统计可能无法正常工作。
 
-## Third-Party Services
+## 第三方服务
 
 ### Google Analytics
 
-We use Google Analytics to analyze website traffic. Google Analytics collects data through cookies and generates statistical reports about website activity. Google's ability to use and share information collected by Google Analytics is governed by the [Google Analytics Terms of Service](https://marketingplatform.google.com/about/analytics/terms/us/) and the [Google Privacy Policy](https://policies.google.com/privacy).
+本站使用 Google Analytics 了解流量来源、页面访问情况与整体使用趋势。Google 对相关数据的使用受其自身条款与隐私政策约束：
 
-We have enabled IP anonymization in Google Analytics, which means your IP address is shortened before being stored.
+- [Google Analytics Terms of Service](https://marketingplatform.google.com/about/analytics/terms/us/)
+- [Google Privacy Policy](https://policies.google.com/privacy)
 
-### Google AdSense
+本站已启用 IP 匿名化设置，这意味着你的 IP 会在存储前被截断。
 
-We may use Google AdSense to display advertisements on our website. Google AdSense uses cookies to serve ads based on your prior visits to our website or other websites. You may opt out of personalized advertising by visiting [Google Ads Settings](https://adssettings.google.com/).
+### 广告服务
 
-For more information about how Google uses your data, please visit [How Google uses information from sites or apps that use our services](https://policies.google.com/technologies/partner-sites).
+目前本站默认不主动展示 Google AdSense 广告。如果未来启用广告服务，本页会同步更新，说明相关 Cookie、个性化广告设置与数据使用方式。
 
-## How We Use Your Information
+## 信息用途
 
-We use the information collected to:
+我们使用这些信息来：
 
-- Operate and maintain our website
-- Analyze usage patterns to improve content and user experience
-- Display relevant advertisements
+- 维护网站的正常运行
+- 了解内容表现并改进阅读体验
+- 排查异常访问与技术问题
 
-## Data Sharing
+## 信息共享
 
-We do not sell, trade, or rent your personal information to third parties. Information may be shared only with third-party service providers (Google Analytics, Google AdSense) as described above, who process data on our behalf.
+我们不会出售、出租或交易你的个人信息。除统计与基础服务提供方外，我们不会主动向第三方披露这些信息，除非法律另有要求。
 
-## Data Retention
+## 数据保留
 
-We retain automatically collected data for up to 26 months via Google Analytics. You may request data deletion by contacting us.
+自动收集的数据保留期限主要取决于 Google Analytics 的设置与其产品策略。你可以通过邮件联系我们，提出与数据相关的合理请求。
 
-## Your Rights
+## 你的权利
 
-You have the right to:
+你可以：
 
-- Access the personal data we hold about you
-- Request correction of inaccurate data
-- Request deletion of your data
-- Opt out of personalized advertising
-- Disable cookies through your browser settings
+- 通过浏览器禁用或清理 Cookie
+- 询问我们是否保存了与你相关的可识别信息
+- 在合理范围内请求更正或删除相关信息
 
-## Children's Privacy
+## 儿童隐私
 
-Our website is not directed at children under the age of 13. We do not knowingly collect personal information from children.
+本站内容并非专门面向 13 岁以下儿童。我们不会主动、故意收集儿童个人信息。
 
-## Changes to This Policy
+## 政策更新
 
-We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.
+如果本站的数据处理方式发生变化，本页会同步更新，并标注最新修订日期。
 
-## Contact Us
+## 联系方式
 
-If you have any questions about this Privacy Policy, please contact us at:
+如果你对本隐私政策有疑问，可以通过以下方式联系我：
 
 - Email: hackepoch@gmail.com
 - GitHub: [CJianYu](https://github.com/CJianYu)
+*** Add File: /Users/jeffrey/develop/Blog/CJianYu.github.io/content/terms.md
+---
+title: "Terms"
+date: 2026-03-22T00:00:00+08:00
+draft: false
+---
+
+Last updated: 2026-03-22
+
+## 使用条款
+
+访问 `webnotes.dev` 即表示你同意在合法、合理的范围内使用本站内容与服务。
+
+## 内容性质
+
+本站是个人博客，主要发布技术、投资、阅读与生活相关的原创内容。除特别说明外，文章仅代表作者在写作当下的个人判断与经验记录，不构成任何投资、法律、税务、医疗或其他专业建议。
+
+## 内容使用
+
+你可以在保留来源并注明原始链接的前提下，引用本站的少量内容。未经允许，请不要整篇转载、镜像复制或将本站内容用于误导性场景。
+
+## 外部链接
+
+本站可能链接到第三方网站或服务。这些外部网站的内容、可用性和隐私做法不受本站控制，访问前请自行判断风险。
+
+## 无保证声明
+
+本站尽力保证内容的准确性与可读性，但不承诺所有信息始终完整、准确、及时或适用于你的具体情境。你基于本站内容做出的任何决定，应由你自行承担责任。
+
+## 服务调整
+
+本站可能在不另行通知的情况下调整、更新或删除部分页面、链接、功能和内容。
+
+## 联系方式
+
+如果你对本站内容使用或这些条款有疑问，请发邮件至 `hackepoch@gmail.com`。
