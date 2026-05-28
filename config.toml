@@ -49,6 +49,11 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   identifier = "Lists"
   url = "/lists/"
 [[menu.main]]
+  name = "收藏"
+  weight = 45
+  identifier = "favorites"
+  url = "/favorites/"
+[[menu.main]]
   name = "关于"
   weight = 50
   identifier = "About"
@@ -122,7 +127,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  customCSS = []
+  customCSS = ["favorites.css"]
   customJS = ["google-analytics.js"]
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
