@@ -1,3 +1,28 @@
+.site-navbar .menu,
+.mobile-menu .mobile-menu-list a {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+}
+
+.site-navbar .menu {
+  padding-right: 0;
+}
+
+.site-navbar .menu .menu-item + .menu-item {
+  margin-left: 14px;
+}
+
+.site-navbar .menu .menu-item-link {
+  color: #3b4652;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.mobile-menu .mobile-menu-list a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .favorites-page {
   margin: 2em auto;
   max-width: 720px;
