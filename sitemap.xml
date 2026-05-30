@@ -730,6 +730,13 @@
   </url>
   
   <url>
+    <loc>https://webnotes.dev/tags/lists/</loc>
+    <lastmod>2024-03-16T15:22:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://webnotes.dev/tags/movie/</loc>
     <lastmod>2018-10-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -760,13 +767,6 @@
   <url>
     <loc>https://webnotes.dev/categories/records/</loc>
     <lastmod>2021-01-19T22:45:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://webnotes.dev/tags/resources/</loc>
-    <lastmod>2024-03-16T15:22:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

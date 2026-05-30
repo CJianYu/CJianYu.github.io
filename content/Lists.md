@@ -1,33 +1,27 @@
 ---
-title: "Resources"
+title: "Lists"
 date: 2024-03-16T15:22:55+08:00
 draft: false
-tags: ["Resources"]
-About: "Resources"
+tags: ["Lists"]
+About: "Lists"
 ---
 
-这里整理的是我长期在用、也愿意持续推荐的工具与资料站。它更像一份个人工作流清单，不包含商业推广链接。
+这里会推荐一些我正在用的产品与服务，类似于一个awesome list，有需要的朋友可以参考。
 
-## 写作与笔记
+## 美股券商
 
-[Obsidian](https://obsidian.md/)：适合沉淀长期笔记与个人知识库。
+终身免佣的美股券商：[长桥证券](https://app.longbridgehk.com/ac/oa?account_channel=lb&channel=HB100010&invite-code=PBQRTC)
 
-[Notion](https://www.notion.so/)：适合做项目整理、资料归档和轻量协作。
+美国本土券商：[IBKR](https://ibkr.com/referral/jianyu257)
 
-## 开发与协作
+## 跨境支付
 
-[GitHub](https://github.com/)：代码托管、协作与开源社区的基础设施。
+境外版支付宝，转账收款必备：[wise](https://wise.com/invite/ihpc/jianyuc7)
 
-[Visual Studio Code](https://code.visualstudio.com/)：我日常最常用的编辑器。
+跨境支付必备：[Paypal](https://py.pl/7t8ZSKSaCmN)
 
-## 信息获取
+## AI Tool
 
-[Feedly](https://feedly.com/)：用来订阅感兴趣的网站和博客。
+集合多个工具的AI聚合产品：[Monica](https://monica.im/invitation-affiliate?ref=nzi3zdm&ref_aff=nzi3zdm)
 
-[YouTube](https://www.youtube.com/)：很多高质量访谈、课程和技术分享都在这里。
-
-## 投资研究
-
-[TradingView](https://www.tradingview.com/)：适合看图表、做基础行情观察。
-
-[SEC EDGAR](https://www.sec.gov/edgar/search/)：查美国上市公司的原始披露文件很方便。
+chatgpt、claude、cursor这些我就不列了，大家应该都在用。
