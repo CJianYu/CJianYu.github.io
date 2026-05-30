@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Document, don&#39;t create - 懒人的梦呓</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="virusyu" /><meta name="description" content="Store 1 const store = createStore(reducer) 有三个方法：getState（获取），dispatch（更改），subscribe（订阅） Actions 行为， Reducer 接收两个参数：state，a" /><meta name="keywords" content="技术博客, 前端开发, 投资理财, 个人成长, JavaScript, 生活随笔" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://webnotes.dev/post/redux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/favorites.css?v=20260528-3">
+
+
+<meta property="og:title" content="Document, don&#39;t create" />
+<meta property="og:description" content="Store 1 const store = createStore(reducer) 有三个方法：getState（获取），dispatch（更改），subscribe（订阅） Actions 行为， Reducer 接收两个参数：state，a" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://webnotes.dev/post/redux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+<meta property="article:published_time" content="2021-03-10T22:29:44&#43;08:00"/>
+<meta property="article:modified_time" content="2021-03-10T22:29:44&#43;08:00"/>
+
+<meta itemprop="name" content="Document, don&#39;t create">
+<meta itemprop="description" content="Store 1 const store = createStore(reducer) 有三个方法：getState（获取），dispatch（更改），subscribe（订阅） Actions 行为， Reducer 接收两个参数：state，a">
+
+
+<meta itemprop="datePublished" content="2021-03-10T22:29:44&#43;08:00" />
+<meta itemprop="dateModified" content="2021-03-10T22:29:44&#43;08:00" />
+<meta itemprop="wordCount" content="341">
+
+
+
+<meta itemprop="keywords" content="Newsletter," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Document, don&#39;t create"/>
+<meta name="twitter:description" content="Store 1 const store = createStore(reducer) 有三个方法：getState（获取），dispatch（更改），subscribe（订阅） Actions 行为， Reducer 接收两个参数：state，a"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">懒人的梦呓</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/lists/">
+        <li class="mobile-menu-item">资源</li>
+      </a><a href="/favorites/">
+        <li class="mobile-menu-item">收藏</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a><a href="/privacy-policy/">
+        <li class="mobile-menu-item">隐私</li>
+      </a><a href="/terms/">
+        <li class="mobile-menu-item">条款</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">懒人的梦呓</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/lists/">资源</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/favorites/">收藏</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/privacy-policy/">隐私</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/terms/">条款</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Document, don&#39;t create</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-03-10 </span>
+        <div class="post-category">
+            <a href="/categories/life/"> Life </a>
+            </div>
+          <span class="more-meta"> 约 341 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#store">Store</a></li>
+<li><a href="#actions">Actions</a></li>
+<li><a href="#reducer">Reducer</a></li>
+<li><a href="#常用的工具函数">常用的工具函数</a></li>
+<li><a href="#react-redux">react-redux</a></li>
+<li><a href="#异步的action">异步的action</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<h3 id="store">Store</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">const</span> <span class="nx">store</span> <span class="o">=</span> <span class="nx">createStore</span><span class="p">(</span><span class="nx">reducer</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>有三个方法：getState（获取），dispatch（更改），subscribe（订阅）</p>
+
+<h3 id="actions">Actions</h3>
+
+<p>行为，</p>
+
+<h3 id="reducer">Reducer</h3>
+
+<p>接收两个参数：state，action</p>
+
+<p>根据action.type判断是否执行相应的逻辑，返回：新的state</p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/CJianYu/PictureBed/BlogImg/20220216221115.png" alt="image-20220216221115280" /></p>
+
+<h3 id="常用的工具函数">常用的工具函数</h3>
+
+<p>combineReducers</p>
+
+<p>bindActionCreators</p>
+
+<h3 id="react-redux">react-redux</h3>
+
+<p>假设有个组件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">class</span> <span class="nx">componentsA</span> <span class="k">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+  
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>mapStateToProps</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 映射state中的部分值，传递给组件
+</span><span class="c1">// 不全部传，因为性能问题，store的任何变化都会促发组件更新
+</span><span class="c1"></span><span class="kd">function</span> <span class="nx">mapStateToProps</span><span class="p">(</span><span class="nx">state</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span>
+      <span class="nx">xx</span><span class="o">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">xx</span><span class="p">,</span>
+      <span class="nx">yy</span><span class="o">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">yy</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>mapDispatchToProps：将actions绑定到组件中</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">mapDispatchToProps</span><span class="p">(</span><span class="nx">actions</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="nx">bindActionCreators</span><span class="p">({</span> <span class="p">...</span><span class="nx">actions</span> <span class="p">},</span> <span class="nx">dispatch</span><span class="p">)</span>
+    <span class="c1">// bindActionCreators({ actionA, actionB }, dispatch)
+</span><span class="c1"></span>  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>然后用connect将state、actions接收后，形成一个函数，此函数再调用这个组件，形成高阶组件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="k">export</span> <span class="k">default</span> <span class="nx">connect</span><span class="p">(</span><span class="nx">mapStateToProps</span><span class="p">,</span> <span class="nx">mapDispatchToProps</span><span class="p">)(</span><span class="nx">componentA</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="异步的action">异步的action</h3>
+
+<p><img src="https://cdn.jsdelivr.net/gh/CJianYu/PictureBed/BlogImg/20220216234139.png" alt="image-20220216234139840" /></p>
+
+<p>中间件截获、发出action</p>
+
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/newsletter/">Newsletter</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E4%B8%80%E6%97%A0%E6%89%80%E6%9C%89/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">一无所有</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/newsletter/">
+            <span class="next-text nav-default">Document, don&#39;t create</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2021-03-10 22:29:44 \x2b0800 CST',
+        title: 'Document, don\x27t create',
+        clientID: '05974c1cc13d6148bcd0',
+        clientSecret: '1728004705e563e811c77fe4bd644836e33eed63',
+        repo: 'CJianYu.github.io',
+        owner: 'CJianYu',
+        admin: ['CJianYu'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/CJianYu" class="iconfont icon-github" title="github"></a>
+  <a href="https://webnotes.dev/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2016 - 
+    2026
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">virusyu</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136354269-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?https:\/\/hm.baidu.com\/hm.js?11b3ab96fbe1187db509353824a1ff3b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+<script src="/js/google-analytics.js"></script>
+
+
+</body>
+</html>

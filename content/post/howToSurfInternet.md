@@ -1,7 +1,7 @@
 ---
 title: "如何正确科学上网"
 date: 2024-03-03T21:35:38+08:00
-draft: true
+draft: false
 tags: [科学上网]
 categories: [Note]
 ---

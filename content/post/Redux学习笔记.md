@@ -1,7 +1,7 @@
 ---
 title: "Document, don't create"
 date: 2021-03-10T22:29:44+08:00
-draft: true
+draft: false
 tags: [Newsletter]
 categories: [Life]
 

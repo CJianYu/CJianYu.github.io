@@ -13,6 +13,15 @@
     
     <item>
       <title>Document, don&#39;t create</title>
+      <link>https://webnotes.dev/post/redux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Wed, 10 Mar 2021 22:29:44 +0800</pubDate>
+      
+      <guid>https://webnotes.dev/post/redux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>Store 1 const store = createStore(reducer) 有三个方法：getState（获取），dispatch（更改），subscribe（订阅） Actions 行为， Reducer 接收两个参数：state，a</description>
+    </item>
+    
+    <item>
+      <title>Document, don&#39;t create</title>
       <link>https://webnotes.dev/post/newsletter/</link>
       <pubDate>Wed, 10 Mar 2021 22:29:44 +0800</pubDate>
       

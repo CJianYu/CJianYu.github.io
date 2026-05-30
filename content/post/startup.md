@@ -1,7 +1,7 @@
 ---
 title: "外企程序员失业后决定重新出发"
 date: 2025-03-31T23:02:22+08:00
-draft: true
+draft: false
 tags: [entrepreneurship]
 categories: [entrepreneurship]
 ---
