@@ -7,38 +7,40 @@
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </header>
 
-  {{ $paginator := .Paginate (.Data.Pages.ByDate.Reverse) }}
+  {{ $paginator := .Paginate (.Data.Pages.ByDate.Reverse) 20 }}
   <div class="favorites-list">
-    {{ range $paginator.Pages }}
+    {{- range $paginator.Pages }}
       <article class="favorite-item">
         <h2 class="favorite-title">
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </h2>
-        {{ with .Description }}
+        {{- with .Description }}
           <p class="favorite-summary">{{ . }}</p>
-        {{ else }}
-          {{ with .Summary }}<p class="favorite-summary">{{ . | plainify }}</p>{{ end }}
-        {{ end }}
+        {{- else }}
+          {{- with .Summary }}<p class="favorite-summary">{{ . | plainify }}</p>{{ end }}
+        {{- end }}
         <time class="favorite-date">{{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</time>
       </article>
-    {{ else }}
+    {{- else }}
       <p class="favorites-empty">还没有文章。把 Markdown 放到 <code>content/favorites/</code> 下就会显示在这里。</p>
-    {{ end }}
+    {{- end }}
   </div>
 
-  <nav class="pagination">
-    {{ with $paginator.Prev -}}
-      <a class="prev" href="{{ .URL }}">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text">{{ T "prevPage" }}</span>
-      </a>
-    {{- end }}
-    {{ with $paginator.Next -}}
-      <a class="next" href="{{ .URL }}">
-        <span class="next-text">{{ T "nextPage" }}</span>
-        <i class="iconfont icon-right"></i>
-      </a>
-    {{- end }}
-  </nav>
+  {{- if gt $paginator.TotalPages 1 }}
+    <nav class="pagination">
+      {{ with $paginator.Prev -}}
+        <a class="prev" href="{{ .URL }}">
+          <i class="iconfont icon-left"></i>
+          <span class="prev-text">{{ T "prevPage" }}</span>
+        </a>
+      {{- end }}
+      {{ with $paginator.Next -}}
+        <a class="next" href="{{ .URL }}">
+          <span class="next-text">{{ T "nextPage" }}</span>
+          <i class="iconfont icon-right"></i>
+        </a>
+      {{- end }}
+    </nav>
+  {{- end }}
 </section>
 {{- end }}
