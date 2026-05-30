@@ -58,16 +58,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 50
   identifier = "About"
   url = "/about/"
-[[menu.main]]
-  name = "隐私"
-  weight = 60
-  identifier = "privacy"
-  url = "/privacy-policy/"
-[[menu.main]]
-  name = "条款"
-  weight = 70
-  identifier = "terms"
-  url = "/terms/"
 
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
