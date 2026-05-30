@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>收藏 on 懒人的梦呓</title>
-    <link>https://webnotes.dev/favorites/</link>
+    <link>https://webnotes.dev/tags/%E6%94%B6%E8%97%8F/</link>
     <description>Recent content in 收藏 on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 31 May 2026 00:08:00 +0800</lastBuildDate>
     
-	<atom:link href="https://webnotes.dev/favorites/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://webnotes.dev/tags/%E6%94%B6%E8%97%8F/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -90,24 +90,6 @@
       
       <guid>https://webnotes.dev/favorites/caoz%E5%B9%B4%E7%BB%88%E7%A6%8F%E5%88%A9%E8%AF%BE%E4%B8%8A/</guid>
       <description>这次福利课的主题是讨论变局，实际上备课的时候，防疫政策出现了重大的调整，国内防疫局势出现了重大变局，也是我未曾预料的。所以这个事情难点在于，</description>
-    </item>
-    
-    <item>
-      <title>马克·塞勒尔经典演讲：伟大投资者的7个特质，重点是“心智壁垒”</title>
-      <link>https://webnotes.dev/favorites/%E9%A9%AC%E5%85%8B%E5%A1%9E%E5%8B%92%E5%B0%94%E7%BB%8F%E5%85%B8%E6%BC%94%E8%AE%B2/</link>
-      <pubDate>Sat, 30 May 2026 00:00:00 +0800</pubDate>
-      
-      <guid>https://webnotes.dev/favorites/%E9%A9%AC%E5%85%8B%E5%A1%9E%E5%8B%92%E5%B0%94%E7%BB%8F%E5%85%B8%E6%BC%94%E8%AE%B2/</guid>
-      <description>马克·塞勒尔是 对冲基金Sellers Capital Fund创始人 ，曾在晨星担任首席股权战略师。 本文是他2008年在哈佛大学所做的演讲，和绝大多数鸡汤式的</description>
-    </item>
-    
-    <item>
-      <title>YC 作为见证者</title>
-      <link>https://webnotes.dev/favorites/yc-as-a-witness/</link>
-      <pubDate>Thu, 28 May 2026 00:00:00 +0800</pubDate>
-      
-      <guid>https://webnotes.dev/favorites/yc-as-a-witness/</guid>
-      <description>原文地址：https://x.com/garrytan/status/2059656455805145383?s=20 心理学家爱丽丝·米勒（</description>
     </item>
     
   </channel>
