@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://webnotes.dev/favorites/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E7%A0%94%E7%A9%B6/</loc>
+    <lastmod>2026-07-03T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://webnotes.dev/favorites/ai%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD/</loc>
     <lastmod>2026-06-06T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -634,7 +641,7 @@
   
   <url>
     <loc>https://webnotes.dev/tags/ai/</loc>
-    <lastmod>2026-06-06T00:00:00+08:00</lastmod>
+    <lastmod>2026-07-03T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -892,7 +899,7 @@
   
   <url>
     <loc>https://webnotes.dev/tags/</loc>
-    <lastmod>2026-06-06T00:00:00+08:00</lastmod>
+    <lastmod>2026-07-03T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -1052,8 +1059,15 @@
   </url>
   
   <url>
+    <loc>https://webnotes.dev/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2026-07-03T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://webnotes.dev/</loc>
-    <lastmod>2026-06-06T00:00:00+08:00</lastmod>
+    <lastmod>2026-07-03T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -1088,7 +1102,7 @@
   
   <url>
     <loc>https://webnotes.dev/favorites/</loc>
-    <lastmod>2026-06-06T00:00:00+08:00</lastmod>
+    <lastmod>2026-07-03T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1096,6 +1110,13 @@
   <url>
     <loc>https://webnotes.dev/tags/%E6%B8%AF%E8%82%A1%E5%BC%80%E6%88%B7/</loc>
     <lastmod>2020-06-07T22:45:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://webnotes.dev/tags/%E7%A0%94%E7%A9%B6/</loc>
+    <lastmod>2026-07-03T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -1130,7 +1151,7 @@
   
   <url>
     <loc>https://webnotes.dev/tags/%E7%BF%BB%E8%AF%91/</loc>
-    <lastmod>2026-06-06T00:00:00+08:00</lastmod>
+    <lastmod>2026-07-03T00:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

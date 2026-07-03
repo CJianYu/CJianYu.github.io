@@ -6,7 +6,7 @@
     <description>Recent content in Tags on 懒人的梦呓</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 06 Jun 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://webnotes.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>AI</title>
       <link>https://webnotes.dev/tags/ai/</link>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0800</pubDate>
       
       <guid>https://webnotes.dev/tags/ai/</guid>
       <description></description>
@@ -426,6 +426,15 @@
     </item>
     
     <item>
+      <title>学习方法</title>
+      <link>https://webnotes.dev/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0800</pubDate>
+      
+      <guid>https://webnotes.dev/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>房地产</title>
       <link>https://webnotes.dev/tags/%E6%88%BF%E5%9C%B0%E4%BA%A7/</link>
       <pubDate>Sat, 14 Jun 2025 21:48:46 +0800</pubDate>
@@ -458,6 +467,15 @@
       <pubDate>Sun, 07 Jun 2020 22:45:52 +0800</pubDate>
       
       <guid>https://webnotes.dev/tags/%E6%B8%AF%E8%82%A1%E5%BC%80%E6%88%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>研究</title>
+      <link>https://webnotes.dev/tags/%E7%A0%94%E7%A9%B6/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0800</pubDate>
+      
+      <guid>https://webnotes.dev/tags/%E7%A0%94%E7%A9%B6/</guid>
       <description></description>
     </item>
     
@@ -500,7 +518,7 @@
     <item>
       <title>翻译</title>
       <link>https://webnotes.dev/tags/%E7%BF%BB%E8%AF%91/</link>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0800</pubDate>
       
       <guid>https://webnotes.dev/tags/%E7%BF%BB%E8%AF%91/</guid>
       <description></description>
