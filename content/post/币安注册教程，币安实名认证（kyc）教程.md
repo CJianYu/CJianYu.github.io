@@ -1,7 +1,7 @@
 ---
 title: "币安注册教程，币安实名认证教程"
 date: 2022-05-14T23:58:53+08:00
-draft: true
+draft: false
 tags: [Crypto]
 categories: [Note]
 ---

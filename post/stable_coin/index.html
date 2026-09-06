@@ -16,18 +16,18 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="" /><meta name="description" content="最近稳定币好像频繁出现在大众的视野，主要原因是美国通过了《天才法案》，在法律层面为合规美元稳定币清除不确定性，并可能吸引更多银行和支付机构进入该赛道。
+<meta name="author" content="virusyu" /><meta name="description" content="最近稳定币好像频繁出现在大众的视野，主要原因是美国通过了《天才法案》，在法律层面为合规美元稳定币清除不确定性，并可能吸引更多银行和支付机构进入该赛道。
 美国通过后，香港迅速跟进，承诺将发放牌照并鼓励将稳定币接入跨境支付、零售场景，各大公司摩拳擦掌，纷纷准备入局。
 为了让你彻底看懂稳定币，这篇文章将分为这几部份：
-从《天才法案》说起 稳定币究竟是什么 会影响现有的美元霸权吗 普通人的机会 从《天才法案》说起 天才法案（GENIUS Act），全称是“Guiding and Establishing National Innovation for U.S. Stablecoins Act of 2025”，这是专门为稳定币推出的法律监管框架，核心有这么几个要点：
-明确稳定币为“Payment Stablecoin“，用于支付结算、承诺 1:1 赎回、需保持稳定价值，明确“既非证券也非商品”，也就是防止被炒作 发行牌照制度：仅“许可支付稳定币发行人”（PPSI）可在美境内铸造；也就是受监管的。 发行商必须严格按照1:1提供高流动性储备以及月度信息披露。也就是发行商的储备必须完全由现金小于或等于 90 天美国国债等高质量流动资产构成； 发行商禁止向持币人付息 所有发行人与服务商一律纳入《银行保密法》AML/KYC 义务，即避免反洗钱。 " /><meta name="keywords" content="技术博客, 前端开发, 投资理财, 个人成长, JavaScript, 生活随笔" />
+ 从《天才法案》说起 稳定币究竟是什么 会影响现有的美元霸权吗 普通人的机会  从《天才法案》说起 天才法案（GENIUS Act），全称是“Guiding and Establishing National Innovation for U.S. Stablecoins Act of 2025”，这是专门为稳定币推出的法律监管框架，核心有这么几个要点：
+ 明确稳定币为“Payment Stablecoin“，用于支付结算、承诺 1:1 赎回、需保持稳定价值，明确“既非证券也非商品”，也就是防止被炒作 发行牌照制度：仅“许可支付稳定币发行人”（PPSI）可在美境内铸造；也就是受监管的。 发行商必须严格按照1:1提供高流动性储备以及月度信息披露。也就是发行商的储备必须完全由现金小于或等于 90 天美国国债等高质量流动资产构成； 发行商禁止向持币人付息 所有发行人与服务商一律纳入《银行保密法》AML/KYC 义务，即避免反洗钱。 " /><meta name="keywords" content="技术博客, 前端开发, 投资理财, 个人成长, JavaScript, 生活随笔" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.165.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://webnotes.dev/post/stable_coin/" />
@@ -38,43 +38,101 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
-<link href="/dist/%3cnil%3e" rel="stylesheet">
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/favorites.css?v=20260531-1">
 
 
-<meta property="og:url" content="https://webnotes.dev/post/stable_coin/">
-	<meta property="og:site_name" content="懒人的梦呓">
-	<meta property="og:title" content="从天才法案到美元霸权扩张：稳定币为什么突然成了头条">
-	<meta property="og:description" content="最近稳定币好像频繁出现在大众的视野，主要原因是美国通过了《天才法案》，在法律层面为合规美元稳定币清除不确定性，并可能吸引更多银行和支付机构进入该赛道。
+<meta property="og:title" content="从天才法案到美元霸权扩张：稳定币为什么突然成了头条" />
+<meta property="og:description" content="最近稳定币好像频繁出现在大众的视野，主要原因是美国通过了《天才法案》，在法律层面为合规美元稳定币清除不确定性，并可能吸引更多银行和支付机构进入该赛道。
+
 美国通过后，香港迅速跟进，承诺将发放牌照并鼓励将稳定币接入跨境支付、零售场景，各大公司摩拳擦掌，纷纷准备入局。
+
 为了让你彻底看懂稳定币，这篇文章将分为这几部份：
-从《天才法案》说起 稳定币究竟是什么 会影响现有的美元霸权吗 普通人的机会 从《天才法案》说起 天才法案（GENIUS Act），全称是“Guiding and Establishing National Innovation for U.S. Stablecoins Act of 2025”，这是专门为稳定币推出的法律监管框架，核心有这么几个要点：
-明确稳定币为“Payment Stablecoin“，用于支付结算、承诺 1:1 赎回、需保持稳定价值，明确“既非证券也非商品”，也就是防止被炒作 发行牌照制度：仅“许可支付稳定币发行人”（PPSI）可在美境内铸造；也就是受监管的。 发行商必须严格按照1:1提供高流动性储备以及月度信息披露。也就是发行商的储备必须完全由现金小于或等于 90 天美国国债等高质量流动资产构成； 发行商禁止向持币人付息 所有发行人与服务商一律纳入《银行保密法》AML/KYC 义务，即避免反洗钱。">
-	<meta property="og:locale" content="zh_cn">
-	<meta property="og:type" content="article">
-		<meta property="article:section" content="post">
-		<meta property="article:published_time" content="2025-07-03T22:20:51+08:00">
-		<meta property="article:modified_time" content="2025-07-03T22:20:51+08:00">
-		<meta property="article:tag" content="稳定币">
-<meta name="news_keywords" content="从天才法案到美元霸权扩张：稳定币为什么突然成了头条" />
-	<meta itemprop="name" content="从天才法案到美元霸权扩张：稳定币为什么突然成了头条">
-	<meta itemprop="description" content="最近稳定币好像频繁出现在大众的视野，主要原因是美国通过了《天才法案》，在法律层面为合规美元稳定币清除不确定性，并可能吸引更多银行和支付机构进入该赛道。
+
+
+从《天才法案》说起
+稳定币究竟是什么
+会影响现有的美元霸权吗
+普通人的机会
+
+
+从《天才法案》说起
+
+天才法案（GENIUS Act），全称是“Guiding and Establishing National Innovation for U.S. Stablecoins Act of 2025”，这是专门为稳定币推出的法律监管框架，核心有这么几个要点：
+
+
+明确稳定币为“Payment Stablecoin“，用于支付结算、承诺 1:1 赎回、需保持稳定价值，明确“既非证券也非商品”，也就是防止被炒作
+发行牌照制度：仅“许可支付稳定币发行人”（PPSI）可在美境内铸造；也就是受监管的。
+发行商必须严格按照1:1提供高流动性储备以及月度信息披露。也就是发行商的储备必须完全由现金小于或等于 90 天美国国债等高质量流动资产构成；
+发行商禁止向持币人付息
+所有发行人与服务商一律纳入《银行保密法》AML/KYC 义务，即避免反洗钱。
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://webnotes.dev/post/stable_coin/" />
+<meta property="article:published_time" content="2025-07-03T22:20:51&#43;08:00"/>
+<meta property="article:modified_time" content="2025-07-03T22:20:51&#43;08:00"/>
+
+<meta itemprop="name" content="从天才法案到美元霸权扩张：稳定币为什么突然成了头条">
+<meta itemprop="description" content="最近稳定币好像频繁出现在大众的视野，主要原因是美国通过了《天才法案》，在法律层面为合规美元稳定币清除不确定性，并可能吸引更多银行和支付机构进入该赛道。
+
 美国通过后，香港迅速跟进，承诺将发放牌照并鼓励将稳定币接入跨境支付、零售场景，各大公司摩拳擦掌，纷纷准备入局。
+
 为了让你彻底看懂稳定币，这篇文章将分为这几部份：
-从《天才法案》说起 稳定币究竟是什么 会影响现有的美元霸权吗 普通人的机会 从《天才法案》说起 天才法案（GENIUS Act），全称是“Guiding and Establishing National Innovation for U.S. Stablecoins Act of 2025”，这是专门为稳定币推出的法律监管框架，核心有这么几个要点：
-明确稳定币为“Payment Stablecoin“，用于支付结算、承诺 1:1 赎回、需保持稳定价值，明确“既非证券也非商品”，也就是防止被炒作 发行牌照制度：仅“许可支付稳定币发行人”（PPSI）可在美境内铸造；也就是受监管的。 发行商必须严格按照1:1提供高流动性储备以及月度信息披露。也就是发行商的储备必须完全由现金小于或等于 90 天美国国债等高质量流动资产构成； 发行商禁止向持币人付息 所有发行人与服务商一律纳入《银行保密法》AML/KYC 义务，即避免反洗钱。">
-	<meta itemprop="datePublished" content="2025-07-03T22:20:51+08:00">
-	<meta itemprop="dateModified" content="2025-07-03T22:20:51+08:00">
-	<meta itemprop="wordCount" content="1633">
-	<meta itemprop="keywords" content="稳定币">
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="从天才法案到美元霸权扩张：稳定币为什么突然成了头条">
-	<meta name="twitter:description" content="最近稳定币好像频繁出现在大众的视野，主要原因是美国通过了《天才法案》，在法律层面为合规美元稳定币清除不确定性，并可能吸引更多银行和支付机构进入该赛道。
+
+
+从《天才法案》说起
+稳定币究竟是什么
+会影响现有的美元霸权吗
+普通人的机会
+
+
+从《天才法案》说起
+
+天才法案（GENIUS Act），全称是“Guiding and Establishing National Innovation for U.S. Stablecoins Act of 2025”，这是专门为稳定币推出的法律监管框架，核心有这么几个要点：
+
+
+明确稳定币为“Payment Stablecoin“，用于支付结算、承诺 1:1 赎回、需保持稳定价值，明确“既非证券也非商品”，也就是防止被炒作
+发行牌照制度：仅“许可支付稳定币发行人”（PPSI）可在美境内铸造；也就是受监管的。
+发行商必须严格按照1:1提供高流动性储备以及月度信息披露。也就是发行商的储备必须完全由现金小于或等于 90 天美国国债等高质量流动资产构成；
+发行商禁止向持币人付息
+所有发行人与服务商一律纳入《银行保密法》AML/KYC 义务，即避免反洗钱。
+">
+
+
+<meta itemprop="datePublished" content="2025-07-03T22:20:51&#43;08:00" />
+<meta itemprop="dateModified" content="2025-07-03T22:20:51&#43;08:00" />
+<meta itemprop="wordCount" content="1633">
+
+
+
+<meta itemprop="keywords" content="稳定币," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="从天才法案到美元霸权扩张：稳定币为什么突然成了头条"/>
+<meta name="twitter:description" content="最近稳定币好像频繁出现在大众的视野，主要原因是美国通过了《天才法案》，在法律层面为合规美元稳定币清除不确定性，并可能吸引更多银行和支付机构进入该赛道。
+
 美国通过后，香港迅速跟进，承诺将发放牌照并鼓励将稳定币接入跨境支付、零售场景，各大公司摩拳擦掌，纷纷准备入局。
+
 为了让你彻底看懂稳定币，这篇文章将分为这几部份：
-从《天才法案》说起 稳定币究竟是什么 会影响现有的美元霸权吗 普通人的机会 从《天才法案》说起 天才法案（GENIUS Act），全称是“Guiding and Establishing National Innovation for U.S. Stablecoins Act of 2025”，这是专门为稳定币推出的法律监管框架，核心有这么几个要点：
-明确稳定币为“Payment Stablecoin“，用于支付结算、承诺 1:1 赎回、需保持稳定价值，明确“既非证券也非商品”，也就是防止被炒作 发行牌照制度：仅“许可支付稳定币发行人”（PPSI）可在美境内铸造；也就是受监管的。 发行商必须严格按照1:1提供高流动性储备以及月度信息披露。也就是发行商的储备必须完全由现金小于或等于 90 天美国国债等高质量流动资产构成； 发行商禁止向持币人付息 所有发行人与服务商一律纳入《银行保密法》AML/KYC 义务，即避免反洗钱。">
+
+
+从《天才法案》说起
+稳定币究竟是什么
+会影响现有的美元霸权吗
+普通人的机会
+
+
+从《天才法案》说起
+
+天才法案（GENIUS Act），全称是“Guiding and Establishing National Innovation for U.S. Stablecoins Act of 2025”，这是专门为稳定币推出的法律监管框架，核心有这么几个要点：
+
+
+明确稳定币为“Payment Stablecoin“，用于支付结算、承诺 1:1 赎回、需保持稳定价值，明确“既非证券也非商品”，也就是防止被炒作
+发行牌照制度：仅“许可支付稳定币发行人”（PPSI）可在美境内铸造；也就是受监管的。
+发行商必须严格按照1:1提供高流动性储备以及月度信息披露。也就是发行商的储备必须完全由现金小于或等于 90 天美国国债等高质量流动资产构成；
+发行商禁止向持币人付息
+所有发行人与服务商一律纳入《银行保密法》AML/KYC 义务，即避免反洗钱。
+"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -113,21 +171,12 @@
         <li class="mobile-menu-item">关于</li>
       </a>
   </ul>
-
-  
-
-
 </nav>
-
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
   <a href="/" class="logo">懒人的梦呓</a>
 </div>
-
-
-
-
 
 <nav class="site-navbar">
   <ul id="menu" class="menu">
@@ -146,7 +195,6 @@
       </li>
   </ul>
 </nav>
-
     </header>
 
     <main id="main" class="main">
@@ -170,27 +218,36 @@
   <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-  <ul>
-    <li><a href="#从天才法案说起">从《天才法案》说起</a></li>
-    <li><a href="#稳定币究竟是什么">稳定币究竟是什么</a></li>
-    <li><a href="#会影响现有的美元霸权吗">会影响现有的美元霸权吗</a></li>
-    <li><a href="#普通人有赚钱机会吗">普通人有赚钱机会吗</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#从-天才法案-说起">从《天才法案》说起</a></li>
+<li><a href="#稳定币究竟是什么">稳定币究竟是什么</a></li>
+<li><a href="#会影响现有的美元霸权吗">会影响现有的美元霸权吗</a></li>
+<li><a href="#普通人有赚钱机会吗">普通人有赚钱机会吗</a></li>
+</ul></li>
+</ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
       <p>最近稳定币好像频繁出现在大众的视野，主要原因是美国通过了《天才法案》，在法律层面为合规美元稳定币清除不确定性，并可能吸引更多银行和支付机构进入该赛道。</p>
+
 <p>美国通过后，香港迅速跟进，承诺将发放牌照并鼓励将稳定币接入跨境支付、零售场景，各大公司摩拳擦掌，纷纷准备入局。</p>
+
 <p>为了让你彻底看懂稳定币，这篇文章将分为这几部份：</p>
+
 <ol>
 <li>从《天才法案》说起</li>
 <li>稳定币究竟是什么</li>
 <li>会影响现有的美元霸权吗</li>
 <li>普通人的机会</li>
 </ol>
-<h2 id="从天才法案说起">从《天才法案》说起</h2>
+
+<h2 id="从-天才法案-说起">从《天才法案》说起</h2>
+
 <p>天才法案（GENIUS Act），全称是“Guiding and Establishing National Innovation for U.S. Stablecoins Act of 2025”，这是专门为稳定币推出的法律监管框架，核心有这么几个要点：</p>
+
 <ol>
 <li>明确稳定币为“Payment Stablecoin“，用于支付结算、承诺 1:1 赎回、需保持稳定价值，明确“既非证券也非商品”，也就是防止被炒作</li>
 <li>发行牌照制度：仅“许可支付稳定币发行人”（PPSI）可在美境内铸造；也就是受监管的。</li>
@@ -198,29 +255,53 @@
 <li>发行商禁止向持币人付息</li>
 <li>所有发行人与服务商一律纳入《银行保密法》AML/KYC 义务，即避免反洗钱。</li>
 </ol>
+
 <h2 id="稳定币究竟是什么">稳定币究竟是什么</h2>
+
 <p>通过《天才法案》，我们知道，稳定币的定性就是一个支付工具。这个工具受监管，跟美元1:1兑换。简单理解就是1个稳定币的价值就是1美元，你可以用这一个稳定币购买1美元的东西。</p>
+
 <p>熟悉web 3的朋友一定对稳定币很熟悉，目前主流的稳定币有两个，一个是usdt，一个是usdc。</p>
+
 <p>USDT的发行商是Tether，非美国公司，但是规模最大，是目前稳定币的一哥。</p>
+
 <p>USDC的发行商是Circle，前不久刚上市被爆炒的美国本土公司，是二哥。</p>
+
 <p>稳定币能稳定的前提是，发行商收到美元之后，老老实实存美元或者存短期美债，在无论发生什么的情况下如果用户想换美元都能及时兑换。</p>
+
 <p>但是我们的一哥Tether并没有那么老实，虽然明面上宣称自己老实，但背地里拿钱投了各种东西，包括去借贷等具有风险的行为。</p>
+
 <p>二哥看到这种情况，心想肯定会出事的，于是推出了第三方审查更加严格的usdc，更公开透明。</p>
+
 <p>基于Circle是美国本土公司，加上更加透明与严格的审查，特朗普政府是有意扶持Circle的，Circle上市之后，暴涨翻倍的事大家也知道了。</p>
+
 <p>这两兄弟基本上占据了稳定币的绝大部分份额，之前还有luna，不过后面出事了。</p>
+
 <p>到这里我们有没有发现，稳定币的发行商跟商业银行很像。其实这两者的商业模式是一样的，稳定币拿到美元之后，只能买短债而不是长债，就是要避免久期风险，防止加息导致债券价格下跌，而客户集体提款发生的挤兑风险。</p>
+
 <h2 id="会影响现有的美元霸权吗">会影响现有的美元霸权吗</h2>
+
 <p>不会。</p>
+
 <p>相反，稳定币其实反而扩展了美元的边界。我们知道，crypto这几年发展的挺好的，已经是几万亿的市场了，那么，如果以美元作为基准的稳定币，成为了这个市场的主流计价货币，那就是彻底的美元本位，那么美元的边界其实是增大了的。</p>
+
 <p>你发行稳定币都要有美元作为储备，又谈何颠覆美元霸权呢？</p>
+
 <p>稳定币发行商拿到美元之后，要么老老实实拿着美元放着不动，就吃个手续费；要么拿去投美债。</p>
+
 <p>一个有利息，一个没利息，要是你，你会怎么选？</p>
+
 <p>肯定拿利息对不对，当发行商越来越多，美债的买方也越来越多，其实是缓解了当前美债卖不动的困境，稳定币也就间接成了美国化债的工具。</p>
+
 <h2 id="普通人有赚钱机会吗">普通人有赚钱机会吗</h2>
+
 <p>之前爆炒Circle的朋友们可以缓缓了，Circle的收入大部份要交给那几家大的交易所，完全就是打工的地位，甚至还比不上商业银行，长期来看目前的估值完全是情绪面的投机结果。</p>
+
 <p>我们知道普通人肯定是当不了发行商的，所以目前基本上没什么发财的机会，除非出现Luna这种崩盘级别的黑天鹅。</p>
+
 <p>你可以永远相信会有人禁不住诱惑，在监管之下去做一些高风险的事，一旦崩盘，嗜血的资本肯定会蜂拥而至。</p>
+
 <p>而你，我的朋友，记得事情发生的时候不要只在傻呵呵看戏，进去捞点钱很容易的。</p>
+
 <p>另外，如果有朋友需要A股、港股、美股、或想玩币圈开户的，可以联系我「开户」。</p>
     </div>
 
@@ -249,7 +330,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
       var gitalk = new Gitalk({
-        id: '2025-07-03 22:20:51 \u002b0800 CST',
+        id: '2025-07-03 22:20:51 \x2b0800 CST',
         title: '从天才法案到美元霸权扩张：稳定币为什么突然成了头条',
         clientID: '05974c1cc13d6148bcd0',
         clientSecret: '1728004705e563e811c77fe4bd644836e33eed63',
@@ -262,17 +343,13 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
 
-  
-
-  
-
       </div>
     </main>
 
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="https://github.com/CJianYu" class="iconfont icon-github" title="github"></a>
-  
+  <a href="https://webnotes.dev/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">
@@ -290,10 +367,13 @@
   <span class="copyright-year">
     &copy; 
     2016 - 
-    2026<span class="heart"><i class="iconfont icon-heart"></i></span><span></span>
+    2026
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">virusyu</span>
   </span>
 </div>
-
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -304,11 +384,19 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
 
 
-
-<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
-
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136354269-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 <script id="baidu_analytics">
   var _hmt = _hmt || [];
   (function() {

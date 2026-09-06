@@ -10,15 +10,22 @@
 		
 		
 		
-			<lastBuildDate>Fri, 14 Aug 2026 16:29:42 +0000</lastBuildDate>
+			<lastBuildDate>Sun, 06 Sep 2026 00:00:00 +0800</lastBuildDate>
 		
 			<atom:link href="https://webnotes.dev/favorites/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>AI Engineering Skills Map: Building and Deploying AI Applications</title>
+				<link>https://webnotes.dev/favorites/ai-engineering-skills-map-building-and-deploying-ai-applications/</link>
+				<pubDate>Sun, 06 Sep 2026 00:00:00 +0800</pubDate>
+				<guid>https://webnotes.dev/favorites/ai-engineering-skills-map-building-and-deploying-ai-applications/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://webnotes.dev/img/ai-engineering-skills-map-building-and-deploying-ai-applications.png&#34; alt=&#34;AI Engineering Skills Map: Building and Deploying AI Applications&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;我之前写过《AI Engineering Skills Map》，当时把 AI 工程的四类核心能力概括为：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;构建与部署 AI 应用&lt;/li&gt;&#xA;&lt;li&gt;软件工程基础&lt;/li&gt;&#xA;&lt;li&gt;使用编程代理（Coding Agents）&lt;/li&gt;&#xA;&lt;li&gt;参与“定义产品”&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;这篇我先展开第一部分：&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>The AI Engineering Skills Map</title>
 				<link>https://webnotes.dev/favorites/the-ai-engineering-skills-map/</link>
 				<pubDate>Fri, 14 Aug 2026 16:29:42 +0000</pubDate>
 				<guid>https://webnotes.dev/favorites/the-ai-engineering-skills-map/</guid>
-				<description>&lt;p&gt;原文地址：&lt;a href=&#34;https://x.com/AndrewYNg/status/2088302050706686198&#34;&gt;https://x.com/AndrewYNg/status/2088302050706686198&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;我很高兴分享《AI Engineering Skills Map》。AI 让我们今天构建软件的方式与 2022 年相比有了本质差别，任何能把握这次变化的人，都有大量值得期待的项目和职业机会。面对围绕 AI 的喧闹与噪音，最值得优先学习的技能到底是什么？我和团队在持续梳理，希望帮助开发者（1）明确该学什么；（2）帮助雇主识别真正有能力的开发者。&lt;/p&gt;</description>
+				<description>&lt;p&gt;&lt;img src=&#34;https://webnotes.dev/img/the-ai-engineering-skills-map-cover.png&#34; alt=&#34;The AI Engineering Skills Map&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;原文地址：&lt;a href=&#34;https://x.com/AndrewYNg/status/2088302050706686198&#34;&gt;https://x.com/AndrewYNg/status/2088302050706686198&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;我很高兴分享《AI Engineering Skills Map》。AI 让我们今天构建软件的方式与 2022 年相比有了本质差别，任何能把握这次变化的人，都有大量值得期待的项目和职业机会。面对围绕 AI 的喧闹与噪音，最值得优先学习的技能到底是什么？我和团队在持续梳理，希望帮助开发者（1）明确该学什么；（2）帮助雇主识别真正有能力的开发者。&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>生活在未来</title>

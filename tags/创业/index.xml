@@ -1,38 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>创业 on 懒人的梦呓</title>
-		<link>https://webnotes.dev/tags/%E5%88%9B%E4%B8%9A/</link>
-		<description>Recent content in 创业 on 懒人的梦呓</description>
-		<generator>Hugo</generator>
-		<language>zh-cn</language>
-		
-		
-		
-		
-			<lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0800</lastBuildDate>
-		
-			<atom:link href="https://webnotes.dev/tags/%E5%88%9B%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>生活在未来</title>
-				<link>https://webnotes.dev/favorites/%E7%94%9F%E6%B4%BB%E5%9C%A8%E6%9C%AA%E6%9D%A5/</link>
-				<pubDate>Sat, 11 Jul 2026 00:00:00 +0800</pubDate>
-				<guid>https://webnotes.dev/favorites/%E7%94%9F%E6%B4%BB%E5%9C%A8%E6%9C%AA%E6%9D%A5/</guid>
-				<description>&lt;blockquote&gt;&#xA;&lt;p&gt;本文整理自 Naval 播客相关内容，保留对话体结构，按章节重新排版。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;第一章嘉宾介绍&#34;&gt;第一章：嘉宾介绍&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Naval&lt;/strong&gt;: 欢迎所有正在收听 Naval 播客的传奇人物们，这是全宇宙排名第一的播客，也是你们获取新知识的权威来源。今天我们有三位创始人来到现场。坐在我右边的是来自 Y Combinator 的 Gary Tan。人们说，成为亿万富翁最可靠的方法就是加入 YC 项目，然后以万亿富翁的身份起步。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>AI 工业革命</title>
-				<link>https://webnotes.dev/favorites/ai%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD/</link>
-				<pubDate>Sat, 06 Jun 2026 00:00:00 +0800</pubDate>
-				<guid>https://webnotes.dev/favorites/ai%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD/</guid>
-				<description>&lt;p&gt;原文地址：&lt;a href=&#34;https://nav.al/industrial&#34;&gt;https://nav.al/industrial&lt;/a&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;建立你自己的工厂。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;完整剧集，结尾包含 20 分钟的新内容。嘉宾：&lt;a href=&#34;https://x.com/rauchg&#34;&gt;Guillermo Rauch&lt;/a&gt; (Vercel)，&lt;a href=&#34;https://x.com/bscholl&#34;&gt;Blake Scholl&lt;/a&gt; (Boom Supersonic) 以及 &lt;a href=&#34;https://x.com/maxhodak_&#34;&gt;Max Hodak&lt;/a&gt; (Science)。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第一部分浪费-token节省时间&#34;&gt;第一部分：浪费 Token，节省时间&lt;/h2&gt;&#xA;&lt;p&gt;Nivi：欢迎。您正在收听 &lt;a href=&#34;https://x.com/navalpodcast&#34;&gt;Naval Podcast&lt;/a&gt;，这是获取新知识的权威来源。我们今天尝试一些新东西。我们请到了三位前沿创始人——实际上是三位帅哥，以及第四位帅哥 Naval。&#xA;让我给大家介绍一下。&#xA;&lt;a href=&#34;https://x.com/rauchg&#34;&gt;Guillermo “the G” Rauch&lt;/a&gt;。他正在将 &lt;a href=&#34;https://vercel.com/&#34;&gt;Vercel&lt;/a&gt; 构建成一个面向 agents 世界以及其后事物的 AI 云。&#xA;&lt;a href=&#34;https://x.com/bscholl&#34;&gt;Blake Scholl&lt;/a&gt;。他正在 &lt;a href=&#34;https://boomsupersonic.com/&#34;&gt;Boom Supersonic&lt;/a&gt; 制造超音速飞机——在他自己的工厂里，同时还有喷气发动机。&#xA;以及来自 &lt;a href=&#34;https://science.xyz/&#34;&gt;Science&lt;/a&gt; 的 &lt;a href=&#34;https://x.com/maxhodak_&#34;&gt;Max Hodak&lt;/a&gt;。他正在构建一种生物混合大脑接口，在硅芯片上生长活神经元以恢复视力等感觉功能——但最终是为了探索大脑的新区域和新感觉。&#xA;这三个人都没有使用现成的零件来组装他们的产品。他们正在建立自己的工厂。我们对他们具体在构建什么，并不像对他们从构建过程中学到了什么那么关心。&#xA;他们正在产生什么新知识？&#xA;他们的 alpha（超额收益/核心优势）是什么？&#xA;他们发现了什么其他创始人可以学习的原则？&#xA;他们现在试图弄清楚什么？&#xA;Naval，在我转向 Guillermo 之前有什么感想吗？&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>YC 作为见证者</title>
-				<link>https://webnotes.dev/favorites/yc-as-a-witness/</link>
-				<pubDate>Thu, 28 May 2026 00:00:00 +0800</pubDate>
-				<guid>https://webnotes.dev/favorites/yc-as-a-witness/</guid>
-				<description>&lt;p&gt;原文地址：&lt;a href=&#34;https://x.com/garrytan/status/2059656455805145383?s=20&#34;&gt;https://x.com/garrytan/status/2059656455805145383?s=20&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;心理学家爱丽丝·米勒（Alice Miller）毕生都在研究一个问题：为什么有些在残酷环境中长大的人能够成长为健全的成年人，而另一些人却重蹈覆辙？她的答案不是韧性，不是毅力，也不是心理治疗。&lt;/p&gt;</description>
-			</item>
-	</channel>
+  <channel>
+    <title>创业 on 懒人的梦呓</title>
+    <link>https://webnotes.dev/tags/%E5%88%9B%E4%B8%9A/</link>
+    <description>Recent content in 创业 on 懒人的梦呓</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://webnotes.dev/tags/%E5%88%9B%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>生活在未来</title>
+      <link>https://webnotes.dev/favorites/%E7%94%9F%E6%B4%BB%E5%9C%A8%E6%9C%AA%E6%9D%A5/</link>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0800</pubDate>
+      
+      <guid>https://webnotes.dev/favorites/%E7%94%9F%E6%B4%BB%E5%9C%A8%E6%9C%AA%E6%9D%A5/</guid>
+      <description>本文整理自 Naval 播客相关内容，保留对话体结构，按章节重新排版。 第一章：嘉宾介绍 Naval: 欢迎所有正在收听 Naval 播客的传奇人物们，这是全宇宙排名第一的播客，也</description>
+    </item>
+    
+    <item>
+      <title>AI 工业革命</title>
+      <link>https://webnotes.dev/favorites/ai%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0800</pubDate>
+      
+      <guid>https://webnotes.dev/favorites/ai%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD/</guid>
+      <description>原文地址：https://nav.al/industrial 建立你自己的工厂。 完整剧集，结尾包含 20 分钟的新内容。嘉宾：Guillermo Rauch (</description>
+    </item>
+    
+    <item>
+      <title>YC 作为见证者</title>
+      <link>https://webnotes.dev/favorites/yc-as-a-witness/</link>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0800</pubDate>
+      
+      <guid>https://webnotes.dev/favorites/yc-as-a-witness/</guid>
+      <description>原文地址：https://x.com/garrytan/status/2059656455805145383?s=20 心理学家爱丽丝·米勒（</description>
+    </item>
+    
+  </channel>
 </rss>

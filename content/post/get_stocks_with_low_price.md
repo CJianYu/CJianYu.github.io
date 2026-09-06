@@ -45,5 +45,4 @@ Short Put/Short Call
 
 ## 最后
 
-想玩美股的新手朋友，我推荐[长桥证券](https://app.longbridgehk.com/ac/oa?account_channel=lb&channel=HB100010&invite-code=PBQRTC)，因为这家券商对新人是很友好的，全程都有客服指导，遇到问题可以及时找到帮助。当然如果你是一个投资老手，资金体量大并且有借日元消费等需求，那么我会推荐[IBKR](https://ibkr.com/referral/jianyu257)，有需要的朋友可以通过我的链接开户，最高获得1000美元的IBKR股票。
-
+如果你准备自己配置美股账户，先比较券商的监管、费率、入金路径、产品功能和客服响应，再决定是否开户。不同阶段、不同资金规模的人，适合的平台并不一样，没必要为了短期活动就仓促选择。
