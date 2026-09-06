@@ -6,6 +6,8 @@ tags: ["AI", "工程", "职业", "招聘"]
 description: "AI 工程正在重塑开发者能力结构。Andrew Ng 总结了 AI 工程中最重要的四类技能。"
 ---
 
+![The AI Engineering Skills Map](/img/the-ai-engineering-skills-map-cover.png)
+
 原文地址：[https://x.com/AndrewYNg/status/2088302050706686198](https://x.com/AndrewYNg/status/2088302050706686198)
 
 我很高兴分享《AI Engineering Skills Map》。AI 让我们今天构建软件的方式与 2022 年相比有了本质差别，任何能把握这次变化的人，都有大量值得期待的项目和职业机会。面对围绕 AI 的喧闹与噪音，最值得优先学习的技能到底是什么？我和团队在持续梳理，希望帮助开发者（1）明确该学什么；（2）帮助雇主识别真正有能力的开发者。
