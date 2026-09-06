@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Lists on 懒人的梦呓</title>
-    <link>https://webnotes.dev/tags/lists/</link>
-    <description>Recent content in Lists on 懒人的梦呓</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 16 Mar 2024 15:22:55 +0800</lastBuildDate>
-    
-	<atom:link href="https://webnotes.dev/tags/lists/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Lists</title>
-      <link>https://webnotes.dev/lists/</link>
-      <pubDate>Sat, 16 Mar 2024 15:22:55 +0800</pubDate>
-      
-      <guid>https://webnotes.dev/lists/</guid>
-      <description>这里会推荐一些我正在用的产品与服务，类似于一个awesome list，有需要的朋友可以参考。 美股券商 终身免佣的美股券商：长桥证券 美国本土券商</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Lists on 懒人的梦呓</title>
+		<link>https://webnotes.dev/tags/lists/</link>
+		<description>Recent content in Lists on 懒人的梦呓</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 16 Mar 2024 15:22:55 +0800</lastBuildDate>
+		
+			<atom:link href="https://webnotes.dev/tags/lists/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Lists</title>
+				<link>https://webnotes.dev/lists/</link>
+				<pubDate>Sat, 16 Mar 2024 15:22:55 +0800</pubDate>
+				<guid>https://webnotes.dev/lists/</guid>
+				<description>&lt;p&gt;这里会推荐一些我正在用的产品与服务，类似于一个awesome list，有需要的朋友可以参考。&lt;/p&gt;&#xA;&lt;h2 id=&#34;美股券商&#34;&gt;美股券商&lt;/h2&gt;&#xA;&lt;p&gt;终身免佣的美股券商：&lt;a href=&#34;https://app.longbridgehk.com/ac/oa?account_channel=lb&amp;amp;channel=HB100010&amp;amp;invite-code=PBQRTC&#34;&gt;长桥证券&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;美国本土券商：&lt;a href=&#34;https://ibkr.com/referral/jianyu257&#34;&gt;IBKR&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;跨境支付&#34;&gt;跨境支付&lt;/h2&gt;&#xA;&lt;p&gt;境外版支付宝，转账收款必备：&lt;a href=&#34;https://wise.com/invite/ihpc/jianyuc7&#34;&gt;wise&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

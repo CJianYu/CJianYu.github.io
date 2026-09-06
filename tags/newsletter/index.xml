@@ -1,24 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Newsletter on 懒人的梦呓</title>
-    <link>https://webnotes.dev/tags/newsletter/</link>
-    <description>Recent content in Newsletter on 懒人的梦呓</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 10 Mar 2021 22:29:44 +0800</lastBuildDate>
-    
-	<atom:link href="https://webnotes.dev/tags/newsletter/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Document, don&#39;t create</title>
-      <link>https://webnotes.dev/post/newsletter/</link>
-      <pubDate>Wed, 10 Mar 2021 22:29:44 +0800</pubDate>
-      
-      <guid>https://webnotes.dev/post/newsletter/</guid>
-      <description>最近，看到GaryVee的一个观点： document, don’t create （记录，而不是创造） 是的，每个人都在想着创造。创造是一个结果，而记录是一个过程。人们当然想</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Newsletter on 懒人的梦呓</title>
+		<link>https://webnotes.dev/tags/newsletter/</link>
+		<description>Recent content in Newsletter on 懒人的梦呓</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 10 Mar 2021 22:29:44 +0800</lastBuildDate>
+		
+			<atom:link href="https://webnotes.dev/tags/newsletter/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Document, don&#39;t create</title>
+				<link>https://webnotes.dev/post/newsletter/</link>
+				<pubDate>Wed, 10 Mar 2021 22:29:44 +0800</pubDate>
+				<guid>https://webnotes.dev/post/newsletter/</guid>
+				<description>&lt;p&gt;最近，看到GaryVee的一个观点：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;document, don’t create （记录，而不是创造）&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;是的，每个人都在想着创造。创造是一个结果，而记录是一个过程。人们当然想创造一个美好的结果，然后将其以最好的形态展现给世界。比如你刻苦学习，在高考中用一个满意的分数告诉大家你是一个学霸；比如平时学技术，可能是期待成为众人眼中的大神的那一天；平时你炒股，也只是希望在年终的时候看着资产上升的快乐，顺带发个朋友圈晒收益率的截图。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Document, don&#39;t create</title>
+				<link>https://webnotes.dev/post/redux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+				<pubDate>Wed, 10 Mar 2021 22:29:44 +0800</pubDate>
+				<guid>https://webnotes.dev/post/redux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+				<description>&lt;h3 id=&#34;store&#34;&gt;Store&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;&#xA;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td class=&#34;lntd&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kr&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;store&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;createStore&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;reducer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;p&gt;有三个方法：getState（获取），dispatch（更改），subscribe（订阅）&lt;/p&gt;&#xA;&lt;h3 id=&#34;actions&#34;&gt;Actions&lt;/h3&gt;&#xA;&lt;p&gt;行为，&lt;/p&gt;&#xA;&lt;h3 id=&#34;reducer&#34;&gt;Reducer&lt;/h3&gt;&#xA;&lt;p&gt;接收两个参数：state，action&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

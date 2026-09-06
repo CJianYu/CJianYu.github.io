@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -16,14 +16,16 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="virusyu" /><meta name="description" content="模拟实现call 1 2 3 4 5 6 7 8 9 10 11 12 Function.prototype.myCall = function(context) { // 判断调用call的函数（也就是this）是否是函数 if(typeof this === &amp;#39;function&amp;#39;) { throw new TypeError(&amp;#39;Error&amp;#39;) } context = context || window context.fn = this const args =" /><meta name="keywords" content="技术博客, 前端开发, 投资理财, 个人成长, JavaScript, 生活随笔" />
+<meta name="author" content="" /><meta name="description" content="模拟实现call 1 2 3 4 5 6 7 8 9 10 11 12 Function.prototype.myCall = function(context) { // 判断调用call的函数（也就是this）是否是函数 if(typeof this === &#39;function&#39;) { throw new TypeError(&#39;Error&#39;) } context = context || window context.fn = this const args = [...argumments].slice(1) const result = context.fn(args) delete context.fn return result } 实现说明：
+当传入的函数为null的时候，this默认指向window 函数是可以有返回值的，这也是要有一个result的意义 模拟实现apply 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Function.prototype.myApply = function(context) { if(typeof this === &#39;function&#39;) { throw new TypeError(&#39;Error&#39;) } context = context || window context.fn = this let result if(arguments[1]) { result = context.fn(arguments[1]) } else { result = context.fn() } return result } 实现说明：
+" /><meta name="keywords" content="技术博客, 前端开发, 投资理财, 个人成长, JavaScript, 生活随笔" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+<meta name="generator" content="Hugo 0.165.0 with even 4.0.0" />
 
 
 <link rel="canonical" href="https://webnotes.dev/post/javascript%E4%B9%8B%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0/" />
@@ -34,31 +36,34 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
-<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link href="/dist/%3cnil%3e" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/favorites.css?v=20260531-1">
 
 
-<meta property="og:title" content="Javascript之模拟实现" />
-<meta property="og:description" content="模拟实现call 1 2 3 4 5 6 7 8 9 10 11 12 Function.prototype.myCall = function(context) { // 判断调用call的函数（也就是this）是否是函数 if(typeof this === &#39;function&#39;) { throw new TypeError(&#39;Error&#39;) } context = context || window context.fn = this const args =" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://webnotes.dev/post/javascript%E4%B9%8B%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0/" />
-<meta property="article:published_time" content="2021-06-27T23:24:34&#43;08:00"/>
-<meta property="article:modified_time" content="2021-06-27T23:24:34&#43;08:00"/>
-
-<meta itemprop="name" content="Javascript之模拟实现">
-<meta itemprop="description" content="模拟实现call 1 2 3 4 5 6 7 8 9 10 11 12 Function.prototype.myCall = function(context) { // 判断调用call的函数（也就是this）是否是函数 if(typeof this === &#39;function&#39;) { throw new TypeError(&#39;Error&#39;) } context = context || window context.fn = this const args =">
-
-
-<meta itemprop="datePublished" content="2021-06-27T23:24:34&#43;08:00" />
-<meta itemprop="dateModified" content="2021-06-27T23:24:34&#43;08:00" />
-<meta itemprop="wordCount" content="638">
-
-
-
-<meta itemprop="keywords" content="JavaScript," />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Javascript之模拟实现"/>
-<meta name="twitter:description" content="模拟实现call 1 2 3 4 5 6 7 8 9 10 11 12 Function.prototype.myCall = function(context) { // 判断调用call的函数（也就是this）是否是函数 if(typeof this === &#39;function&#39;) { throw new TypeError(&#39;Error&#39;) } context = context || window context.fn = this const args ="/>
+<meta property="og:url" content="https://webnotes.dev/post/javascript%E4%B9%8B%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0/">
+	<meta property="og:site_name" content="懒人的梦呓">
+	<meta property="og:title" content="Javascript之模拟实现">
+	<meta property="og:description" content="模拟实现call 1 2 3 4 5 6 7 8 9 10 11 12 Function.prototype.myCall = function(context) { // 判断调用call的函数（也就是this）是否是函数 if(typeof this === &#39;function&#39;) { throw new TypeError(&#39;Error&#39;) } context = context || window context.fn = this const args = [...argumments].slice(1) const result = context.fn(args) delete context.fn return result } 实现说明：
+当传入的函数为null的时候，this默认指向window 函数是可以有返回值的，这也是要有一个result的意义 模拟实现apply 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Function.prototype.myApply = function(context) { if(typeof this === &#39;function&#39;) { throw new TypeError(&#39;Error&#39;) } context = context || window context.fn = this let result if(arguments[1]) { result = context.fn(arguments[1]) } else { result = context.fn() } return result } 实现说明：">
+	<meta property="og:locale" content="zh_cn">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="post">
+		<meta property="article:published_time" content="2021-06-27T23:24:34+08:00">
+		<meta property="article:modified_time" content="2021-06-27T23:24:34+08:00">
+		<meta property="article:tag" content="JavaScript">
+<meta name="news_keywords" content="Javascript之模拟实现" />
+	<meta itemprop="name" content="Javascript之模拟实现">
+	<meta itemprop="description" content="模拟实现call 1 2 3 4 5 6 7 8 9 10 11 12 Function.prototype.myCall = function(context) { // 判断调用call的函数（也就是this）是否是函数 if(typeof this === &#39;function&#39;) { throw new TypeError(&#39;Error&#39;) } context = context || window context.fn = this const args = [...argumments].slice(1) const result = context.fn(args) delete context.fn return result } 实现说明：
+当传入的函数为null的时候，this默认指向window 函数是可以有返回值的，这也是要有一个result的意义 模拟实现apply 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Function.prototype.myApply = function(context) { if(typeof this === &#39;function&#39;) { throw new TypeError(&#39;Error&#39;) } context = context || window context.fn = this let result if(arguments[1]) { result = context.fn(arguments[1]) } else { result = context.fn() } return result } 实现说明：">
+	<meta itemprop="datePublished" content="2021-06-27T23:24:34+08:00">
+	<meta itemprop="dateModified" content="2021-06-27T23:24:34+08:00">
+	<meta itemprop="wordCount" content="638">
+	<meta itemprop="keywords" content="JavaScript">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Javascript之模拟实现">
+	<meta name="twitter:description" content="模拟实现call 1 2 3 4 5 6 7 8 9 10 11 12 Function.prototype.myCall = function(context) { // 判断调用call的函数（也就是this）是否是函数 if(typeof this === &#39;function&#39;) { throw new TypeError(&#39;Error&#39;) } context = context || window context.fn = this const args = [...argumments].slice(1) const result = context.fn(args) delete context.fn return result } 实现说明：
+当传入的函数为null的时候，this默认指向window 函数是可以有返回值的，这也是要有一个result的意义 模拟实现apply 1 2 3 4 5 6 7 8 9 10 11 12 13 14 Function.prototype.myApply = function(context) { if(typeof this === &#39;function&#39;) { throw new TypeError(&#39;Error&#39;) } context = context || window context.fn = this let result if(arguments[1]) { result = context.fn(arguments[1]) } else { result = context.fn() } return result } 实现说明：">
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -84,43 +89,53 @@
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     <a href="/">
-        <li class="mobile-menu-item">Home</li>
+        <li class="mobile-menu-item">首页</li>
       </a><a href="/post/">
-        <li class="mobile-menu-item">Archives</li>
+        <li class="mobile-menu-item">归档</li>
       </a><a href="/tags/">
-        <li class="mobile-menu-item">Tags</li>
+        <li class="mobile-menu-item">标签</li>
       </a><a href="/lists/">
         <li class="mobile-menu-item">Lists</li>
+      </a><a href="/favorites/">
+        <li class="mobile-menu-item">收藏</li>
       </a><a href="/about/">
-        <li class="mobile-menu-item">About</li>
-      </a><a href="/privacy-policy/">
-        <li class="mobile-menu-item">Privacy Policy</li>
+        <li class="mobile-menu-item">关于</li>
       </a>
   </ul>
+
+  
+
+
 </nav>
+
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
   <a href="/" class="logo">懒人的梦呓</a>
 </div>
 
+
+
+
+
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
+        <a class="menu-item-link" href="/">首页</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
+        <a class="menu-item-link" href="/post/">归档</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">Tags</a>
+        <a class="menu-item-link" href="/tags/">标签</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/lists/">Lists</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">About</a>
+        <a class="menu-item-link" href="/favorites/">收藏</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/privacy-policy/">Privacy Policy</a>
+        <a class="menu-item-link" href="/about/">关于</a>
       </li>
   </ul>
 </nav>
+
     </header>
 
     <main id="main" class="main">
@@ -136,39 +151,35 @@
         <div class="post-category">
             <a href="/categories/note/"> Note </a>
             </div>
-          <span class="more-meta"> 638 words </span>
-          <span class="more-meta"> 2 mins read </span>
+          <span class="more-meta"> 约 638 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         
       </div>
     </header>
 
     <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Contents</h2>
+  <h2 class="post-toc-title">文章目录</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#模拟实现call">模拟实现call</a></li>
-<li><a href="#模拟实现apply">模拟实现apply</a></li>
-<li><a href="#模拟实现bind">模拟实现bind</a></li>
-<li><a href="#模拟实现new">模拟实现new</a></li>
-<li><a href="#模拟实现instanceof">模拟实现instanceof</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#模拟实现call">模拟实现call</a></li>
+        <li><a href="#模拟实现apply">模拟实现apply</a></li>
+        <li><a href="#模拟实现bind">模拟实现bind</a></li>
+        <li><a href="#模拟实现new">模拟实现new</a></li>
+        <li><a href="#模拟实现instanceof">模拟实现instanceof</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      
-
-<h3 id="模拟实现call">模拟实现call</h3>
+      <h3 id="模拟实现call">模拟实现call</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -182,32 +193,29 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">myCall</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// 判断调用call的函数（也就是this）是否是函数
-</span><span class="c1"></span>  <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="k">this</span> <span class="o">===</span> <span class="s1">&#39;function&#39;</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">throw</span> <span class="k">new</span> <span class="nx">TypeError</span><span class="p">(</span><span class="s1">&#39;Error&#39;</span><span class="p">)</span>
-  <span class="p">}</span>
-  <span class="nx">context</span> <span class="o">=</span> <span class="nx">context</span> <span class="o">||</span> <span class="nb">window</span>
-  <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span> <span class="o">=</span> <span class="k">this</span>
-  <span class="k">const</span> <span class="nx">args</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">argumments</span><span class="p">].</span><span class="nx">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-  <span class="k">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span>
-  <span class="k">delete</span> <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span>
-  <span class="k">return</span> <span class="nx">result</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">myCall</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 判断调用call的函数（也就是this）是否是函数
+</span></span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="k">this</span> <span class="o">===</span> <span class="s1">&#39;function&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">throw</span> <span class="k">new</span> <span class="nx">TypeError</span><span class="p">(</span><span class="s1">&#39;Error&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">context</span> <span class="o">=</span> <span class="nx">context</span> <span class="o">||</span> <span class="nb">window</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span> <span class="o">=</span> <span class="k">this</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">args</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">argumments</span><span class="p">].</span><span class="nx">slice</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">delete</span> <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">result</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>实现说明：</p>
-
+</div><p>实现说明：</p>
 <ul>
 <li>当传入的函数为null的时候，this默认指向window</li>
 <li>函数是可以有返回值的，这也是要有一个result的意义</li>
 </ul>
-
 <h3 id="模拟实现apply">模拟实现apply</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -223,33 +231,30 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">myApply</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="k">this</span> <span class="o">===</span> <span class="s1">&#39;function&#39;</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">throw</span> <span class="k">new</span> <span class="nx">TypeError</span><span class="p">(</span><span class="s1">&#39;Error&#39;</span><span class="p">)</span>
-  <span class="p">}</span>
-  <span class="nx">context</span> <span class="o">=</span> <span class="nx">context</span> <span class="o">||</span> <span class="nb">window</span>
-  <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span> <span class="o">=</span> <span class="k">this</span>
-  <span class="kd">let</span> <span class="nx">result</span>
-  <span class="k">if</span><span class="p">(</span><span class="nx">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
-    <span class="nx">result</span> <span class="o">=</span> <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span><span class="p">(</span><span class="nx">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="nx">result</span> <span class="o">=</span> <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span><span class="p">()</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="nx">result</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">myApply</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="k">this</span> <span class="o">===</span> <span class="s1">&#39;function&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">throw</span> <span class="k">new</span> <span class="nx">TypeError</span><span class="p">(</span><span class="s1">&#39;Error&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">context</span> <span class="o">=</span> <span class="nx">context</span> <span class="o">||</span> <span class="nb">window</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span> <span class="o">=</span> <span class="k">this</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">result</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">(</span><span class="nx">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">result</span> <span class="o">=</span> <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span><span class="p">(</span><span class="nx">arguments</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">result</span> <span class="o">=</span> <span class="nx">context</span><span class="p">.</span><span class="nx">fn</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="nx">result</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>实现说明：</p>
-
+</div><p>实现说明：</p>
 <ul>
 <li>实现跟call的实现差不多，唯一的区别是传入的参数不一样</li>
 </ul>
-
 <h3 id="模拟实现bind">模拟实现bind</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -271,33 +276,32 @@
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">bind2</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
-
-    <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="k">this</span> <span class="o">!==</span> <span class="s2">&#34;function&#34;</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s2">&#34;Function.prototype.bind - what is trying to be bound is not callable&#34;</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">args</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-
-    <span class="kd">var</span> <span class="nx">fNOP</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{};</span>
-
-    <span class="kd">var</span> <span class="nx">fBound</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-        <span class="kd">var</span> <span class="nx">bindArgs</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">);</span>
-        <span class="k">return</span> <span class="nx">self</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="nx">fNOP</span> <span class="o">?</span> <span class="k">this</span> <span class="o">:</span> <span class="nx">context</span><span class="p">,</span> <span class="nx">args</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">bindArgs</span><span class="p">));</span>
-    <span class="p">}</span>
-
-    <span class="nx">fNOP</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
-    <span class="nx">fBound</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">fNOP</span><span class="p">();</span>
-    <span class="k">return</span> <span class="nx">fBound</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">bind2</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="k">this</span> <span class="o">!==</span> <span class="s2">&#34;function&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s2">&#34;Function.prototype.bind - what is trying to be bound is not callable&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">self</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">args</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">fNOP</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">fBound</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">bindArgs</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">self</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="nx">fNOP</span> <span class="o">?</span> <span class="k">this</span> <span class="o">:</span> <span class="nx">context</span><span class="p">,</span> <span class="nx">args</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">bindArgs</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">fNOP</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">fBound</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">fNOP</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">fBound</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="模拟实现new">模拟实现new</h3>
+</div><h3 id="模拟实现new">模拟实现new</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -309,21 +313,19 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">myNew</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{}</span>
-  <span class="c1">// shift会改变原数组，所以arguments第一个元素会被去除，后面直接使用
-</span><span class="c1"></span>  <span class="kd">let</span> <span class="nx">Contructor</span> <span class="o">=</span> <span class="p">[].</span><span class="nx">shift</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)</span>
-  <span class="c1">// 继承
-</span><span class="c1"></span>  <span class="nx">obj</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">=</span> <span class="nx">Contructor</span><span class="p">.</span><span class="nx">prototype</span>
-  <span class="c1">// 绑定this
-</span><span class="c1"></span>  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">Contructor</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">)</span>
-  <span class="k">return</span> <span class="k">typeof</span> <span class="nx">result</span> <span class="o">===</span> <span class="s1">&#39;object&#39;</span><span class="o">?</span> <span class="nx">result</span> <span class="o">:</span> <span class="nx">obj</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">myNew</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// shift会改变原数组，所以arguments第一个元素会被去除，后面直接使用
+</span></span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">Contructor</span> <span class="o">=</span> <span class="p">[].</span><span class="nx">shift</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 继承
+</span></span></span><span class="line"><span class="cl">  <span class="nx">obj</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">=</span> <span class="nx">Contructor</span><span class="p">.</span><span class="nx">prototype</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 绑定this
+</span></span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">Contructor</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="k">typeof</span> <span class="nx">result</span> <span class="o">===</span> <span class="s1">&#39;object&#39;</span><span class="o">?</span> <span class="nx">result</span> <span class="o">:</span> <span class="nx">obj</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>实现说明：</p>
-
+</div><p>实现说明：</p>
 <ul>
 <li>创建一个新对象</li>
 <li>取出传入的第一个参数（构造函数）</li>
@@ -331,11 +333,10 @@
 <li>改变构造函数的this指向，使新对象可以访问构造函数的属性</li>
 <li>确保返回的是对象</li>
 </ul>
-
 <h3 id="模拟实现instanceof">模拟实现instanceof</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -350,24 +351,22 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">myInstanceof</span><span class="p">(</span><span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kd">let</span> <span class="nx">prototype</span> <span class="o">=</span> <span class="nx">right</span><span class="p">.</span><span class="nx">prototype</span>
-  <span class="nx">left</span> <span class="o">=</span> <span class="nx">left</span><span class="p">.</span><span class="nx">__proto__</span>
-  <span class="k">while</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">left</span> <span class="o">===</span> <span class="kc">null</span> <span class="o">||</span> <span class="nx">left</span> <span class="o">===</span> <span class="nx">underfined</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="kc">false</span>
-    <span class="p">}</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">left</span> <span class="o">===</span> <span class="nx">prototype</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">return</span> <span class="kc">true</span>
-    <span class="p">}</span>
-    <span class="nx">left</span> <span class="o">=</span> <span class="nx">left</span><span class="p">.</span><span class="nx">__prototype__</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">myInstanceof</span><span class="p">(</span><span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">let</span> <span class="nx">prototype</span> <span class="o">=</span> <span class="nx">right</span><span class="p">.</span><span class="nx">prototype</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">left</span> <span class="o">=</span> <span class="nx">left</span><span class="p">.</span><span class="nx">__proto__</span>
+</span></span><span class="line"><span class="cl">  <span class="k">while</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="nx">left</span> <span class="o">===</span> <span class="kc">null</span> <span class="o">||</span> <span class="nx">left</span> <span class="o">===</span> <span class="nx">underfined</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="nx">left</span> <span class="o">===</span> <span class="nx">prototype</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">left</span> <span class="o">=</span> <span class="nx">left</span><span class="p">.</span><span class="nx">__prototype__</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>实现说明：</p>
-
+</div><p>实现说明：</p>
 <ul>
 <li>拿到对象（left）与类型（right）的原型</li>
 <li>循环判断两者是否相等，直到left为null</li>
@@ -384,11 +383,11 @@
         <a class="prev" href="/post/%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/">
             <i class="iconfont icon-left"></i>
             <span class="prev-text nav-default">几个常用的快捷键</span>
-            <span class="prev-text nav-mobile">Prev</span>
+            <span class="prev-text nav-mobile">上一篇</span>
           </a>
         <a class="next" href="/post/%E4%B8%80%E6%97%A0%E6%89%80%E6%9C%89/">
             <span class="next-text nav-default">一无所有</span>
-            <span class="next-text nav-mobile">Next</span>
+            <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
       </nav>
@@ -400,7 +399,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
       var gitalk = new Gitalk({
-        id: '2021-06-27 23:24:34 \x2b0800 CST',
+        id: '2021-06-27 23:24:34 \u002b0800 CST',
         title: 'Javascript之模拟实现',
         clientID: '05974c1cc13d6148bcd0',
         clientSecret: '1728004705e563e811c77fe4bd644836e33eed63',
@@ -413,22 +412,26 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
 
+  
+
+  
+
       </div>
     </main>
 
     <footer id="footer" class="footer">
       <div class="social-links">
       <a href="https://github.com/CJianYu" class="iconfont icon-github" title="github"></a>
-  <a href="https://webnotes.dev/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  
 </div>
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
   </span>
   <span class="division">|</span>
   <span class="theme-info">
-    Theme - 
+    主题 - 
     <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
   </span>
 
@@ -437,13 +440,10 @@
   <span class="copyright-year">
     &copy; 
     2016 - 
-    2026
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">virusyu</span>
+    2026<span class="heart"><i class="iconfont icon-heart"></i></span><span></span>
   </span>
 </div>
+
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -454,19 +454,11 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
 
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-136354269-1', 'auto');
-	ga('set', 'anonymizeIp', true);
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
 <script id="baidu_analytics">
   var _hmt = _hmt || [];
   (function() {
