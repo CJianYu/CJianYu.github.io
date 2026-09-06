@@ -13,13 +13,13 @@
 			<lastBuildDate>Sun, 06 Sep 2026 00:20:00 +0800</lastBuildDate>
 		
 			<atom:link href="https://webnotes.dev/favorites/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>AI Engineering Skills Map: Using coding agents</title>
-				<link>https://webnotes.dev/favorites/ai-engineering-skills-map-using-coding-agents/</link>
-				<pubDate>Sun, 06 Sep 2026 00:20:00 +0800</pubDate>
-				<guid>https://webnotes.dev/favorites/ai-engineering-skills-map-using-coding-agents/</guid>
-				<description>&lt;p&gt;&lt;img src=&#34;https://webnotes.dev/img/ai-engineering-skills-map-using-coding-agents.png&#34; alt=&#34;AI Engineering Skills Map: Using coding agents&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;原文地址：&lt;a href=&#34;https://x.com/AndrewYNg/status/2095890279865721217&#34;&gt;https://x.com/AndrewYNg/status/2095890279865721217&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;AI 工程里最关键的能力之一就是会使用 coding agents。你要能让它们不仅负责写代码，也能处理非代码任务，比如数据分析、系统运维。这样你能把更多工作交给 agent，同时保留正确的把控。&lt;/p&gt;</description>
-			</item>
+		<item>
+			<title>AI Engineering Skills Map: Using coding agents</title>
+			<link>https://webnotes.dev/favorites/ai-engineering-skills-map-using-coding-agents/</link>
+			<pubDate>Sun, 06 Sep 2026 00:20:00 +0800</pubDate>
+			<guid>https://webnotes.dev/favorites/ai-engineering-skills-map-using-coding-agents/</guid>
+			<description>&lt;p&gt;&lt;img src=&#34;https://webnotes.dev/img/ai-engineering-skills-map-using-coding-agents.png&#34; alt=&#34;AI Engineering Skills Map: Using coding agents&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;原文地址：&lt;a href=&#34;https://x.com/AndrewYNg/status/2095890279865721217&#34;&gt;https://x.com/AndrewYNg/status/2095890279865721217&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;AI 工程里最关键的能力之一就是会使用 coding agents。你要能让它们不仅负责写代码，也能处理非代码任务，比如数据分析、系统运维。这样你能把更多工作交给 agent，同时保留正确的把控。&lt;/p&gt;</description>
+		</item>
 			<item>
 				<title>AI Engineering Skills Map: 软件工程基础</title>
 				<link>https://webnotes.dev/favorites/software-engineering-fundamentals/</link>
