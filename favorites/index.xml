@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sun, 06 Sep 2026 00:00:00 +0800</lastBuildDate>
+			<lastBuildDate>Sun, 06 Sep 2026 00:10:00 +0800</lastBuildDate>
 		
 			<atom:link href="https://webnotes.dev/favorites/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>AI Engineering Skills Map: 软件工程基础</title>
+				<link>https://webnotes.dev/favorites/software-engineering-fundamentals/</link>
+				<pubDate>Sun, 06 Sep 2026 00:10:00 +0800</pubDate>
+				<guid>https://webnotes.dev/favorites/software-engineering-fundamentals/</guid>
+				<description>&lt;p&gt;&lt;img src=&#34;https://webnotes.dev/img/software-engineering-fundamentals.png&#34; alt=&#34;AI Engineering Skills Map: Software engineering fundamentals&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;原文地址：&lt;a href=&#34;https://x.com/AndrewYNg/status/2093388974194872781&#34;&gt;https://x.com/AndrewYNg/status/2093388974194872781&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;有了可代理化编程（agentic coding），软件工程基础发生了什么变化？即使所有代码都由 coding agent 来写，理解软件工程基础仍然很关键。它能帮助你给代理下达正确的指令，推动它做出你想要的权衡；更重要的是，你要知道有哪些权衡，甚至哪些权衡是你还没意识到的。&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>AI Engineering Skills Map: Building and Deploying AI Applications</title>
 				<link>https://webnotes.dev/favorites/ai-engineering-skills-map-building-and-deploying-ai-applications/</link>
