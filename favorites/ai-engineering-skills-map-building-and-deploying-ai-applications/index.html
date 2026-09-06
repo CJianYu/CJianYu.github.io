@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>AI Engineering Skills Map: Building and Deploying AI Applications - 懒人的梦呓</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="" /><meta name="description" content="从 LLM、数据检索到 Agent 和评估闭环，本文展开 AI 工程技能中的“构建与部署 AI 应用”。" /><meta name="keywords" content="技术博客, 前端开发, 投资理财, 个人成长, JavaScript, 生活随笔" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.165.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://webnotes.dev/favorites/ai-engineering-skills-map-building-and-deploying-ai-applications/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/favorites.css?v=20260531-1">
+
+
+<meta property="og:url" content="https://webnotes.dev/favorites/ai-engineering-skills-map-building-and-deploying-ai-applications/">
+	<meta property="og:site_name" content="懒人的梦呓">
+	<meta property="og:title" content="AI Engineering Skills Map: Building and Deploying AI Applications">
+	<meta property="og:description" content="从 LLM、数据检索到 Agent 和评估闭环，本文展开 AI 工程技能中的“构建与部署 AI 应用”。">
+	<meta property="og:locale" content="zh_cn">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="favorites">
+		<meta property="article:published_time" content="2026-09-06T00:00:00+08:00">
+		<meta property="article:modified_time" content="2026-09-06T00:00:00+08:00">
+		<meta property="article:tag" content="AI">
+		<meta property="article:tag" content="工程">
+		<meta property="article:tag" content="职业">
+		<meta property="article:tag" content="招聘">
+
+<meta name="news_keywords" content="AI, 工程, 职业, 招聘" />
+<meta name="robots" content="index,follow" />
+
+	<meta itemprop="name" content="AI Engineering Skills Map: Building and Deploying AI Applications">
+	<meta itemprop="description" content="从 LLM、数据检索到 Agent 和评估闭环，本文展开 AI 工程技能中的“构建与部署 AI 应用”。">
+	<meta itemprop="datePublished" content="2026-09-06T00:00:00+08:00">
+	<meta itemprop="dateModified" content="2026-09-06T00:00:00+08:00">
+	<meta itemprop="wordCount" content="1695">
+	<meta itemprop="keywords" content="AI,工程,职业,招聘">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="AI Engineering Skills Map: Building and Deploying AI Applications">
+	<meta name="twitter:description" content="从 LLM、数据检索到 Agent 和评估闭环，本文展开 AI 工程技能中的“构建与部署 AI 应用”。">
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">懒人的梦呓</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/lists/">
+        <li class="mobile-menu-item">Lists</li>
+      </a><a href="/favorites/">
+        <li class="mobile-menu-item">收藏</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">懒人的梦呓</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/lists/">Lists</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/favorites/">收藏</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">AI Engineering Skills Map: Building and Deploying AI Applications</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2026-09-06 </span>
+          <span class="more-meta"> 约 1695 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
+      </div>
+    </header><div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-llm-基础">1. LLM 基础</a></li>
+    <li><a href="#2-用数据给模型定向">2. 用数据给模型“定向”</a></li>
+    <li><a href="#3-构建-agentic-系统">3. 构建 Agentic 系统</a></li>
+    <li><a href="#4-评估驱动开发">4. 评估驱动开发</a></li>
+    <li><a href="#5-生产运维">5. 生产运维</a></li>
+    <li><a href="#6-机器学习基础">6. 机器学习基础</a></li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content">
+      <p><img src="/img/ai-engineering-skills-map-building-and-deploying-ai-applications.png" alt="AI Engineering Skills Map: Building and Deploying AI Applications"></p>
+<p>我之前写过《AI Engineering Skills Map》，当时把 AI 工程的四类核心能力概括为：</p>
+<ol>
+<li>构建与部署 AI 应用</li>
+<li>软件工程基础</li>
+<li>使用编程代理（Coding Agents）</li>
+<li>参与“定义产品”</li>
+</ol>
+<p>这篇我先展开第一部分：</p>
+<p>要擅长构建与部署 AI 应用，意味着你要掌握：</p>
+<ol>
+<li>LLM 基础</li>
+<li>用数据对模型进行 grounding</li>
+<li>构建 Agentic 系统</li>
+<li>以评估驱动开发</li>
+<li>在生产环境中稳定运行</li>
+<li>机器学习基础</li>
+</ol>
+<p>这套能力地图是基于大量岗位信息、结构化专家访谈和问卷数据整理出来的。</p>
+<p>AI 应用和传统软件的关键差别在于：前者输出更难预测。你不知道 LLM 会输出什么，也无法事先准确预测监督学习模型对新样本会给出什么预测。正因为这种不确定性，构建 AI 系统比传统软件更偏向迭代式工作，前置计划难度更高。优秀的 AI 工程师会反复构建、观察、决策，基于中间结果决定下一步。能够不断判断“下一步该做什么”，才是把不稳定的 AI 组件变成可靠系统的核心。这项能力背后包含多块知识：</p>
+<h2 id="1-llm-基础">1. LLM 基础</h2>
+<p>理解大语言模型如何分词、如何生成输出，可以帮助你判断它什么时候值得信任、什么时候更可能失效。它还能帮助你决定何时用多模态模型、如何在上下文窗口中做取舍、以及如何理解缓存命中、知识截止时间、推理强度、采样参数，什么时候该用工具调用等能力。</p>
+<p>懂这些基础，才能选择合适的模型或模型组合，也能在需要时使用专业手段，比如微调或自部署模型。</p>
+<h2 id="2-用数据给模型定向">2. 用数据给模型“定向”</h2>
+<p>LLM 需要高质量上下文，才能给出可用结果。RAG 基于向量检索是早期给模型加上下文的手段之一，但可选技术已经扩展得很广。</p>
+<p>你会需要判断：哪些信息放进提示词，哪些留给 LLM 通过工具按需检索；数据和查询更适合哪种表示方式：向量索引、知识图谱，还是结构化数据上的语义层（比如客户档案）。</p>
+<p>你还要把文档（文本、PDF、HTML、图片）转为 LLM 可读输入，并建立数据清洗与更新流水线。只有当你了解可用技术清单，才能持续为模型提供更相关的上下文。</p>
+<h2 id="3-构建-agentic-系统">3. 构建 Agentic 系统</h2>
+<p>Agentic 系统从固定顺序执行的 LLM 工作流，到模型自主决策下一步的 agent harness 都在你的选择范围内。你需要决定编排方式：哪些步骤串联，哪些并行，什么时候用代码，什么时候让 LLM 决策，并给工作流/架构加上兜底分支。</p>
+<p>在设计 agent loop 时，你还要决定模型可调用哪些工具（包括 MCP、CLI、沙箱执行环境）、用什么记忆架构、如何在长会话里管理上下文，以及何时采用多代理协同而不是单代理。</p>
+<p>把原型变为生产级系统时，还要关注可靠性、安全性和治理能力；例如护栏设计、对抗输入防护、以及关键风险规避（如数据外泄）。</p>
+<p>Agentic 工作流变化很快，你还要了解相关领域的新技术，比如语音代理、计算机操作代理、生成式 UI。</p>
+<h2 id="4-评估驱动开发">4. 评估驱动开发</h2>
+<p>我看来，能把 AI 系统做好的关键能力之一是是否能跑出一套有纪律的评估与误差分析闭环。它能持续把团队精力集中到更可能成功的方向。</p>
+<p>构建高质量评估本身是技术活。你需要查看系统 trace 与输出，做探索性分析，结合业务视角判断该衡量什么。你还要知道不同评估方式：</p>
+<ul>
+<li>何时用确定性（代码化）评估</li>
+<li>何时用 LLM-as-a-judge</li>
+<li>何时引入人工复核</li>
+<li>如何持续校准与迭代自己的评估方法</li>
+</ul>
+<p>这些评估再反过来指导下一轮开发，让进展更稳定、可复现，而不是靠随机试错。</p>
+<h2 id="5-生产运维">5. 生产运维</h2>
+<p>AI 系统在生产中的差异比传统软件更明显：不确定性、成本和时延都更难处理。</p>
+<p>你需要能搭建可观测性能力，理解真实流量下的表现，监控漂移，并在模型失效或安全事件（比如对抗式注入）发生时快速响应。</p>
+<p>AI 体系还需要更有统计意识的回归测试和 CI/CD，测试强度要按风险等级分层。</p>
+<p>另外，你还要能选对成本与时延优化组合，比如模型选择优化、蒸馏与微调，以及把 Agentic 流程做简化。</p>
+<p>如果你的产品规模上来，成本与时延优化会直接决定体验和可持续性。</p>
+<h2 id="6-机器学习基础">6. 机器学习基础</h2>
+<p>现代 LLM 依赖监督学习与强化学习。每个在 LLM 方向上做得不错的工程师，通常都能讲清机器学习/深度学习。</p>
+<p>很多场景仍然需要自己用别人训练好的模型，或者直接从头训练。那意味着你要熟悉常见机器学习和深度学习模型，以及准确率、训练速度、推理速度等权衡；能正确准备与评估训练数据。</p>
+<p>偏差/方差分解、误差分析、数据工程这些概念，在处理“输出不确定”的系统时仍然是核心框架，能指导大量实践决策。</p>
+<p>学习这条线需要投入很深的技术训练，但每一步都能显著提升你做 AI 工程的质量。它的强互补是扎实的软件工程能力，我会在后续文章里展开讲。</p>
+
+    </div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/ai/">AI</a>
+          <a href="/tags/%E5%B7%A5%E7%A8%8B/">工程</a>
+          <a href="/tags/%E8%81%8C%E4%B8%9A/">职业</a>
+          <a href="/tags/%E6%8B%9A%E8%81%98/">招聘</a>
+          </div><nav class="post-nav">
+        
+        <a class="next" href="/favorites/the-ai-engineering-skills-map/">
+            <span class="next-text nav-default">The AI Engineering Skills Map</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2026-09-06 00:00:00 \u002b0800 CST',
+        title: 'AI Engineering Skills Map: Building and Deploying AI Applications',
+        clientID: '05974c1cc13d6148bcd0',
+        clientSecret: '1728004705e563e811c77fe4bd644836e33eed63',
+        repo: 'CJianYu.github.io',
+        owner: 'CJianYu',
+        admin: ['CJianYu'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/CJianYu" class="iconfont icon-github" title="github"></a>
+  
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2016 - 
+    2026<span class="heart"><i class="iconfont icon-heart"></i></span><span></span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?https:\/\/hm.baidu.com\/hm.js?11b3ab96fbe1187db509353824a1ff3b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+<script src="/js/google-analytics.js"></script>
+
+
+</body>
+</html>
